@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-md {{ site.data.theme.navbar-color }} {{ site.data.theme.navbar-background }}">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-md-none col-8">
+            <a class="p-1" href="{{ site.organization-link }}" target="_blank" rel="noopener">
+                <img class="img-fluid" id="mobile-nav-image" src="{{ site.organization-logo-nav }}" title="{{ site.organization-name }}" alt="{{ site.organization-name }} logo" >
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="page-nav">
+            <ul class="navbar-nav mr-auto">
+                {% for nav in site.data.config-nav %}
+                <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
+                    <a class="nav-link mt-1" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
+                </li>
+                {% endfor %}
+                <li class="nav-item ">
+                    <a class="nav-link mt-1" href="{{ site.cdm-url }}/cdm/search/collection/{{ site.cdm-collection-id }}/" target="_blank">Database</a>
+                </li>
+            </ul>
+            {% include nav-search-cdm.html %}
+        </div>
+    </div>    
+</nav>

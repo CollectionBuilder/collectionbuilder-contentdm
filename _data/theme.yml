@@ -1,0 +1,80 @@
+# CollectionBuilder theme customization
+# values set here help configure details of individual pages in the website
+
+# Home page
+home-banner-image-number: 548 # use number of photo from collection
+home-banner-image-link:  # leave blank unless no cdm number to generate item
+home-banner-image-title: Photograph of Clerical and Bookkeeping Staff from the Branch Mailing Department. # for accessibility 
+home-title-y-padding: 12em # the margin from the top your title portion will appear.
+home-banner-image-position: center # [options: top, center, bottom] Default: top
+carousel-height: # in px, but don't include the "px"; default is 450.
+# carousel can feature specific item types: image,pdf,youtube,thumbs
+carousel-type: image
+featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
+featured-subjects-max: 6 # set number of top subjects to display if auto generating
+featured-locations: Moscow, ID #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 3
+mediatypes: images;documents;audio;video #options[documents,images,video,audio,data,youtube] separate semi-colon(';'). 
+
+# Browse page
+# see _data/browse-config.csv for field display options
+# fields given the "btn" option can be multivalued with ";" such as subjects.
+
+# Item page 
+browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
+
+# Map page
+# see _data/map-config.csv for field display options
+latitude: 46.733711 #to determine center of map
+longitude: -117.001252 #to determine center of map
+zoom-level: 10 # zoom level for map 
+map-search: true # not suggested with large collections
+map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
+map-cluster: true # suggested for large collection or with many items in same location
+map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
+
+# Subject page
+subjects-page: true # true / false, turns off subject generation 
+subjects-fields: subject;creator # set of fields separated by ; to be featured in the cloud
+subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+# Locations page
+locations-page: false # true/false
+locations-fields: location # set of fields separated by ; to be featured in the cloud
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+# Timeline
+year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
+year-nav-increment: 5 # set increments to auto gen nav years
+
+# Data 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,description,creator,recipient,date,date-is-approximate,latitude,longitude,item-information,subject,related-publication,publisher-digital,source,original-identifier,identifier,rights,rightsstatement,type,format,language,relation,cdmid,objectid,youtubeid"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject,creator,format"
+
+# Advanced Theme Options
+
+# images 
+image-percentage-large: # default 70
+image-percentage-medium: # default 40 
+image-percentage-small: # default 20
+
+# navbar text color
+# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
+navbar-color: navbar-dark
+# navbar background color
+# Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
+navbar-background: bg-dark
+# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
+# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
+bootswatch: # leave blank or comment out for plain bootstrap
+# Theme Fonts
+base-font-size: 1.2em
+text-color: "#191919"
+link-color: "#17a2b8"
+base-font-family: # comment out for bootstrap defaults. e.g. Roboto
+font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">

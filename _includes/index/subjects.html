@@ -1,0 +1,17 @@
+{%- if site.data.theme.featured-subjects -%}
+{%- assign topSubjects = site.data.theme.featured-subjects | split: ";" -%}
+{%- else -%}
+{%- assign subjects = site.data[site.metadata] | map: "subject" | join: ";" | downcase | split: ";" | array_count_uniq -%}
+{%- capture topSubjects -%}
+{% for i in subjects limit: site.data.theme.featured-subjects-max %}{{ i[0] }};{% endfor %}{% endcapture %}
+{%- assign topSubjects = topSubjects | split: ";" -%}
+{%- endif -%}
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Top Subjects</h5>
+    <p class="card-text">
+        {% for s in topSubjects %}
+        <a class="btn btn-sm btn-info m-1" href="{{ s | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}">{{ s | strip }}</a>{% endfor %}
+    </p>
+  </div>
+</div>

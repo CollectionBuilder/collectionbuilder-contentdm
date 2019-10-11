@@ -1,0 +1,13 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+{% if jekyll.environment == "production" %}{% if site.google-analytics-id %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google-analytics-id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  /* load umbrella property with enhanced link attribution and cross domain tracking */
+  gtag('config', '{{ site.google-analytics-id }}', {
+    'link_attribution': true
+  });
+</script>
+{% endif %}{% endif %}

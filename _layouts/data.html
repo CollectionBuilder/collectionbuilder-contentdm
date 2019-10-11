@@ -1,0 +1,60 @@
+---
+layout: page
+---
+{% assign fields = site.data.config-table | map: 'display_name' %}
+{%- assign stubs = site.data.config-nav | map: 'stub' | join: ';' -%}
+<button type="button" class="btn btn-info btn-lg float-md-right" data-toggle="modal" data-target="#data">Download Data</button>
+<!-- Modal -->
+<div class="modal fade" id="data" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Collection Data Downloads</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <a class="btn btn-info col-md-6 col-md-offset-3" href="{{ '/data/metadata.csv' | absolute_url }}" target="_blank">CSV spreadsheet</a>
+                <br>
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/metadata.json' | absolute_url }}" target="_blank">Metadata JSON</a>
+                <br>{% if stubs contains "subject" %}
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/subjects.json' | absolute_url }}" target="_blank">Subjects JSON</a>
+                <br>
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/subjects.csv' | absolute_url }}" target="_blank">Subjects CSV</a>
+                <br>{% endif %}
+                {% if stubs contains "map" %}
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/geodata.json' | absolute_url }}" target="_blank">Geodata JSON</a>
+                <br>{% endif %}
+                {% if stubs contains "location" %}
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/locations.csv' | absolute_url }}" target="_blank">Locations CSV</a>
+                <br>
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/locations.json' | absolute_url }}" target="_blank">Locations JSON</a>
+                <br>{% endif %}
+                {% if stubs contains "timeline" %}
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/timelinejs.json' | absolute_url }}" target="_blank">Timeline JSON</a>
+                {% endif %}
+                {% if site.data.theme.metadata-facets-fields %}
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ '/data/facets.json' | absolute_url }}" target="_blank">Facets</a>
+                <br>{% endif %}
+                <a class="btn btn-info col-md-6 col-md-offset-3 mt-2" href="{{ site.source-code }}" rel="noopener" target="_blank">Source Code</a>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ content }}
+
+<div class="table-responsive-md">
+    <table id="item-table" class="table table-striped">
+        <thead>
+            <tr>
+                {% for f in fields %}
+                <th scope="col">{{ f }}</th>
+                {% endfor %}
+                <th>Link</th>
+            </tr>
+        </thead>
+    </table>
+</div>

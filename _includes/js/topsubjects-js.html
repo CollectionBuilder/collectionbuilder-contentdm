@@ -1,0 +1,14 @@
+<script>
+var subjectTerms = [ {%- for unique in uniqueSubjects -%}{% if unique != "" and unique != " " %}{% assign count = subjects | where_exp: "item", "item == unique" | size %}{%- if count > min-count -%}{ "subject" : "{{ unique }}", "count" : {{ count }} }{% unless forloop.last %}, {% endunless %}{% endif %}{% endif %}{% endfor %}];
+var cloud = document.getElementById("topsubjects");
+function makeTop(array) {
+    array.sort(function(a, b){return b.count - a.count});
+    var i;
+    var item;
+    for (i = 0; i < 9; i++) {
+        item = '<a class="filter btn btn-sm btn-info m-1" href="{{ "/browse.html" | relative_url }}#' + array[i].subject + '">' + array[i].subject + '</a>';
+        cloud.innerHTML += item;
+    }
+}
+makeTop(subjectTerms); 
+</script>

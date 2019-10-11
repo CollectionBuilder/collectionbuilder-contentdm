@@ -1,0 +1,14 @@
+<!-- Optional JS for Bootstrap: jQuery first, then Bootstrap bundle JS -->
+<script src="{{ '/assets/lib/jquery-3.4.1.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/bootstrap.bundle.min.js' | absolute_url }}"></script>
+<!-- load other js -->
+{% if layout.lazyload == true or page.lazyload == true %}<script src="{{ '/assets/lib/lazysizes.min.js' | absolute_url }}" async></script>{% endif %}
+{% if layout.gallery == true %}{% include js/gallery-js.html %}{% endif %}
+{% if page.layout == "browse" %}{% include js/browse-js.html %}{% endif %}
+{% if page.layout == "data" %}{% include js/table-js.html %}{% endif %}
+{% if page.layout == "subjects" %}{% include js/cloud-js.html fields=site.data.theme.subjects-fields %}{% endif %}
+{% if page.layout == "locations" %}{% include js/cloud-js.html fields=site.data.theme.locations-fields %}{% endif %}
+{% if page.layout == "timeline" %}{% include js/timeline-js.html %}{% endif %}
+{% if page.layout == "map" %}{% include js/map-js.html %}{% endif %}
+{% if page.layout == "item" %}{% include js/arrow-page-control-js.html %}{% endif %}
+{%- if page.layout == "home-infographic" %}{% include js/carousel-js.html %}{% endif -%}
