@@ -1,4 +1,4 @@
-# collectionbuilder-contentdm
+# CollectionBuilder-CONTENTdm
 
 CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories.
 
