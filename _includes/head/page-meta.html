@@ -5,8 +5,8 @@
 <meta property="og:description" content="{{ site.description | escape }}" />
 <meta property="og:site_name" content="{{ site.title | escape }}" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="{% if site.data.theme.home-banner-image-number %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ site.data.theme.home-banner-image-number }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}" />
-<meta property="og:image:alt" content="{{ site.data.theme.home-banner-image-title }}" />
+<meta property="og:image" content="{% include image/featured-image.html %}" />
+<meta property="og:image:alt" content="{{ bannerItem[0].title | escape }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}","publisher":"{{ site.organization-name | escape }}","description":"{{ site.description | escape }}","image":"{% if site.data.theme.home-banner-image-number %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ site.data.theme.home-banner-image-number }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}","url":"{{ page.url | absolute_url }}"}</script> 
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}","publisher":"{{ site.organization-name | escape }}","description":"{{ site.description | escape }}","image":"{% include image/featured-image.html %}","url":"{{ page.url | absolute_url }}"}</script> 

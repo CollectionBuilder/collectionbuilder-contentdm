@@ -1,7 +1,7 @@
 {% if page.layout == "home-infographic" %}
 <style>
 #home-banner {
-    background-image: url('{% if site.data.theme.home-banner-image-number %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ site.data.theme.home-banner-image-number }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}');
+    background-image: url('{% include image/featured-image.html %}');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: {{ site.data.theme.home-banner-image-position | default: top }};
@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="text-right p-0 mt-0">
-        <small><a class="text-info featured-link" href="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.home-banner-image-number | prepend: site.metadata | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}" title="{{ site.data.theme.home-banner-image-title }}">Featured Image</a></small>
+        <small><a class="text-info featured-link" href="{% if site.data.theme.home-banner-image-objectid %}{{ site.data.theme.home-banner-image-objectid | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}" title="{{ bannerItem[0].title | escape }}">Featured Image</a></small>
     </div>
 </div>
 {%- else -%}
