@@ -1,6 +1,7 @@
+{% if site.data.theme.home-banner-image-objectid %}{% assign bannerItem = site.data[site.metadata] | where: 'objectid', site.data.theme.home-banner-image-objectid %}{%- endif -%}
 <style>
 #jumbo-feature {
-    background-image: url('{% if site.data.theme.home-banner-image-number %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ site.data.theme.home-banner-image-number }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}');
+    background-image: url('{% include image/featured-image.html %}');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: {{ site.data.theme.home-banner-image-position | default: top }};
