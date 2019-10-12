@@ -1,1 +1,2 @@
+{%- if site.data.theme.home-banner-image-objectid -%}{% assign bannerItem = site.data[site.metadata] | where: 'objectid', site.data.theme.home-banner-image-objectid %}{%- endif -%}
 {% if site.data.theme.home-banner-image-objectid %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ bannerItem[0].cdmid }}/full/max/0/default.jpg{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}
