@@ -11,7 +11,7 @@
           "credit": {{ site.title | jsonify }}
         },
         "text": {
-          "headline": "{{ site.title | append: ' Timeline' | jsonify }}",
+          "headline": {{ site.title | append: ' Timeline' | jsonify }},
           "text": {{ site.description | jsonify }}
         }
     },
