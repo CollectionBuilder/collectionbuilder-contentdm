@@ -26,7 +26,7 @@
         "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
           "month": "{{ dates[1] }}",
           "day": "{{ dates[2] }}",
-          "year": "{{ dates[0] }}"{% else %}
+          "year": "{{ dates[0] }}"{% elsif item.date contains '/' %}"year": "{{ item.date | strip | split: '/' | last }}"{% else %}
           "year": "{{ item.date }}"{% endif %}
         },
         "text": {
