@@ -6,7 +6,7 @@
 url: https://www.lib.uidaho.edu
 # location on the domain
 # e.g. /digital/hjccc
-baseurl: /digital/psychiana
+baseurl: /demo/psychiana
 # CONTENTdm server url
 cdm-url: https://digital.lib.uidaho.edu
 # location of code
