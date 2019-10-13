@@ -6,7 +6,7 @@
 {% capture itemImg %}"https://img.youtube.com/vi/" + carouselItems[i][1] + "/hqdefault.jpg"{% endcapture %}
 {% elsif site.data.theme.carousel-type == "image" %}
 {%- assign carousel-items = site.data[site.metadata] | where_exp: "item","item.format contains 'image'" -%}
-{% capture itemImg %}"{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/" + carouselItems[i][1] + "/full/!{{ site.data.theme.carousel-height | remove: 'px' | default: '450' }},{{ site.data.theme.carousel-height | remove: 'px' | default: '450' }}/0/default.jpg"{% endcapture %}
+{% capture itemImg %}"{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/" + carouselItems[i][1] + "/full/,{{ site.data.theme.carousel-height | remove: 'px' | default: '450' }}/0/default.jpg"{% endcapture %}
 {% else %}
 {%- assign carousel-items = site.data[site.metadata] -%}
 {% capture itemImg %}"{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/" + carouselItems[i][1]{% endcapture %}
