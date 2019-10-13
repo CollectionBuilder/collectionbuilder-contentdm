@@ -40,7 +40,7 @@ page_gen:
 # Note: use environment variable on build command to include analytics
 # JEKYLL_ENV=production jekyll build
 # if present, used to add analytics during build
-google-analytics-id: UA-76328753-1
+google-analytics-id: 
 
 # add liquid profiler to id bottlenecks
 # profile: true
