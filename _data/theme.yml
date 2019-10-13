@@ -13,7 +13,6 @@ featured-subjects: #separate semi-colon(';') - if left blank, will be automatica
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
 featured-locations: Moscow, ID #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
-mediatypes: images;documents;audio;video #options[documents,images,video,audio,data,youtube] separate semi-colon(';'). 
 
 # Browse page
 # see _data/browse-config.csv for field display options
