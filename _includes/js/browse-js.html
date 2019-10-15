@@ -3,60 +3,60 @@
 <script>
 
 function makeCard(obj) {
-    var itemHref = "{{ '/items/' | relative_url }}" + obj.id + ".html";
-    var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
-    // top image for photos
-    if(obj.youtube){
-      card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="https://img.youtube.com/vi/' + obj.youtube + '/mqdefault.jpg" alt="Image of ' + obj.title + '"></a>';
-    } else if(obj.format.includes('image')){ 
-      card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg" alt="Image of ' + obj.title + '"></a>';
-    }
-    // title
-    card += '<div class="card-body text-center search"> <h3 class="card-title"><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="text-dark">' + obj.title + '</a></h3>';
-    // thumb for non-photo items
-    if(!obj.format.includes('image') && !obj.youtube){
-      card += '<p><a target="_blank" href="{{ '/items/' | relative_url }}' + obj.id + '.html"><img class="thumb lazyload" data-src="{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/' + obj.cdm + '" alt="item thumbnail"></a></p>';
-    }
-    // other fields
-    card += '<p class="card-text">';
-    {% for f in fields %}{% unless f.hidden == 'true' %}
-    if(obj.{{ f.field | replace: "-","" }}){
-    {% if f.displayName %}card += '<strong>{{ f.displayName }}:</strong> ';{% endif %}
-    {% if f.btn == 'true' %}
-    var btns = obj.{{ f.field | replace: "-","" }}.split(";");
-    for (var i = 0, len = btns.length; i < len; i++) {
-      if(btns[i] != "") {
-        card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(btns[i]) + '">' + btns[i] + '</a>';
-      }
-    }
-    {% else %}
-    card += obj.{{ f.field | replace: "-","" }};
-    {% endif %}
-    {% unless forloop.last %}card += '<br>';{% endunless %}
-    }
-    {% endunless %}{% endfor %}
-    card += '</p>';
-    // media type
-    card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
-      obj.format.split("/").pop().toUpperCase() + ' <span class="';
-    if(obj.format.includes('image')){
-      card += 'far fa-image';
-    } else if(obj.format.includes('audio')){
-      card += 'far fa-file-audio';
-    } else if(obj.format.includes('video')){
-      card += 'far fa-file-video';
-    } else {
-      card += 'far fa-file';
-    }
-    card += '"></span></a></small></p><hr>';
-    // view button
-    card += '<a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="btn btn-sm btn-light text-primary" title="link to ' + obj.title + '">View Full Record</a>';
-    // close divs
-    card += '</div></div></div>';
-    // send back big string
-    return card;
-  };
 
+  var itemHref = "{{ '/items/' | relative_url }}" + obj.id + ".html";
+  var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
+  // top image for photos
+  if(obj.youtube){
+    card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="https://img.youtube.com/vi/' + obj.youtube + '/mqdefault.jpg" alt="Image of ' + obj.title + '"></a>';
+  } else if(obj.format.includes('image')){ 
+    card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg" alt="Image of ' + obj.title + '"></a>';
+  }
+  // title
+  card += '<div class="card-body text-center search"> <h3 class="card-title"><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="text-dark">' + obj.title + '</a></h3>';
+  // thumb for non-photo items
+  if(!obj.format.includes('image') && !obj.youtube){
+    card += '<p><a target="_blank" href="{{ '/items/' | relative_url }}' + obj.id + '.html"><img class="thumb lazyload" data-src="{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/' + obj.cdm + '" alt="item thumbnail"></a></p>';
+  }
+  // other fields
+  card += '<p class="card-text">';
+  {% for f in fields %}{% unless f.hidden == 'true' %}
+  if(obj.{{ f.field | replace: "-","" }}){
+  {% if f.displayName %}card += '<strong>{{ f.displayName }}:</strong> ';{% endif %}
+  {% if f.btn == 'true' %}
+  var btns = obj.{{ f.field | replace: "-","" }}.split(";");
+  for (var i = 0, len = btns.length; i < len; i++) {
+    if(btns[i] != "") {
+      card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(btns[i]) + '">' + btns[i] + '</a>';
+    }
+  }
+  {% else %}
+  card += obj.{{ f.field | replace: "-","" }};
+  {% endif %}
+  {% unless forloop.last %}card += '<br>';{% endunless %}
+  }
+  {% endunless %}{% endfor %}
+  card += '</p>';
+  // media type
+  card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
+    obj.format.split("/").pop().toUpperCase() + ' <span class="';
+  if(obj.format.includes('image')){
+    card += 'far fa-image';
+  } else if(obj.format.includes('audio')){
+    card += 'far fa-file-audio';
+  } else if(obj.format.includes('video')){
+    card += 'far fa-file-video';
+  } else {
+    card += 'far fa-file';
+  }
+  card += '"></span></a></small></p><hr>';
+  // view button
+  card += '<a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="btn btn-sm btn-light text-primary" title="link to ' + obj.title + '">View Full Record</a>';
+  // close divs
+  card += '</div></div></div>';
+  // send back big string
+  return card;
+};
     
   /* add items */
   var items = [
@@ -106,7 +106,15 @@ function makeCard(obj) {
     
     var cards = "";
     for (var i = 0, len = filteredItems.length; i < len; i++) {
-      cards += makeCard(filteredItems[i]);
+      try {
+        cards += makeCard(filteredItems[i]);
+      } catch(err) {
+        var errorMessage = "Metadata Issue! objectid: " + filteredItems[i].id + " | error message: " + err.message;
+        {% if jekyll.environment == "development" %}
+        document.getElementById("errors").innerHTML += "<li>" + errorMessage + "</li>";
+        {% else %}
+        console.log(errorMessage);{% endif %}
+      }
     }
     $("#browseItems").html(cards);
 

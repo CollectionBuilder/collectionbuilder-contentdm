@@ -23,4 +23,5 @@ lazyload: true
     <div class="spinner-border text-secondary" role="status"><span class="sr-only">Loading...</span></div>
 </div>
 
+{% if jekyll.environment == "development" %}<ol id="errors" class="border border-danger"></ol>{% endif %}
 <div class="row" id="browseItems"></div>
