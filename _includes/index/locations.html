@@ -1,9 +1,14 @@
 {%- if site.data.theme.featured-locations -%}
 {%- assign topLocations = site.data.theme.featured-locations | split: ";" -%}
 {%- else -%}
-{%- assign locations = site.data[site.metadata] | map: "location" | join: ";" | split: ";" | array_count_uniq -%}
+{%- assign locations-fields = site.data.theme.locations-fields | split: ";" -%}
+{%- for c in locations-fields -%}
+{% assign new = site.data[site.metadata] | map: c | join: ";" %}
+{% assign places = places | append: ";" | append: new %}
+{%- endfor -%}
+{%- assign uniqPlaces = places | downcase | split: ";" | array_count_uniq -%}
 {%- capture topLocations -%}
-{% for i in locations limit: site.data.theme.featured-locations-max %}{{ i[0] }};{% endfor %}{% endcapture %}
+{% for i in uniqPlaces limit: site.data.theme.featured-locations-max %}{{ i[0] }};{% endfor %}{% endcapture %}
 {%- assign topLocations = topLocations | split: ";" -%}
 {%- endif -%}
 <div class="card mb-3">
