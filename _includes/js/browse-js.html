@@ -3,19 +3,27 @@
 <script>
 
 function makeCard(obj) {
+    // find item link
     var itemHref = "{{ '/items/' | relative_url }}" + obj.id + ".html";
+    // find images
+    if(obj.youtube) {
+      var imgSrc = 'https://img.youtube.com/vi/' + obj.youtube + '/mqdefault.jpg';
+    } else if(obj.format.includes('image')) { 
+      var imgSrc = '{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg';
+    } else {
+      var thumbSrc = '{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/' + obj.cdm;
+    }
+    // start card
     var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
     // top image for photos
-    if(obj.youtube){
-      card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="https://img.youtube.com/vi/' + obj.youtube + '/mqdefault.jpg" alt="Image of ' + obj.title + '"></a>';
-    } else if(obj.format.includes('image')){ 
-      card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/' + obj.cdm + '/full/pct:{{ site.data.theme.image-percentage-medium | default: 40 }}/0/default.jpg" alt="Image of ' + obj.title + '"></a>';
+    if(imgSrc) {
+      card += '<a target="_blank" href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
     // title
-    card += '<div class="card-body text-center search"> <h3 class="card-title"><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="text-dark">' + obj.title + '</a></h3>';
+    card += '<div class="card-body text-center search"> <h3 class="card-title"><a target="_blank" href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
     // thumb for non-photo items
-    if(!obj.format.includes('image') && !obj.youtube){
-      card += '<p><a target="_blank" href="{{ '/items/' | relative_url }}' + obj.id + '.html"><img class="thumb lazyload" data-src="{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/' + obj.cdm + '" alt="item thumbnail"></a></p>';
+    if(thumbSrc){
+      card += '<p><a target="_blank" href="' + itemHref + '"><img class="lazyload" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
     }
     // other fields
     card += '<p class="card-text">';
@@ -52,7 +60,7 @@ function makeCard(obj) {
       card += '"></span></a></small></p>';
     }
     // view button
-    card += '<hr><a href="{{ '/items/' | relative_url }}' + obj.id + '.html" class="btn btn-sm btn-light text-primary" title="link to ' + obj.title + '">View Full Record</a>';
+    card += '<hr><a href="' + itemHref + '" class="btn btn-sm btn-light text-primary" title="link to ' + obj.title + '">View Full Record</a>';
     // close divs
     card += '</div></div></div>';
     // send back big string
@@ -71,7 +79,6 @@ function makeCard(obj) {
     return array;
   }
 
-    
   /* add items */
   var items = [
     {% for i in items %}
@@ -86,17 +93,13 @@ function makeCard(obj) {
       var filteredItems = arr; 
     } else {
       q = q.toUpperCase(); 
-      // 3 filter options, filter, grep, loop
-
+      // 3 filter options, filter, grep, loop...
       // js filter
       /*
       var filteredItems = arr.filter(function (obj) { return Object.values(obj).join(" ").toUpperCase().includes(q);}); */
-      
       // jquery grep
       /*
-      if(q==""){ var filteredItems = arr; } else {
-        var filteredItems = jQuery.grep(arr, function(obj) { return Object.values(obj).join(" ").toUpperCase().includes(q);});
-      }*/
+      var filteredItems = jQuery.grep(arr, function(obj) { return Object.values(obj).join(" ").toUpperCase().includes(q);}); */
       // (/keyword/i).test(source)
       // js loop
       /*
@@ -106,7 +109,7 @@ function makeCard(obj) {
           filteredItems.push(arr[i]);
         }
       }*/
-      // for compatible indexOf loop?
+      // for compatible indexOf loop seems fastest
       var filteredItems = [];
       for (var i = 0, len = arr.length; i < len; i++) {
         var val = "";
