@@ -20,7 +20,7 @@ function makeCard(obj) {
       card += '<a target="_blank" href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
     // title
-    card += '<div class="card-body text-center search"> <h3 class="card-title"><a target="_blank" href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
+    card += '<div class="card-body text-center"> <h3 class="card-title"><a target="_blank" href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
     // thumb for non-photo items
     if(thumbSrc){
       card += '<p><a target="_blank" href="' + itemHref + '"><img class="lazyload" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
@@ -121,8 +121,8 @@ function makeCard(obj) {
     }
     // add number 
     $("#numberOf").html(filteredItems.length);
-    // add stuff, make cards first in giant var, then add all at once to speed things up
     
+    // add stuff, make cards first in giant var, then add all at once to speed things up
     var cards = "";
     for (var i = 0, len = filteredItems.length; i < len; i++) {
       cards += makeCard(filteredItems[i]);
