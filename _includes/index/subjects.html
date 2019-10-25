@@ -2,6 +2,7 @@
 {%- assign topSubjects = site.data.theme.featured-subjects | split: ";" -%}
 {%- else -%}
 {%- assign subjects-fields = site.data.theme.subjects-fields | split: ";" -%}
+{%- assign subjects = "" -%}
 {%- for c in subjects-fields -%}
 {% assign new = site.data[site.metadata] | map: c | join: ";" %}
 {% assign subjects = subjects | append: ";" | append: new %}

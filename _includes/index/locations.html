@@ -2,6 +2,7 @@
 {%- assign topLocations = site.data.theme.featured-locations | split: ";" -%}
 {%- else -%}
 {%- assign locations-fields = site.data.theme.locations-fields | split: ";" -%}
+{%- assign places = "" -%}
 {%- for c in locations-fields -%}
 {% assign new = site.data[site.metadata] | map: c | join: ";" %}
 {% assign places = places | append: ";" | append: new %}
