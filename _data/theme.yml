@@ -2,7 +2,7 @@
 # values set here help configure details of individual pages in the website
 
 # Home page
-featured-image-objectid: demo_psychiana548 # use number of photo from collection
+featured-image-objectid: weinberg548 # use number of photo from collection
 featured-image-link:  # leave blank unless no cdm number to generate item 
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top

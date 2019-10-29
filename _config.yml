@@ -3,17 +3,17 @@
 
 # URL variables
 # site domain 
-url: https://www.lib.uidaho.edu
+url: https://collectionbuilder.github.io
 # location on the domain
 # e.g. /digital/hjccc
-baseurl: /demo/psychiana
+baseurl: /demo/wienberg
 # CONTENTdm server url
-cdm-url: https://digital.lib.uidaho.edu
+cdm-url: https://cdm15730.contentdm.oclc.org
 # location of code
 source-code: https://github.com/CollectionBuilder
 
 # Site settings
-title: Collection Builder CDM Skin
+title: Wienberg Demo
 # header and head metadata
 tagline: Digital Collection Magic with Static Web Technologies
 description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
@@ -25,13 +25,13 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 
 # Collection settings
 # contentdm collection name 
-cdm-collection-id: psychiana
+cdm-collection-id: p15730coll18
 # name of metadata file, be sure to also change page_gen data setting!
-metadata: demo_psychiana 
+metadata: wienberg
 # page gen settings 
 # "data" value must be the name of the metadata file
 page_gen:
-  - data: 'demo_psychiana'
+  - data: 'wienberg'
     template: 'items'
     name: 'objectid'
     dir: 'items'
