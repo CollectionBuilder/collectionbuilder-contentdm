@@ -4,15 +4,16 @@
 {% assign new = site.data[site.metadata] | map: c | join: ";" %}
 {% assign terms = terms | append: ";" | append: new %}
 {%- endfor -%}
-{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq | sort | where_exp: 't','t[1] > site.data.theme.subjects-min' -%}
+{%- assign termsMin = include.min | default: "1" -%}
+{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq | sort | where_exp: 't','t[1] > termsMin' -%}
 <script>
     /* subject terms + count */
     var terms = [
         {% for t in uniqTerms %}[{{ t[0] | jsonify }}, {{ t[1] | jsonify }}]{% unless forloop.last %}, {% endunless %}{% endfor %}
     ];
 
-    {% if site.data.theme.subjects-stopwords %}/* apply stopwords */
-    var stopWords = {{ site.data.theme.subjects-stopwords | downcase | split: ';' | jsonify }};
+    {% if include.stopwords %}/* apply stopwords */
+    var stopWords = {{ include.stopwords | downcase | split: ';' | jsonify }};
     terms = terms.filter(function(a) { return stopWords.indexOf(a[0]) < 0;});{% endif %}
     /* calculate max size */
     var counts = terms.map(function(obj){ return obj[1]; });
