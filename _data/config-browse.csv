@@ -1,4 +1,4 @@
 field,displayName,btn,hidden
 date,Date,
-creator,Creator,
+location,,true
 subject,,true
