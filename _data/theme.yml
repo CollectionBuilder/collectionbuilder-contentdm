@@ -2,16 +2,16 @@
 # values set here help configure details of individual pages in the website
 
 # Home page
-featured-image-objectid: weinberg548 # use number of photo from collection
+featured-image-objectid: wienberg973 # use number of photo from collection
 featured-image-link:  # leave blank unless no cdm number to generate item 
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
-carousel-height: # in px, but don't include the "px"; default is 450.
+carousel-height: 500 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: Moscow, ID #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 
 # Browse page
@@ -33,7 +33,7 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 # Subject page
 subjects-page: true # true / false, turns off subject generation 
-subjects-fields: subject;creator # set of fields separated by ; to be featured in the cloud
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud
 subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -50,9 +50,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # Data 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,creator,recipient,date,date-is-approximate,latitude,longitude,item-information,subject,related-publication,publisher-digital,source,original-identifier,identifier,rights,rightsstatement,type,format,language,relation,cdmid,objectid,youtubeid"
+metadata-export-fields: "title,note,alternative title,description,date,date original,date searchable,subject,subject - tgm,subject - lcsh,subject - local,collecting area,status,manufacturer,latitude,longitude,view on map,digital collection,archival source,publisher,original format,provenance,rights & usage,credit line,file name,type,location id,digital format,file size,height,width,color space,checksum,hardware,software,user name,notes,internal use,folder search,oclc number,date created,date modified,reference url,cdmid,objectid,contentdm file name,archival file,contentdm file path"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,creator,format"
+metadata-facets-fields: "subject,format"
 
 # Advanced Theme Options
 
