@@ -18,10 +18,10 @@ title: Wienberg Demo
 tagline: Digital Collection Magic with Static Web Technologies
 description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
 # Organization branding
-organization-name: "Digital Initiatives, University of Idaho Library"
-organization-link: https://www.lib.uidaho.edu/digital/
-organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
-organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
+organization-name: "Pepperdine Libraries Digital Collections"
+organization-link: https://cdm15730.contentdm.oclc.org/digital/
+organization-logo-banner: assets/img/pepperdine-libraries-digital-collections.png
+organization-logo-nav: assets/img/pepperdine-libraries-digital-collections.png
 
 # Collection settings
 # contentdm collection name 
