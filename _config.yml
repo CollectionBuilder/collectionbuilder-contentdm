@@ -20,8 +20,8 @@ description: "CollectionBuilder-CONTENTdm is a template for creating digital col
 # Organization branding
 organization-name: "Pepperdine Libraries Digital Collections"
 organization-link: https://cdm15730.contentdm.oclc.org/digital/
-organization-logo-banner: assets/img/pepperdine-libraries-digital-collections.png
-organization-logo-nav: assets/img/pepperdine-libraries-digital-collections.png
+organization-logo-banner: /assets/img/pepperdine-libraries-digital-collections.png
+organization-logo-nav: /assets/img/pepperdine-libraries-digital-collections.png
 
 # Collection settings
 # contentdm collection name 
