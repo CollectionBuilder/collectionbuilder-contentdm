@@ -1,5 +1,6 @@
 <meta name="keywords" content="{{ page.subject | escape }}" >
 <meta name="description" content="Item from {{ site.title | escape }}: {{ page.description | truncatewords: 25 | escape }}">
+{% if jekyll.environment == "production" %}
 <!-- DC meta -->
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
@@ -36,3 +37,4 @@
 </script> 
 <!-- breadcrumbs schema -->
 <script type="application/ld+json">{"@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "item": { "@id": "{{ "/" | absolute_url }}", "name": {{ site.title | jsonify }}, "image": "{% include image/featured-image.html %}" } },{ "@type": "ListItem", "position": 2, "item": { "@id": "{{ '/browse.html' | absolute_url }}", "name": "Browse Collection" } },{ "@type": "ListItem", "position": 3, "item": { "@id": "{{ page.url | absolute_url }}", "name": {{ page.title | jsonify }}, "image": "{% if page.format contains 'image' %}{% include image/original.html %}{% else %}{% include image/thumb.html %}{% endif %}" } }] }</script>
+{% endif %}
