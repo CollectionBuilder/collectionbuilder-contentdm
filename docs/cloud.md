@@ -49,15 +49,14 @@ cloud-stopwords:
 Example custom cloud page.
 ```
 
-## Advanced details 
+## Cloud include 
 
-Clouds can also be added to any page using the `_include/js/cloud-js.html` include in the page stub content. 
+Clouds can also be added to any page using the `_include/js/cloud-js.html` include in the page stub content, with the variable `fields`, and optional variables `min` and `stopwords`. 
+Cloud-js include assumes a div with `id="cloud"` exists on the page for the cloud to fill.
+So putting them together, you can add a cloud anywhere in a page.
 For example:
 
-`{% include js/cloud-js.html fields="creator;publisher" min="2" stopwords="example;another" %}`
-
-Cloud-js include assumes a div with `id="cloud"` exists on the page, like: 
-
-`<div id="cloud" class="text-center my-4 bg-light border rounded p-2"></div>`
-
-Rather than manually adding the div, you can use `layout: cloud` to automatically add it beneath the page content. 
+```
+<div id="cloud" class="text-center my-4 bg-light border rounded p-2"></div>
+{% include js/cloud-js.html fields="creator;publisher" min="2" stopwords="example;another" %}
+```
