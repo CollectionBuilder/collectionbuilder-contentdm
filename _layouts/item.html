@@ -18,7 +18,7 @@ gallery: true
                 {% if page.format contains 'image' %}
                 {% if page.compound %}
                 {%for c in compound%}{%unless forloop.last %}                
-                <div class="gallery-img border pt-4" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ c }}/full/max/0/default.jpg">
+                <div class="gallery-img border pt-4" {%if forloop.first%}id='first-gal'{%endif%} data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ c }}/full/max/0/default.jpg">
                     {%if forloop.first%}<p><small>Click to view images in full-screen gallery</small></p>{%endif%}
                     <p><img src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ c }}/full/pct:{{ site.data.theme.image-percentage-small | default: 20 }}/0/default.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
                 </div>{%endunless%}{%endfor%}
@@ -52,7 +52,9 @@ gallery: true
                 <div class="my-2">
                     {% if page.youtubeid %}
                     <a target="_blank" href="https://www.youtube.com/watch?v={{ youtubeid }}" class="btn btn-outline-info" title="Object download">View on YouTube</a>
-                    {% else %}
+                    {%elsif page.compound%}
+                    <button target="_blank" onclick="$('#first-gal').click();" class="btn btn-outline-info" title="Object download">Download {{ page.format | split: '/' | last | upcase }} in Gallery</button>
+                    {% else %} 
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-info" title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>{% endif %}
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
                     <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" class="ml-2 btn btn-outline-info" title="View object year on timeline">View on Timeline</a>{% endif %}
