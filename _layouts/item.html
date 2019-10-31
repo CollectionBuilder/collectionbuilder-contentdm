@@ -14,10 +14,17 @@ gallery: true
         <div class="col-md-6" id="lightgallery">
             <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
+                {% if page.pdflink %}
+                <div >
+                    <p><a href="{{ page.pdflink }}{{page.title}}" target="_blank"><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></a></p>
+                    <p><small>Click to download pdf</small></p>
+                </div>
+                {%else%}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
                     <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
                 </div>
+                {%- endif -%}
                 {%- else -%}
                 <div class="mt-4">
                     <p>
