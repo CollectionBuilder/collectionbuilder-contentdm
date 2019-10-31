@@ -17,3 +17,7 @@
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | absolute_url }}" type="text/css">
 {% include head/google-analytics.html %}
 <!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->
+
+{% if jekyll.environment == "production" %}
+<meta name="robots" content="noindex">
+{%endif%}

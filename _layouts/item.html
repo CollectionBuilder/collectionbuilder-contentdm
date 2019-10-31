@@ -3,6 +3,8 @@ layout: default
 gallery: true
 ---
 {%- assign fields = site.data.config-metadata -%}
+{%- assign compound = page.compound | remove: " " | split: ";" -%}
+
 <div class="container py-3">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
@@ -14,11 +16,12 @@ gallery: true
         <div class="col-md-6" id="lightgallery">
             <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
-                {% if page.pdflink %}
-                <div >
-                    <p><a href="{{ page.pdflink }}{{page.title}}" target="_blank"><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></a></p>
-                    <p><small>Click to download pdf</small></p>
-                </div>
+                {% if page.compound %}
+                {%for c in compound%}{%unless forloop.last %}                
+                <div class="gallery-img border pt-4" data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ c }}/full/max/0/default.jpg">
+                    {%if forloop.first%}<p><small>Click to view images in full-screen gallery</small></p>{%endif%}
+                    <p><img src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ c }}/full/pct:{{ site.data.theme.image-percentage-small | default: 20 }}/0/default.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                </div>{%endunless%}{%endfor%}
                 {%else%}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
                     <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
