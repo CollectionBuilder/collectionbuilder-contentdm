@@ -1,4 +1,4 @@
-{%- assign items = site.data[site.metadata] -%}
+{%- assign items = site.data[site.metadata] | where: "format","cpd"-%}
 {%- assign fields = site.data.config-browse -%}
 <script>
 

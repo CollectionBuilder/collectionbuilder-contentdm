@@ -2,7 +2,7 @@
 layout: page 
 lazyload: true
 ---
-{% assign itemCount = site.data[site.metadata] | size %}
+{% assign itemCount = site.data[site.metadata] | where: "format","cpd" | size %}
 
 {{ content }}
 

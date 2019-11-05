@@ -34,7 +34,7 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 # Subject page
 subjects-page: true # true / false, turns off subject generation 
 subjects-fields: subject # set of fields separated by ; to be featured in the cloud
-subjects-min: 5 # min size for subject cloud, too many terms = slow load time!
+subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Locations page
@@ -52,7 +52,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # comma delimited list, reference url is automatic
 metadata-export-fields: "title,interviewee,interviewer,date,datenice,dates,affiliation (role),affiliation (department),description,biography,subject (lcsh),subjects (lctgm),keywords,geographic coverage,object type,notes,language,language code,digital collection,digital id number,ordering information,citation information,repository,repository collection,rights uri,restrictions,type,staff notes,cataloging,extent,format,original format,file name,digital reproduction information,oclc number,date created,date modified,reference url,compound,cdmid,contentdm file name,contentdm file path,objectid"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "affiliation (role),affiliation (department),subject (lcsh),subjects (lctgm),keywords,geographic coverage,object type"
+metadata-facets-fields: "affiliation (role),affiliation (department),subject,location"
 
 # Advanced Theme Options
 
