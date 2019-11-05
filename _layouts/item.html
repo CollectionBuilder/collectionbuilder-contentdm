@@ -4,7 +4,7 @@ gallery: true
 ---
 {%- assign fields = site.data.config-metadata -%}
 {%- assign compound = page.compound | remove: " " | split: ";" -%}
-
+{%- assign items = site.data[site.metadata] -%}
 <div class="container py-3">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
@@ -15,19 +15,31 @@ gallery: true
     <div class="row">
         <div class="col-md-6" id="lightgallery">
             <div class="card mb-4 text-center">
-                {% if page.format contains 'image' %}
-                {% if page.compound %}
-                {%for c in compound%}{%unless forloop.last %}                
-                <div class="gallery-img border pt-4" {%if forloop.first%}id='first-gal'{%endif%} data-src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ c }}/full/max/0/default.jpg">
-                    {%if forloop.first%}<p><small>Click to view images in full-screen gallery</small></p>{%endif%}
-                    <p><img src="{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ c }}/full/pct:{{ site.data.theme.image-percentage-small | default: 20 }}/0/default.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
-                </div>{%endunless%}{%endfor%}
-                {%else%}
+               {% if page.compound %}
+                {%for c in compound%}
+                {%- assign cpd = items | where_exp: 'item', 'item.cdmid == c' -%}
+                {% for item in cpd %}
+                {% if item.format == 'image/jpg' %}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
-                    <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                    <p><img src="{% include image/small.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
                 </div>
+                {% elsif item.format == 'application/pdf' %}
+                <div class="card  py-4">
+                        <h3>Transcript</h3>
+                    <a href="{% include download/pdf.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ item.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a>
+                </div>
+                {% elsif item.format == 'audio/mp3' %}
+                <div class="card  py-4">
+                    <h3>Audio</h3>
+                <audio controls class="mp3-item-player">
+                    <source src="{% include download/item.html %}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></div>
+                {%- else -%}
                 {%- endif -%}
+                {%- endfor -%}
+                {%- endfor -%}
                 {%- else -%}
                 <div class="mt-4">
                     <p>

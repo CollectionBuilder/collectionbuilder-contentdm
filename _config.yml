@@ -6,9 +6,9 @@
 url: https://collectionbuilder.github.io
 # location on the domain
 # e.g. /digital/hjccc
-baseurl: /demo/wienberg
+baseurl: /demo/foundingstories
 # CONTENTdm server url
-cdm-url: https://cdm15730.contentdm.oclc.org
+cdm-url: https://cdm16786.contentdm.oclc.org/
 # location of code
 source-code: https://github.com/CollectionBuilder
 
@@ -18,20 +18,20 @@ title: Wienberg Demo
 tagline: Digital Collection Magic with Static Web Technologies
 description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
 # Organization branding
-organization-name: "Pepperdine Libraries Digital Collections"
-organization-link: https://cdm15730.contentdm.oclc.org/digital/
+organization-name: "University of Washington Libraries Digital Collections"
+organization-link: https://content.lib.washington.edu/
 organization-logo-banner: /assets/img/pepperdine-libraries-digital-collections.png
 organization-logo-nav: /assets/img/pepperdine-libraries-digital-collections.png
 
 # Collection settings
 # contentdm collection name 
-cdm-collection-id: p15730coll18
+cdm-collection-id: p16786coll18
 # name of metadata file, be sure to also change page_gen data setting!
-metadata: wienberg
+metadata: foundingstories
 # page gen settings 
 # "data" value must be the name of the metadata file
 page_gen:
-  - data: 'wienberg'
+  - data: 'foundingstories'
     template: 'items'
     name: 'objectid'
     dir: 'items'
