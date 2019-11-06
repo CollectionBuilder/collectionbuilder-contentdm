@@ -1,17 +1,13 @@
 field,display-name,dc-map,browse-link
 title,Title,DC.title
-creator,Creator,DC.creator
+interviewee,Interviewee,,
+interviewer,Interviewer,,
 date,Date Created,DCTERMS.created
-date-is-approximate,Approximated Date
-description,Description,DC.description
+affiliation (role),Role,,
+affiliation (department),Department,,
+biography,Biography,,
 subject,Subjects,DC.subject,true
 location,Location,,true
-latitude,Latitude
-longitude,Longitude
-collecting area,Collecting Area
-manufacturer,Manufacturer,,true
-archival source,Source
-original format,Format Original
-mediatype,Media Type
+extent,Extent,,
 type,Type,DC.type
 format,Format

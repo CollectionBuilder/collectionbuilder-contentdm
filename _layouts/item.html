@@ -26,14 +26,14 @@ gallery: true
                 </div>
                 {% elsif item.format == 'application/pdf' %}
                 <div class="card  py-4">
-                        <h3>Transcript</h3>
-                    <a href="{% include download/pdf.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ item.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a>
+                        <h3 class="mb-4">Transcript</h3>
+                    <a id="transcript-download" href="{% include download/pdf.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ item.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a>
                 </div>
                 {% elsif item.format == 'audio/mp3' %}
                 <div class="card  py-4">
-                    <h3>Audio</h3>
+                    <h3 class="mb-4">Audio</h3>
                 <audio controls class="mp3-item-player">
-                    <source src="{% include download/item.html %}" type="audio/mpeg">
+                    <source src="{{ site.cdm-url }}/utils/getstream/collection/{{ site.cdm-collection-id }}/id/{{ item.cdmid }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio></div>
                 {%- else -%}
@@ -65,7 +65,7 @@ gallery: true
                     {% if page.youtubeid %}
                     <a target="_blank" href="https://www.youtube.com/watch?v={{ youtubeid }}" class="btn btn-outline-info" title="Object download">View on YouTube</a>
                     {%elsif page.compound%}
-                    <button target="_blank" onclick="$('#first-gal').click();" class="btn btn-outline-info" title="Object download">Download {{ page.format | split: '/' | last | upcase }} in Gallery</button>
+                    <button target="_blank" onclick="$('#transcript-download').click();" class="btn btn-outline-info" title="Object download">Download Transcript</button>
                     {% else %} 
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-info" title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>{% endif %}
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
@@ -136,7 +136,7 @@ gallery: true
     {% unless page.index_number == last %}
     {% assign forward = page.index_number | plus: 4 %}
     {% else %}
-    {% assign forward = 4 %}
+    {% assign forward = 3 %}
     {%- endunless -%}
     {%- assign back_url = site.data[site.metadata][back].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
     {%- assign forward_url = site.data[site.metadata][forward].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
