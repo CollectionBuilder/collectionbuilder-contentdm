@@ -5,7 +5,7 @@
 {% assign terms = terms | append: ";" | append: new %}
 {%- endfor -%}
 {%- assign termsMin = include.min | default: 1 -%}
-{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq | sort | where_exp: 't','t[1] > termsMin' -%}
+{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq | sort | where_exp: 't','t[1] >= termsMin' -%}
 <script>
     /* subject terms + count */
     var terms = [
