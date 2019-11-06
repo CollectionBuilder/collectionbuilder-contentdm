@@ -13,15 +13,15 @@ cdm-url: https://cdm16786.contentdm.oclc.org/
 source-code: https://github.com/CollectionBuilder
 
 # Site settings
-title: Wienberg Demo
+title: Founding Histories Demo
 # header and head metadata
 tagline: Digital Collection Magic with Static Web Technologies
 description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
 # Organization branding
 organization-name: "University of Washington Libraries Digital Collections"
 organization-link: https://content.lib.washington.edu/
-organization-logo-banner: /assets/img/pepperdine-libraries-digital-collections.png
-organization-logo-nav: /assets/img/pepperdine-libraries-digital-collections.png
+organization-logo-banner: https://www.lib.washington.edu/uwlib-theme-www/img/wordmark.png
+organization-logo-nav: https://www.lib.washington.edu/uwlib-theme-www/img/wordmark.png
 
 # Collection settings
 # contentdm collection name 

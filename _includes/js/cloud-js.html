@@ -4,7 +4,7 @@
 {% assign new = site.data[site.metadata] | map: c | join: ";" %}
 {% assign terms = terms | append: ";" | append: new %}
 {%- endfor -%}
-{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq | sort | where_exp: 't','t[1] > site.data.theme.subjects-min' -%}
+{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq | sort | where_exp: 't','t[1] >= site.data.theme.subjects-min' -%}
 <script>
     /* subject terms + count */
     var terms = [
