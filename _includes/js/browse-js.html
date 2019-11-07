@@ -92,7 +92,7 @@ function makeCard(obj) {
     if (q=="") { 
       var filteredItems = arr; 
     } else {
-      q = q.toUpperCase(); 
+      q = q.trim().toUpperCase(); 
       // 3 filter options, filter, grep, loop...
       // js filter
       /*
