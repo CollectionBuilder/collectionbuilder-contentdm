@@ -62,7 +62,7 @@
 
     {% if site.data.theme.map-cluster == true %}
     /* create cluster group */
-    var markers = L.markerClusterGroup({ maxClusterRadius: {{ site.data.theme.cluster-radius | default: 15 }}, singleMarkerMode: true {% if site.data.theme.map-search == true %}, removeOutsideVisibleBounds: false{% endif %} });{% endif %}
+    var markers = L.markerClusterGroup({ maxClusterRadius: {{ site.data.theme.map-cluster-radius | default: 15 }}, singleMarkerMode: true {% if site.data.theme.map-search == true %}, removeOutsideVisibleBounds: false{% endif %} });{% endif %}
 
     /* object popup function */
     function objectPopups(feature, layer) {
