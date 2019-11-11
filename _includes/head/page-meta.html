@@ -9,4 +9,4 @@
 <meta property="og:image:alt" content="{{ bannerItem[0].title | escape }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}","publisher":"{{ site.organization-name | escape }}","description":"{{ site.description | escape }}","image":"{% include image/featured-image.html %}","url":"{{ page.url | absolute_url }}"}</script> 
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}","publisher":"{{ site.organization-name | escape }}","description":{{ site.description | jsonify }},"image":"{% include image/featured-image.html %}","url":"{{ page.url | absolute_url }}"}</script> 
