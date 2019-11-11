@@ -7,6 +7,9 @@ CollectionBuilder-CONTENTdm utilizes [CONTENTdm](https://www.oclc.org/en/content
 
 Visit the [CollectionBuilder home](https://collectionbuilder.github.io/) for more information about getting started!
 
+If you are interested in using CollectionBuilder, or are already using it, please drop us a line (**libstatic.uidaho@gmail.com**) since we would love to learn more about it's use in the wild. 
+There are also currently opportunities to [collaborate on CollectionBuilder](https://collectionbuilder.github.io/about.html#the-grant).
+
 ----------
 
 CollectionBuilder is a project of University of Idaho Library's [Digital Initiatives](https://www.lib.uidaho.edu/digital/) as part of the Lib-STATIC toolkit. 
