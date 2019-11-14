@@ -6,8 +6,8 @@
 {% if layout.gallery == true %}{% include js/gallery-js.html %}{% endif %}
 {% if page.layout == "browse" %}{% include js/browse-js.html %}{% endif %}
 {% if page.layout == "data" %}{% include js/table-js.html %}{% endif %}
-{% if page.layout == "subjects" %}{% include js/cloud-js.html fields=site.data.theme.subjects-fields %}{% endif %}
-{% if page.layout == "locations" %}{% include js/cloud-js.html fields=site.data.theme.locations-fields %}{% endif %}
+{% if page.layout == "subjects" %}{% include js/cloud-js.html fields=site.data.theme.subjects-fields min=site.data.theme.subjects-min stopwords=site.data.theme.subjects-stopwords %}{% endif %}
+{% if page.layout == "locations" %}{% include js/cloud-js.html fields=site.data.theme.locations-fields min=site.data.theme.locations-min stopwords=site.data.theme.locations-stopwords %}{% endif %}
 {% if page.layout == "timeline" %}{% include js/timeline-js.html %}{% endif %}
 {% if page.layout == "map" %}{% include js/map-js.html %}{% endif %}
 {% if page.layout == "item" %}{% include js/arrow-page-control-js.html %}{% endif %}

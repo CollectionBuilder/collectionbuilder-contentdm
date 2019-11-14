@@ -24,7 +24,7 @@ gallery: true
                 </div>{%endunless%}{%endfor%}
                 {%else%}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
-                    <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                    <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
                 </div>
                 {%- endif -%}
@@ -44,7 +44,7 @@ gallery: true
                             Your browser does not support the video tag.
                         </video>
                         {%- else -%}
-                        <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a>
+                        <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid thumb"></a>
                         {%- endif -%}
                     </p>
                 </div>

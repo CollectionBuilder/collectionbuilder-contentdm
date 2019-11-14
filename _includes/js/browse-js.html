@@ -34,7 +34,7 @@ function makeCard(obj) {
     var btns = obj[{{ f.field | jsonify }}].split(";");
     for (var i = 0, len = btns.length; i < len; i++) {
       if(btns[i] != "") {
-        card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(btns[i]) + '">' + btns[i] + '</a>';
+        card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(btns[i].trim()) + '">' + btns[i].trim() + '</a>';
       }
     }
     {% else %}
@@ -82,7 +82,7 @@ function makeCard(obj) {
   /* add items */
   var items = [
     {% for i in items %}
-    { "title":{{ i.title | strip | jsonify }}, "format":{% if i.format %}{{ i.format | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %} {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "cdm":{{ i.cdmid | jsonify }}, "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    { "title":{{ i.title | strip | escape | jsonify }}, "format":{% if i.format %}{{ i.format | escape | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | escape | jsonify }},{% endif %}{% endfor %} {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "cdm":{{ i.cdmid | jsonify }}, "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
   ];
   /* randomize items once at page load */
   shuffle(items);
@@ -92,7 +92,7 @@ function makeCard(obj) {
     if (q=="") { 
       var filteredItems = arr; 
     } else {
-      q = q.toUpperCase(); 
+      q = q.trim().toUpperCase(); 
       // 3 filter options, filter, grep, loop...
       // js filter
       /*

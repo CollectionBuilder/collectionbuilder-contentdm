@@ -20,7 +20,10 @@ map-cluster: true # suggested for large collection or with many items in same lo
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 ```
 
-These `theme` options will load the correct CSS and JS for leaflet features. 
+These `theme` options will load the correct CSS and JS for leaflet features, while setting some JS configuration variables. 
+`map-cluster-radius` sets the `maxClusterRadius` which corresponds to the maximum radius a cluster can cover in pixels on the map.
+A smaller radius will create more, smaller clusters, and increasing will create fewer, larger clusters on the map.
+
 Next, configure the display using `_data/map-config.csv`, which controls the metadata displayed on object popups and included in search:
 
 - `field`: matches a column name in the metadata csv that will be displayed in object popups.
