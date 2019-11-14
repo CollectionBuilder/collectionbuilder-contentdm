@@ -2,7 +2,7 @@
 # values set here help configure details of individual pages in the website
 
 # Home page
-featured-image-objectid: wienberg2584 # use number of photo from collection
+featured-image-objectid: libraryhistory81 # use number of photo from collection
 featured-image-link:  # leave blank unless no cdm number to generate item 
 home-title-y-padding: 8em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
@@ -33,7 +33,7 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 # Subject page
 subjects-page: true # true / false, turns off subject generation 
-subjects-fields: subject # set of fields separated by ; to be featured in the cloud
+subjects-fields: subject;creator # set of fields separated by ; to be featured in the cloud
 subjects-min: 5 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
