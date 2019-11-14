@@ -38,7 +38,7 @@ subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Locations page
-locations-page: false # true/false
+locations-page: true # true/false
 locations-fields: location # set of fields separated by ; to be featured in the cloud
 locations-min: 1 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
@@ -50,7 +50,7 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # Data 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,creator,recipient,date,date-is-approximate,latitude,longitude,item-information,subject,related-publication,publisher-digital,source,original-identifier,identifier,rights,rightsstatement,type,format,language,relation,cdmid,objectid,youtubeid"
+metadata-export-fields: "title,other title,creator,contributor,date,release date,subjects,location,region,time period,description,abstract,table of contents,publisher,agency,standard number,rights,rights release,requirements for use,physical characteristics,collection,collection folder,type,language,format original,digital characteristics-a,series,digital collection,format,related items,title replaced by,title replaces,audience,hosted by,metadata creator,url-a,pres file name-m,pres local file path-m,full text,digital creation date-m,digital creator-m,capture tools-m,resolution-m,bit depth-m,security-m,checksum-m,local call number,revision-m,oclc number,date created,date modified,reference url,compound,cdmid,objectid,contentdm file name,full resolution,contentdm file path"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,creator,format"
 
