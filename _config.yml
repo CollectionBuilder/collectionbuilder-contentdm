@@ -3,7 +3,7 @@
 
 # URL variables
 # site domain 
-url: https://www.lib.uidaho.edu
+url: https://collectionbuilder.github.io
 # location on the domain
 # e.g. /digital/hjccc
 baseurl: /demo/libraryhistory
