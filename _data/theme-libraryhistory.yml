@@ -1,0 +1,78 @@
+# CollectionBuilder theme customization
+# values set here help configure details of individual pages in the website
+
+# Home page
+featured-image-objectid: libraryhistory201 # use number of photo from collection
+featured-image-link:  # leave blank unless no cdm number to generate item 
+home-title-y-padding: 8em # the margin from the top your title portion will appear.
+home-banner-image-position: center # [options: top, center, bottom] Default: top
+carousel-height: 500 # in px, but don't include the "px"; default is 450.
+# carousel can feature specific item types: image,pdf,youtube,thumbs
+carousel-type: image
+featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
+featured-subjects-max: 8 # set number of top subjects to display if auto generating
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 8
+
+# Browse page
+# see _data/browse-config.csv for field display options
+# fields given the "btn" option can be multivalued with ";" such as subjects.
+
+# Item page 
+browse-buttons: true # true / false, adds previous/next arrows to items, but doubles build time
+
+# Map page
+# see _data/map-config.csv for field display options
+latitude: 34.03 #to determine center of map
+longitude: -118.57 #to determine center of map
+zoom-level: 9 # zoom level for map 
+map-search: true # not suggested with large collections
+map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
+map-cluster: true # suggested for large collection or with many items in same location
+map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
+
+# Subject page
+subjects-page: true # true / false, turns off subject generation 
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud
+subjects-min: 4 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+# Locations page
+locations-page: true # true/false
+locations-fields: location;region # set of fields separated by ; to be featured in the cloud
+locations-min: 2 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+# Timeline
+year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
+year-nav-increment: 5 # set increments to auto gen nav years
+
+# Data 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,other title,creator,contributor,date,release date,subject,location,region,time period,description,abstract,table of contents,publisher,agency,standard number,rights,rights release,requirements for use,physical characteristics,collection,collection folder,type,language,format original,digital characteristics-a,series,digital collection,format,related items,title replaced by,title replaces,audience,hosted by,metadata creator,url-a,pres file name-m,pres local file path-m,full text,digital creation date-m,digital creator-m,capture tools-m,resolution-m,bit depth-m,security-m,checksum-m,local call number,revision-m,oclc number,date created,date modified,reference url,compound,cdmid,objectid,contentdm file name,full resolution,contentdm file path"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject,location,creator,region,timeperiod,agency,format original,metadata creator,time period"
+
+# Advanced Theme Options
+
+# images 
+image-percentage-large: 60 # default 70
+image-percentage-medium: 30 # default 40 
+image-percentage-small: 15 # default 20
+
+# navbar text color
+# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
+navbar-color: navbar-dark
+# navbar background color
+# Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
+navbar-background: bg-dark
+# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
+# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
+bootswatch: # leave blank or comment out for plain bootstrap
+# Theme Fonts
+base-font-size: 1.2em
+text-color: "#191919"
+link-color: "#17a2b8"
+base-font-family: # comment out for bootstrap defaults. e.g. Roboto
+font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">

@@ -1,9 +1,9 @@
 field,displayName,btn,hidden
+creator,Creator,
 date,Date,
 location,,true
 subject,,true
-manufacturer,,true
-original format,,,true
-mediatype,,,true
+format original,,,true
 description,,,true
+full text,,,true
 

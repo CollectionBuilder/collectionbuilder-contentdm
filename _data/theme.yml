@@ -2,13 +2,13 @@
 # values set here help configure details of individual pages in the website
 
 # Home page
-featured-image-objectid: libraryhistory81 # use number of photo from collection
+featured-image-objectid:  # use number of photo from collection
 featured-image-link:  # leave blank unless no cdm number to generate item 
-home-title-y-padding: 8em # the margin from the top your title portion will appear.
+home-title-y-padding: 2em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: 500 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
-carousel-type: image
+carousel-type: thumbs
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 8 # set number of top subjects to display if auto generating
 featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
@@ -33,14 +33,14 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 # Subject page
 subjects-page: true # true / false, turns off subject generation 
-subjects-fields: subject;creator # set of fields separated by ; to be featured in the cloud
-subjects-min: 5 # min size for subject cloud, too many terms = slow load time!
+subjects-fields: subject # set of fields separated by ; to be featured in the cloud
+subjects-min: 4 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Locations page
 locations-page: true # true/false
 locations-fields: location # set of fields separated by ; to be featured in the cloud
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-min: 2 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Timeline
@@ -50,9 +50,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # Data 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "column,title,description,date,subject,subject - lcsh,subject - local,location,collecting area,manufacturer,latitude,longitude,archival source,original format,type,format,identifier,rights,provenance,publisher,credit line,digital collection,mediatype,file size,height,width,color space,checksum,pdflink,compound,cpdmaster,cdmid,objectid"
+metadata-export-fields: "title,submitted by,other title,creator,contributor,crosswalked date,date,release date,subject,location,time period,description,abstract,table of contents,publisher,standard number,rights,rights release,requirements for use,physical characteristics,collection,type,language,format original,digital characteristics-a,series,serial title,digital collection,format,related items,title replaced by,title replaces,audience,hosted by,metadata creator,url-a,pres file name-m,pres local file path-m,full text,digital creation date-m,digital creator-m,capture tools-m,resolution-m,bit depth-m,security-m,checksum-m,original object identifier-m,revision-m,oclc number-original,notes,oclc number,date created,date modified,reference url,objectid,cdmid,cpd-master,contentdm file name,archival file,contentdm file path"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,location,original format,archival source,manufacturer,mediatype"
+metadata-facets-fields: "subject,location,creator,contributor,timeperiod,agency,format original,time period,"
 
 # Advanced Theme Options
 

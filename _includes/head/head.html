@@ -13,7 +13,8 @@
 {% if page.layout == 'map' %}<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.css' | absolute_url }}">
 {% if site.data.theme.map-search == true %}<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.fusesearch.css' | absolute_url }}">{% endif %}
 {% if site.data.theme.map-cluster == true %}<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.css' | absolute_url }}">
-<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.Default.css' | absolute_url }}">{% endif %}{% endif %}
+<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.Default.css' | absolute_url }}">{% endif %}
+{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | absolute_url }}" type="text/css">
 {% include head/google-analytics.html %}
 <!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->

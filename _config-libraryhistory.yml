@@ -1,0 +1,54 @@
+# CollectionBuilder 
+# Jekyll Digital Collection Generator
+
+# URL variables
+# site domain 
+url: https://www.lib.uidaho.edu
+# location on the domain
+# e.g. /digital/hjccc
+baseurl: /demo/libraryhistory
+# CONTENTdm server url
+cdm-url: http://cdm16062.contentdm.oclc.org/
+# location of code
+source-code: https://github.com/CollectionBuilder
+# version of CONTENTdm (default is 7)
+cdm-version: 6
+
+# Site settings
+title: Demo - Library History
+# header and head metadata
+tagline: Demo Collection from the State Library of North Carolina Digital Collections
+description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
+# Organization branding
+organization-name: "State Library of North Carolina Digital Collections"
+organization-link: http://digital.ncdcr.gov/
+organization-logo-banner: https://files.nc.gov/dncr-statelibrary/GHL/Branding/NCR_Logo_Horizontal_Color_White_BG.png
+organization-logo-nav: https://files.nc.gov/dncr-statelibrary/SLNC_logo-websitefooter.svg
+
+# Collection settings
+# contentdm collection name 
+cdm-collection-id: p249901coll36
+# name of metadata file, be sure to also change page_gen data setting!
+metadata: libraryhistory 
+# page gen settings 
+# "data" value must be the name of the metadata file
+page_gen:
+  - data: 'libraryhistory'
+    template: 'items'
+    name: 'objectid'
+    dir: 'items'
+    extension: 'html'   
+
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+# if present, used to add analytics during build
+google-analytics-id: 
+
+# add liquid profiler to id bottlenecks
+# profile: true
+
+exclude: [docs/, Rakefile, README.md, LICENSE]
+
+# compress CSS output
+sass:
+  style: compressed
