@@ -2,13 +2,13 @@
 # values set here help configure details of individual pages in the website
 
 # Home page
-featured-image-objectid:  # use number of photo from collection
+featured-image-objectid: libraryhistory201 # use number of photo from collection
 featured-image-link:  # leave blank unless no cdm number to generate item 
-home-title-y-padding: 2em # the margin from the top your title portion will appear.
+home-title-y-padding: 8em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: 500 # in px, but don't include the "px"; default is 450.
 # carousel can feature specific item types: image,pdf,youtube,thumbs
-carousel-type: thumbs
+carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 8 # set number of top subjects to display if auto generating
 featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
@@ -39,9 +39,9 @@ subjects-stopwords: # set of subjects separated by ; that will be removed from d
 
 # Locations page
 locations-page: true # true/false
-locations-fields: location # set of fields separated by ; to be featured in the cloud
-locations-min: 2 # min size for subject cloud, too many terms = slow load time!
-locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+locations-fields: location;region # set of fields separated by ; to be featured in the cloud
+locations-min: 6 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: north carolina, united states;central north carolina regional library (historical) # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
@@ -50,9 +50,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # Data 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,submitted by,other title,creator,contributor,crosswalked date,date,release date,subject,location,time period,description,abstract,table of contents,publisher,standard number,rights,rights release,requirements for use,physical characteristics,collection,type,language,format original,digital characteristics-a,series,serial title,digital collection,format,related items,title replaced by,title replaces,audience,hosted by,metadata creator,url-a,pres file name-m,pres local file path-m,full text,digital creation date-m,digital creator-m,capture tools-m,resolution-m,bit depth-m,security-m,checksum-m,original object identifier-m,revision-m,oclc number-original,notes,oclc number,date created,date modified,reference url,objectid,cdmid,cpd-master,contentdm file name,archival file,contentdm file path"
+metadata-export-fields: "title,other title,creator,contributor,date,release date,subject,location,region,time period,description,abstract,table of contents,publisher,agency,standard number,rights,rights release,requirements for use,physical characteristics,collection,collection folder,type,language,format original,digital characteristics-a,series,digital collection,format,related items,title replaced by,title replaces,audience,hosted by,metadata creator,url-a,pres file name-m,pres local file path-m,full text,digital creation date-m,digital creator-m,capture tools-m,resolution-m,bit depth-m,security-m,checksum-m,local call number,revision-m,oclc number,date created,date modified,reference url,compound,cdmid,objectid,contentdm file name,full resolution,contentdm file path"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,location,creator,contributor,timeperiod,agency,format original,time period,"
+metadata-facets-fields: "subject,location,creator,region,timeperiod,agency,format original,metadata creator,time period"
 
 # Advanced Theme Options
 

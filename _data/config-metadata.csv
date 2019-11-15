@@ -2,13 +2,15 @@ field,display-name,dc-map,browse-link
 title,Title,DC.title
 creator,Creator,DC.creator
 contributor,Contributor
+publisher,Publisher
 date,Date Created,DCTERMS.created
 description,Description,DC.description
 subject,Subjects,DC.subject,true
 location,Location,,true
+region,Region,,true
+time period,Time Period,,,
 format original,Format Original
 type,Type,DC.type
 format,Format
 related items,Related,,true
 full text,Full Text
-

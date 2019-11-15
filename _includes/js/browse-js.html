@@ -17,13 +17,13 @@ function makeCard(obj) {
     var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
     // top image for photos
     if(imgSrc) {
-      card += '<a target="_blank" href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
+      card += '<a  href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
     // title
-    card += '<div class="card-body text-center"> <h3 class="card-title"><a target="_blank" href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
+    card += '<div class="card-body text-center"> <h3 class="card-title"><a  href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
     // thumb for non-photo items
     if(thumbSrc){
-      card += '<p><a target="_blank" href="' + itemHref + '"><img class="lazyload" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
+      card += '<p><a  href="' + itemHref + '"><img class="lazyload" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
     }
     // other fields
     card += '<p class="card-text">';
@@ -82,7 +82,7 @@ function makeCard(obj) {
   /* add items */
   var items = [
     {% for i in items %}
-    { "title":{{ i.title | strip | escape | jsonify }}, "format":{% if i.format %}{{ i.format | escape | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %} {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "cdm":{{ i.cdmid | jsonify }}, "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    { "title":{{ i.title | strip | escape | jsonify }}, "format":{% if i.format %}{{ i.format | escape | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %} {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "cdm":{%if i.compound%}{{ i.compound | split: ";" | first | jsonify }}{%else%}{{ i.cdmid | jsonify }}{%endif%}, "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
   ];
   /* randomize items once at page load */
   shuffle(items);
