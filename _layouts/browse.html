@@ -2,7 +2,6 @@
 layout: page 
 lazyload: true
 ---
-{% assign itemCount = site.data[site.metadata] | size %}
 
 {{ content }}
 
@@ -15,7 +14,7 @@ lazyload: true
                 <a class="btn btn-outline-secondary filter" href="#" data-filter="">Reset</a>
             </div>
         </div>
-        <span class="info2 h2"><span id="numberOf">{{ itemCount }}</span> of {{ itemCount }} items</span>
+        <div class="h2" id="numberOf"></div>
     </div>
 </div>
 
