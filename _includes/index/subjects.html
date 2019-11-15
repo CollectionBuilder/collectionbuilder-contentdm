@@ -10,14 +10,18 @@
 {%- assign uniqSubjects = subjects | downcase | split: ";" | array_count_uniq -%}
 {%- capture topSubjects -%}
 {% for i in uniqSubjects limit: site.data.theme.featured-subjects-max %}{{ i[0] }};{% endfor %}{% endcapture %}
+{% assign subjectsRemoved = site.data.theme.subjects-stopwords | split: ";"%}
+{% for s in subjectsRemoved %}
+{%- assign topSubjects = topSubjects | remove: s -%}
+{% endfor %}
 {%- assign topSubjects = topSubjects | split: ";" -%}
 {%- endif -%}
 <div class="card mb-3">
   <div class="card-body">
     <h5 class="card-title">Top Subjects</h5>
     <p class="card-text">
-        {% for s in topSubjects %}
-        <a class="btn btn-sm btn-info m-1" href="{{ s | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}">{{ s | strip }}</a>{% endfor %}
+        {% for s in topSubjects %}{% if s.size > 1 %}
+        <a class="btn btn-sm btn-info m-1" href="{{ s | strip | url_param_escape | prepend: '/browse.html#' | absolute_url }}">{{ s | strip }}</a>{% endif %}{% endfor %}
     </p>
   </div>
 </div>

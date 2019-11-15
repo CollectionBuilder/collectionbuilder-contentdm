@@ -16,12 +16,12 @@ source-code: https://github.com/CollectionBuilder
 title: Demo - Library History
 # header and head metadata
 tagline: Demo Collection from the State Library of North Carolina Digital Collections
-description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
+description: "A CollectionBuilder-CONTENTdm demo for the Folklore Collection" 
 # Organization branding
 organization-name: "State Library of North Carolina Digital Collections"
 organization-link: http://digital.ncdcr.gov/
-organization-logo-banner: https://files.nc.gov/dncr-statelibrary/GHL/Branding/NCR_Logo_Horizontal_Color_White_BG.png
-organization-logo-nav: https://files.nc.gov/dncr-statelibrary/SLNC_logo-websitefooter.svg
+organization-logo-banner: http://digital.ncdcr.gov/ui/custom/default/collection/default/resources/custompages/home/images/slnc-logo.png
+organization-logo-nav: http://digital.ncdcr.gov/ui/custom/default/collection/default/resources/custompages/home/images/slnc-logo.png
 
 # Collection settings
 # contentdm collection name 

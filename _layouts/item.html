@@ -128,6 +128,7 @@ gallery: true
     {%- endunless -%}
     {%- assign back_url = site.data[site.metadata][back].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
     {%- assign forward_url = site.data[site.metadata][forward].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
+
     <div class="text-center">
         <a class="btn btn-secondary" href="{{ back_url }}" role="button" id="prev-page-button">&laquo; Previous</a>
         <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>

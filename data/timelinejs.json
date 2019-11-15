@@ -1,7 +1,7 @@
 ---
 # generate time-focused json data suitable for TimelineJS
 ---
-{%- assign items = site.data[site.metadata] -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.objectid' -%}
 {%- assign bannerItem = site.data[site.metadata] | where: 'objectid', site.data.theme.featured-image-objectid -%}
 {
     "title": {
@@ -25,7 +25,7 @@
         },
         "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
           "month": "{{ dates[1] }}",
-          "day": "{{ dates[2] }}",
+          "day": "{{ dates[2] | default: 01 }}",
           "year": "{{ dates[0] }}"{% elsif item.date contains '/' %}"year": "{{ item.date | strip | split: '/' | last }}"{% else %}
           "year": "{{ item.date }}"{% endif %}
         },

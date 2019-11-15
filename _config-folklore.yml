@@ -6,38 +6,37 @@
 url: https://www.lib.uidaho.edu
 # location on the domain
 # e.g. /digital/hjccc
-baseurl: /demo/libraryhistory
+baseurl: /demo/folklore
 # CONTENTdm server url
 cdm-url: http://cdm16062.contentdm.oclc.org/
 # location of code
 source-code: https://github.com/CollectionBuilder
-# version of CONTENTdm (default is 7)
-cdm-version: 6
 
 # Site settings
-title: Demo - Library History
+title: Demo - Folklore
 # header and head metadata
 tagline: Demo Collection from the State Library of North Carolina Digital Collections
-description: "A CollectionBuilder-CONTENTdm demo for the Library History Collection" 
+description: "A CollectionBuilder-CONTENTdm demo for the Folklore Collection" 
 # Organization branding
 organization-name: "State Library of North Carolina Digital Collections"
 organization-link: http://digital.ncdcr.gov/
-organization-logo-banner: https://files.nc.gov/dncr-statelibrary/GHL/Branding/NCR_Logo_Horizontal_Color_White_BG.png
-organization-logo-nav: https://files.nc.gov/dncr-statelibrary/SLNC_logo-websitefooter.svg
+organization-logo-banner: http://digital.ncdcr.gov/ui/custom/default/collection/default/resources/custompages/home/images/slnc-logo.png
+organization-logo-nav: http://digital.ncdcr.gov/ui/custom/default/collection/default/resources/custompages/home/images/slnc-logo.png
 
 # Collection settings
 # contentdm collection name 
-cdm-collection-id: p249901coll36
+cdm-collection-id: p16062coll43
 # name of metadata file, be sure to also change page_gen data setting!
-metadata: libraryhistory 
+metadata: folklore 
 # page gen settings 
 # "data" value must be the name of the metadata file
 page_gen:
-  - data: 'libraryhistory'
+  - data: 'folklore'
     template: 'items'
     name: 'objectid'
     dir: 'items'
-    extension: 'html'   
+    extension: 'html'
+    filter: 'objectid'   
 
 # Note: use environment variable on build command to include analytics
 # JEKYLL_ENV=production jekyll build
