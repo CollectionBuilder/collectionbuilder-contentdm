@@ -15,8 +15,8 @@ source-code: https://github.com/CollectionBuilder
 # Site settings
 title: Schoenberg Manuscript Collection
 # header and head metadata
-tagline: Manuscripts Donated to New College of Florida by Lawrence Schoenberg
-description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
+tagline: Demo Collection of Manuscripts Donated to New College of Florida by Lawrence Schoenberg
+description: "" 
 # Organization branding
 organization-name: "Digital Initiatives, University of Idaho Library"
 organization-link: https://www.lib.uidaho.edu/digital/
