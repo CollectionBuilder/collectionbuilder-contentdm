@@ -1,0 +1,33 @@
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+  var base_url = "http://ncf.sobek.ufl.edu/";
+
+  function parseItemBrief(data)
+  {
+    // Find the URL for the photograph (we know there is one here)
+    var image_url = base_url + "content/" + data["bibid"].substring(0, 2) + "/" + data["bibid"].substring(2, 4) + "/" + data["bibid"].substring(4, 6) + "/" + data["bibid"].substring(6,8) + "/" + data["bibid"].substring(8, 10) + "/" + data["vid"];
+    var jpeg = find_jpeg(data["images"][0]);
+    var jpeg2 = find_jpeg(data["images"][1]);
+
+    // Add the image to the views placeholder
+    $("#views-placeholder").html("<img src=\"" + image_url + "/" + jpeg + "\" alt=\"" + data["title"] + "\" />");
+    $("#views-placeholder2").html("<img src=\"" + image_url + "/" + jpeg2 + "\" alt=\"" + data["title"] + "\" />");
+  }
+
+  // Function looks through all the files in a page and returns the normal size jpeg, if there is one
+function find_jpeg(page) {
+    
+    for (i = 0; i < page["files"].length ; i++) {
+        var name = page["files"][i]["name"];
+        if ((name.indexOf(".jpg") > 0) && (name.indexOf("thm.jpg") < 0)) {
+            return name;
+        }
+  }
+    return "";
+}
+</script>
+
+<script type="application/javascript" src="http://ncf.sobek.ufl.edu/engine/items/brief/json-p/AA00026052"></script>
