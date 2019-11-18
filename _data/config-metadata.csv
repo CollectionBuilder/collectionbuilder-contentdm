@@ -2,15 +2,21 @@ field,display-name,dc-map,browse-link
 title,Title,DC.title
 creator,Creator,DC.creator
 recipient,Recipient,
-date,Date Created,DCTERMS.created
+publication_date,Date
 date-is-approximate,Approximated Date
 description,Description,DC.description
+description_physical,Physical Description
+language,Language
+genre,Genre
 item-information,Item Information,
+note,Note
 subject,Subjects,DC.subject,true
+measurements,Measurements
+title_alternative,Alternative Title
 location,Location
 latitude,Latitude
 longitude,Longitude
-source,Source
+source_institution,Source
 identifier,Source Identifier
 type,Type,DC.type
 format original,Format Original
