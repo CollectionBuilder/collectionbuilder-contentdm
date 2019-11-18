@@ -6,16 +6,16 @@
 url: https://www.lib.uidaho.edu
 # location on the domain
 # e.g. /digital/hjccc
-baseurl: /demo/psychiana
+baseurl: /schoenberg
 # CONTENTdm server url
-cdm-url: https://digital.lib.uidaho.edu
+cdm-url: http://ncf.sobek.ufl.edu/content
 # location of code
 source-code: https://github.com/CollectionBuilder
 
 # Site settings
-title: Collection Builder CDM Skin
+title: Schoenberg Manuscript Collection
 # header and head metadata
-tagline: Digital Collection Magic with Static Web Technologies
+tagline: Manuscripts Donated to New College of Florida by Lawrence Schoenberg
 description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
 # Organization branding
 organization-name: "Digital Initiatives, University of Idaho Library"
@@ -25,13 +25,13 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 
 # Collection settings
 # contentdm collection name 
-cdm-collection-id: psychiana
+cdm-collection-id:
 # name of metadata file, be sure to also change page_gen data setting!
-metadata: demo_psychiana 
+metadata: schoenberg
 # page gen settings 
 # "data" value must be the name of the metadata file
 page_gen:
-  - data: 'demo_psychiana'
+  - data: 'schoenberg'
     template: 'items'
     name: 'objectid'
     dir: 'items'
