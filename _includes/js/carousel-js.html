@@ -14,7 +14,7 @@
 
 <script> 
     //title,youtubeid/cdmid,objectid
-    var carouselItems = [ {% for c in carousel-items %}[ {{ c.title | escape | jsonify }}, "{% if site.data.theme.carousel-type == 'youtube' %}{{ c.youtubeid }}{% else %}{{ c.systemfolder }}{{ c.thumb1 }}{% endif %}", "{{ c.objectid }}" ]{% unless forloop.last %}, {% endunless %}{% endfor %}];
+    var carouselItems = [ {% for c in carousel-items %}[ {{ c.title | escape | jsonify }}, "{% if site.data.theme.carousel-type == 'youtube' %}{{ c.youtubeid }}{% else %}{{ c.systemfolder }}{{ c.imageid }}thm{% endif %}", "{{ c.objectid }}" ]{% unless forloop.last %}, {% endunless %}{% endfor %}];
     var carousel = document.getElementById("carouselInner");
     carouselItems.sort(function() { return 0.5 - Math.random() });
     var i;

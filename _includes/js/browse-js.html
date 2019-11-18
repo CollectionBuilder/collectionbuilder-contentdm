@@ -82,7 +82,7 @@ function makeCard(obj) {
   /* add items */
   var items = [
     {% for i in items %}
-    { "title":{{ i.title | strip | escape | jsonify }}, "format":{% if i.format %}{{ i.format | escape | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | escape | jsonify }},{% endif %}{% endfor %} {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "bibid":{{ i.bibid | jsonify }}, "vid":{{ i.vid | jsonify }}, "id":{{ i.objectid | jsonify }}, {% if i.image1 %} "image":{{ i.image1 | jsonify }},{% endif %} "path":{{ i.systemfolder | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    { "title":{{ i.title | strip | escape | jsonify }}, "format":{% if i.format %}{{ i.format | escape | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | escape | jsonify }},{% endif %}{% endfor %} {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }},{% endif %} "bibid":{{ i.bibid | jsonify }}, "vid":{{ i.vid | jsonify }}, "id":{{ i.objectid | jsonify }}, {% if i.imageid %} "image":{{ i.imageid | jsonify }},{% endif %} "path":{{ i.systemfolder | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
   ];
   /* randomize items once at page load */
   shuffle(items);
