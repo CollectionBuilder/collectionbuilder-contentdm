@@ -1,5 +1,5 @@
 field,display_name
 title,Title
-date,Date
-description,Description
+publication_date,Date
+short_description,Description
 subject,Subjects
