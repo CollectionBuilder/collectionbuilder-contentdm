@@ -2,7 +2,6 @@
 # generate time-focused json data suitable for TimelineJS
 ---
 {%- assign items = site.data[site.metadata] -%}
-{%- assign bannerItem = site.data[site.metadata] | where: 'objectid', site.data.theme.featured-image-objectid -%}
 {
     "title": {
         "media": {
