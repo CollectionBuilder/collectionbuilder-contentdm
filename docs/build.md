@@ -15,3 +15,5 @@ This is set by adding the env, `JEKYLL_ENV=production`, in front of the command:
 To simplify, this command is added in a [Rake](https://github.com/ruby/rake) task in this repository.
 Typing the command `rake deploy` will set the correct environment and build. 
 (*note:* setting ENV cannot be done on windows CMD, use the rake task or Git Bash terminal).
+
+Since the extra elements are included during "production", the build time will be *significantly* higher than when using the development server.
