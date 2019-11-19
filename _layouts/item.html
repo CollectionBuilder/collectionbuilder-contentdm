@@ -3,7 +3,8 @@ layout: default
 gallery: true
 ---
 {%- assign fields = site.data.config-metadata -%}
-{%- assign compound = page.image | remove: " " | split: ";" -%}
+{%- assign compound = page.image | split: ";" -%}
+{%- assign names = page.image_name | split: ";" -%}
 
 <div class="container py-3">
     <ul class="breadcrumb">
@@ -17,12 +18,12 @@ gallery: true
             <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
                 {% if page.image %}
-                {% for c in compound %}
+                {% for n in names %}{% for c in compound %}
                 <div class="gallery-img border pt-4" {%if forloop.first%}id='first-gal'{%endif%} data-src="{{ site.cdm-url }}/{{ page.systemfolder }}{{ c }}.jpg">
-                    {%if forloop.first%}<p><small>Click to view images in full-screen gallery</small></p>{%endif%}
-                    <p><img src="{{ site.cdm-url }}/{{ page.systemfolder }}{{ c }}thm.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
-                </div>{%endfor%}
-                {%else%}
+                    {% if forloop.first %}<p><small>Click to view images in full-screen gallery</small></p>{% endif %}
+                    <p><img src="{{ site.cdm-url }}/{{ page.systemfolder }}{{ c }}thm.jpg" alt="{{ n | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                </div>{% break %}{% endfor %}{% endfor %}
+                {% else %}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
                     <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
                     <p><small>Click to view full screen</small></p>
@@ -52,7 +53,7 @@ gallery: true
                 <div class="my-2">
                     {% if page.youtubeid %}
                     <a target="_blank" href="https://www.youtube.com/watch?v={{ youtubeid }}" class="btn btn-outline-info" title="Object download">View on YouTube</a>
-                    {%elsif page.compound%}
+                    {% elsif page.compound %}
                     <button target="_blank" onclick="$('#first-gal').click();" class="btn btn-outline-info" title="Object download">Download {{ page.format | split: '/' | last | upcase }} in Gallery</button>
                     {% else %}
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-info" title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>{% endif %}
