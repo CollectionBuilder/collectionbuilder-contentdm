@@ -3,7 +3,10 @@
 <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}">
 <meta http-equiv="Content-Language" content="en-us" >
+{% if jekyll.environment == "production" %}
 {% if page.layout == "item" %}{% include head/item-meta.html %}{% else %}{% include head/page-meta.html %}{% endif %}
+{% include head/google-analytics.html %}
+{% endif %}
 
 {% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{% endif %}
 <link rel="stylesheet" href="{% if site.data.theme.bootswatch %}https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/{{ site.data.theme.bootswatch }}/bootstrap.min.css{% else %}{{ '/assets/lib/bootstrap.min.css' | absolute_url }}{% endif %}" type="text/css">
@@ -15,5 +18,5 @@
 {% if site.data.theme.map-cluster == true %}<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.css' | absolute_url }}">
 <link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.Default.css' | absolute_url }}">{% endif %}{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | absolute_url }}" type="text/css">
-{% include head/google-analytics.html %}
+
 <!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->
