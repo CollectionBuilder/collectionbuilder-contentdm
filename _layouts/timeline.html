@@ -3,42 +3,30 @@ layout: page
 lazyload: true
 ---
 {%- assign items = site.data[site.metadata] -%}
-{%- assign raw-dates = site.data[site.metadata] | map: 'date' | compact | uniq -%}
-{%- capture clean-years -%}{% for date in raw-dates %}{% if date contains "-" %}{{ date | strip | split: "-" | first }}{% elsif date contains "/" %}{{ date | strip | split: "/" | last }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
-{%- assign uniqueYears = clean-years | remove: " " | split: ";" | uniq | sort -%}
-{%- if site.data.theme.year-navigation -%}
-{%- assign navYears = site.data.theme.year-navigation | split: ";" -%}
-{%- else -%}
-{%- capture navYears -%}
-{%- for i in uniqueYears -%}{%- assign t = i | modulo: site.data.theme.year-nav-increment -%}
-{%- if t == 0 -%}{{ i }}{% unless forloop.last %};{% endunless %}{% endif %}{% endfor %}{%- endcapture -%}
-{%- assign navYears = navYears | split: ";" -%}
-{%- endif -%}
+{%- assign centuries = "ca. 1200;Mid-12th Century;13th century;Mid-14th century;15th Century;Late 15th Century;1498;Late 16th century" | split: ";" -%}
+
 <div class="dropdown float-right" id="year-nav">
     <button class="btn btn-info dropdown-toggle" type="button" id="yearButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Year
+        Century
     </button>
     <div class="dropdown-menu" aria-labelledby="yearButton">
-        {% for y in navYears %}
-        <a class="dropdown-item" href="#{{ y }}">{{ y }}</a>{% endfor %}
+        {% for y in centuries %}
+        <a class="dropdown-item" href="#{{ y | slugify }}">{{ y }}</a>{% endfor %}
     </div>
 </div>
 
 {{ content }}
 
-<h3><a href="#{{ uniqueYears | first }}">{{ uniqueYears | first }}</a> to <a href="#{{ uniqueYears | last }}">{{ uniqueYears | last }}</a></h3>
-
 <table id="timeline" class="table table-striped">
-    {% for year in uniqueYears %}
-    <tr id="{{ year }}">
+    {% for century in centuries %}
+    <tr id="{{ century | slugify }}">
         <th>
-            <h3>{{ year }}</h3>
+            <h3>{{ century }}</h3>
         </th>
         <td>
-            {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
-            {% for item in inYear %}
-            <a href="{{ '/items/' | absolute_url | append: item.objectid | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% if item.youtubeid %}https://img.youtube.com/vi/{{ item.youtubeid }}/mqdefault.jpg{% else %}{% include image/thumb.html %}{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
-            {% endfor %}
+            {% for item in items %}{% if item.publication_date contains century %}
+            <a href="{{ '/items/' | absolute_url | append: item.objectid | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% if item.youtubeid %}https://img.youtube.com/vi/{{ item.youtubeid }}/mqdefault.jpg{% else %}{{ site.cdm-url }}/{{ item.systemfolder }}{{ item.imageid }}thm.jpg{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
+            {% endif %}{% endfor %}
         </td>
     </tr>
     {% endfor %}
