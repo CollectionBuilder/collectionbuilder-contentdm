@@ -103,7 +103,8 @@ gallery: true
     </div>
 
     {%- if site.data.theme.browse-buttons == true -%}
-    {% assign last = site.data[site.metadata] | size | minus: 1 %}
+    {% assign itemset = site.data[site.metadata] | where_exp: 'item','item.objectid' %}
+    {% assign last = itemset | size | minus: 1 %}
     {% unless page.index_number == 0 %}
     {% assign back = page.index_number | minus: 1 %}
     {% else %}
@@ -114,8 +115,8 @@ gallery: true
     {% else %}
     {% assign forward = 0 %}
     {%- endunless -%}
-    {%- assign back_url = site.data[site.metadata][back].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
-    {%- assign forward_url = site.data[site.metadata][forward].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
+    {%- assign back_url = itemset[back].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
+    {%- assign forward_url = itemset[forward].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
     <div class="text-center">
         <a class="btn btn-secondary" href="{{ back_url }}" role="button" id="prev-page-button">&laquo; Previous</a>
         <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
