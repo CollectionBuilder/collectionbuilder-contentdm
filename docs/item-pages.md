@@ -6,7 +6,7 @@ Page gen options are configured in `_config.yml`, with the block:
 ```
 page_gen:
   - data: 'demo_psychiana'
-    template: 'items'
+    template: 'item'
     name: 'objectid'
     dir: 'items'
     extension: 'html' 
@@ -15,11 +15,11 @@ page_gen:
 
 The values correspond to:
 
-- `data`: the name of the metadata file in `_data`
-- `template`: the name of the layout in `_layouts`. *Important note:* layouts do not work as expected with page_gen, so we use a dummy layout that passes the page data through to the real layout. Thus `template` is set to the layout 'items', which has no content, but has `layout: item`. The actual layout is done in 'item'.  
+- `data`: the name of the metadata file in `_data`, which should be the same as the value given for `metadata:` in _config.yml just above the page_gen config block.
+- `template`: the name of the layout in `_layouts`, which is normally 'item'.  
 - `name`: the metadata field used to create the filename, this should be objectid. Keep in mind this means your objectids will be URLs, so should be fully sanitized names with no spaces.
 - `dir`: the directly where you want the pages to be output, i.e. where they will be on the website. CollectionBuilder expects them to be in /items/
-- `extension`: should be html, since we are creating web pages
+- `extension`: should be html, since we are creating web pages directly using html.
 - `filter`: used to skip rows of the metadata for page generation. Should be 'objectid', meaning if an item in the metadata does not have an objectid it will not become a page. This filter is used in other CollectionBuilder visualizations as well.
 
 Page_gen passes all metadata fields through to the "_layouts/item.html" layout. 
