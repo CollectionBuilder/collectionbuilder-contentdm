@@ -33,7 +33,8 @@ module Jekyll
     # - `name_expr` is an expression for generating the output filename
     # - `template` is the name of the template for generating the page
     # - `extension` is the extension for the generated file
-    def initialize(site, base, index_files, dir, data, name, number, name_expr, template, extension)
+    # - `index_number` is the number of the object in the array of generated pages
+    def initialize(site, base, index_files, dir, data, name, name_expr, template, extension, index_number)
       @site = site
       @base = base
 
@@ -66,8 +67,8 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), template + ".html")
       self.data['title'] = raw_filename
-      # modified to add index number to page object
-      self.data['index_number'] = number
+      # add index number to page object
+      self.data['index_number'] = index_number
       # add all the information defined in _data for the current record to the
       # current page (so that we can access it with liquid tags)
 
@@ -122,10 +123,10 @@ module Jekyll
             records = records.select { |r| r[data_spec['filter']] } if data_spec['filter']
             records = records.select { |record| eval(data_spec['filter_condition']) } if data_spec['filter_condition']
 
-            # modified to provide index number to page object
             records.each_with_index do |record, index|
-              number = index
-              site.pages << DataPage.new(site, site.source, index_files_for_this_data, dir, record, name, name_expr, number, template, extension)
+              # provide index number for page object
+              index_number = index
+              site.pages << DataPage.new(site, site.source, index_files_for_this_data, dir, record, name, name_expr, template, extension, index_number)
             end
           else
             puts "error (datapage_gen). could not find template #{template}" if not site.layouts.key? template
