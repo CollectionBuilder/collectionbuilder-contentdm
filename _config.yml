@@ -35,7 +35,8 @@ page_gen:
     template: 'items'
     name: 'objectid'
     dir: 'items'
-    extension: 'html'   
+    extension: 'html' 
+    filter: 'objectid'  
 
 # Note: use environment variable on build command to include analytics
 # JEKYLL_ENV=production jekyll build
