@@ -32,7 +32,7 @@ metadata: demo_psychiana
 # "data" value must be the name of the metadata file
 page_gen:
   - data: 'demo_psychiana'
-    template: 'items'
+    template: 'item'
     name: 'objectid'
     dir: 'items'
     extension: 'html' 
