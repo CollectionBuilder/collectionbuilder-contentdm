@@ -103,7 +103,7 @@ gallery: true
     </div>
 
     {%- if site.data.theme.browse-buttons == true -%}
-    {% assign itemset = site.data[site.metadata] | map: 'objectid' %}
+    {% assign itemset = site.data[site.metadata] | map: 'objectid' | compact %}
     {% assign last = itemset | size | minus: 1 %}
     {% unless page.index_number == 0 %}
     {% assign back = page.index_number | minus: 1 %}
