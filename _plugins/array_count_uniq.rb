@@ -3,7 +3,7 @@
 # returns a hash of the unique values + counts
 # evan will 2018 for CollectionBuilder project
 module Jekyll
-  module AssetFilter
+  module ArrayCountUniq
     def array_count_uniq(input)
       clean = input.compact.reject(&:empty?).collect(&:strip)
       clean.uniq.map { |x| [x, clean.count(x)] }.sort_by {|k, v| -v}.to_h
@@ -11,4 +11,4 @@ module Jekyll
   end
 end
   
-Liquid::Template.register_filter(Jekyll::AssetFilter)
+Liquid::Template.register_filter(Jekyll::ArrayCountUniq)
