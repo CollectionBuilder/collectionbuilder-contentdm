@@ -7,7 +7,7 @@
   gtag('js', new Date());
   /* load umbrella property with enhanced link attribution and cross domain tracking */
   gtag('config', '{{ site.google-analytics-id }}', {
-    'link_attribution': true
+    'anonymize_ip': true, 'link_attribution': true
   });
 </script>
 {% endif %}
