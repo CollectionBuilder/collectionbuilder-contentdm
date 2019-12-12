@@ -8,7 +8,7 @@ url: https://collectionbuilder.github.io
 # e.g. /digital/hjccc
 baseurl: /demo/folklore
 # CONTENTdm server url
-cdm-url: http://cdm16062.contentdm.oclc.org/
+cdm-url: https://cdm16062.contentdm.oclc.org
 # location of code
 source-code: https://github.com/CollectionBuilder
 
@@ -20,8 +20,8 @@ description: "A CollectionBuilder-CONTENTdm demo for the Folklore Collection"
 # Organization branding
 organization-name: "State Library of North Carolina Digital Collections"
 organization-link: http://digital.ncdcr.gov/
-organization-logo-banner: http://digital.ncdcr.gov/ui/custom/default/collection/default/resources/custompages/home/images/slnc-logo.png
-organization-logo-nav: http://digital.ncdcr.gov/ui/custom/default/collection/default/resources/custompages/home/images/slnc-logo.png
+organization-logo-banner: https://digital.ncdcr.gov/ui/custom/default/collection/default/resources/custompages/home/images/slnc-logo.png
+organization-logo-nav: https://digital.ncdcr.gov/ui/custom/default/collection/default/resources/custompages/home/images/slnc-logo.png
 
 # Collection settings
 # contentdm collection name 
