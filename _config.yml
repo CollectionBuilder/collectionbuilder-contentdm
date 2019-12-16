@@ -16,7 +16,7 @@ source-code: https://github.com/CollectionBuilder
 title: Schoenberg Manuscript Collection
 # header and head metadata
 tagline: Demo Collection of Manuscripts Donated to New College of Florida by Lawrence Schoenberg
-description: "" 
+description: "The Schoenberg Manuscript Collection contains images and information related to the items donated to New College of Florida by Lawrence Schoenberg" 
 # Organization branding
 organization-name: "Digital Initiatives, University of Idaho Library"
 organization-link: https://www.lib.uidaho.edu/digital/
@@ -25,7 +25,7 @@ organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwh
 
 # Collection settings
 # contentdm collection name 
-cdm-collection-id:
+cdm-collection-id: manu
 # name of metadata file, be sure to also change page_gen data setting!
 metadata: schoenberg
 # page gen settings 
