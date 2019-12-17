@@ -18,11 +18,11 @@ gallery: true
             <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
                 {% if page.image %}
-                {% for c in compound %}{% for n in names %}
+                {% for c in compound %}
                 <div class="gallery-img border pt-4" {%if forloop.first%}id='first-gal'{%endif%} data-src="{{ site.cdm-url }}/{{ page.systemfolder }}{{ c }}.jpg">
                     {% if forloop.first %}<p><small>Click to view images in full-screen gallery</small></p>{% endif %}
-                    <p><img src="{{ site.cdm-url }}/{{ page.systemfolder }}{{ c }}thm.jpg" alt="{{ n | escape }}" alt="item thumbnail" class="img-fluid"></p>
-                </div>{% break %}{% endfor %}{% endfor %}
+                    <p><img src="{{ site.cdm-url }}/{{ page.systemfolder }}{{ c }}thm.jpg" alt="{{ names[forloop.index0] | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                </div>{% endfor %}
                 {% else %}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
                     <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
