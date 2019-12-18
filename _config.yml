@@ -13,15 +13,15 @@ cdm-url: http://ncf.sobek.ufl.edu/content
 source-code: https://github.com/CollectionBuilder
 
 # Site settings
-title: Schoenberg Manuscript Collection
+title: Demo Schoenberg Manuscript Collection
 # header and head metadata
 tagline: Demo Collection of Manuscripts Donated to New College of Florida by Lawrence Schoenberg
 description: "The Schoenberg Manuscript Collection contains images and information related to the items donated to New College of Florida by Lawrence Schoenberg" 
 # Organization branding
-organization-name: "Digital Initiatives, University of Idaho Library"
-organization-link: https://www.lib.uidaho.edu/digital/
-organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
-organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
+organization-name: "New College of Florida Digital Collections"
+organization-link: http://ncf.sobek.ufl.edu/archives
+organization-logo-banner: https://3rft043w17da3uqixj33lfj7-wpengine.netdna-ssl.com/library/wp-content/plugins/ncfgears-library/images	/jblogo.png
+organization-logo-nav: https://3rft043w17da3uqixj33lfj7-wpengine.netdna-ssl.com/library/wp-content/themes/newcollege2016/img/logo-footer-white.png
 
 # Collection settings
 # contentdm collection name 
