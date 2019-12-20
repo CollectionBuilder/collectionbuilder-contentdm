@@ -1,2 +1,2 @@
 {%- if site.data.theme.featured-image-objectid -%}{% assign bannerItem = site.data[site.metadata] | where: 'objectid', site.data.theme.featured-image-objectid %}{%- endif -%}
-{% if site.data.theme.featured-image-objectid %}{{ site.cdm-url }}/{{ bannerItem[0].systemfolder }}{{ bannerItem[0].imageid }}.jpg{% else %}{{ site.data.theme.featured-image-link }}{% endif %}
+{% if site.data.theme.featured-image-objectid %}{{ site.sobek-url }}/{{ bannerItem[0].systemfolder }}{{ bannerItem[0].imageid }}.jpg{% else %}{{ site.data.theme.featured-image-link }}{% endif %}

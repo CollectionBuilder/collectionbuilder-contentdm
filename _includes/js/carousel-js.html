@@ -6,14 +6,14 @@
 {% capture itemImg %}"https://img.youtube.com/vi/" + carouselItems[i][1] + "/hqdefault.jpg"{% endcapture %}
 {% elsif site.data.theme.carousel-type == "image" %}
 {%- assign carousel-items = site.data[site.metadata] | where_exp: "item","item.format contains 'image'" -%}
-{% capture itemImg %}"{{ site.cdm-url }}/" + carouselItems[i][1] + ".jpg"{% endcapture %}
+{% capture itemImg %}"{{ site.sobek-url }}/" + carouselItems[i][1] + ".jpg"{% endcapture %}
 {% else %}
 {%- assign carousel-items = site.data[site.metadata] -%}
-{% capture itemImg %}"{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/" + carouselItems[i][1]{% endcapture %}
-{%- endif -%}
+{% capture itemImg %}"{{ site.sobek-url }}/" + carouselItems[i][1] + ".jpg"{% endcapture %}
+{%- endif -%} 
 
 <script> 
-    //title,youtubeid/cdmid,objectid
+    //title,youtubeid/imageid,objectid
     var carouselItems = [ {% for c in carousel-items %}[ {{ c.title | escape | jsonify }}, "{% if site.data.theme.carousel-type == 'youtube' %}{{ c.youtubeid }}{% else %}{{ c.systemfolder }}{{ c.imageid }}thm{% endif %}", "{{ c.objectid }}" ]{% unless forloop.last %}, {% endunless %}{% endfor %}];
     var carousel = document.getElementById("carouselInner");
     carouselItems.sort(function() { return 0.5 - Math.random() });

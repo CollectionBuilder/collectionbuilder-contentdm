@@ -25,7 +25,7 @@ lazyload: true
         </th>
         <td>
             {% for item in items %}{% if item.publication_date contains century %}
-            <a href="{{ '/items/' | absolute_url | append: item.objectid | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% if item.youtubeid %}https://img.youtube.com/vi/{{ item.youtubeid }}/mqdefault.jpg{% else %}{{ site.cdm-url }}/{{ item.systemfolder }}{{ item.imageid }}thm.jpg{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
+            <a href="{{ '/items/' | absolute_url | append: item.objectid | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% if item.youtubeid %}https://img.youtube.com/vi/{{ item.youtubeid }}/mqdefault.jpg{% else %}{{ site.sobek-url }}/{{ item.systemfolder }}{{ item.imageid }}thm.jpg{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
             {% endif %}{% endfor %}
         </td>
     </tr>
