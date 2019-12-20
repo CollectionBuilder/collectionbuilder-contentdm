@@ -8,7 +8,7 @@ url: https://www.lib.uidaho.edu
 # e.g. /digital/hjccc
 baseurl: /schoenberg
 # CONTENTdm server url
-cdm-url: http://ncf.sobek.ufl.edu/content
+sobek-url: http://ncf.sobek.ufl.edu/content
 # location of code
 source-code: https://github.com/CollectionBuilder
 
@@ -25,7 +25,7 @@ organization-logo-nav: https://3rft043w17da3uqixj33lfj7-wpengine.netdna-ssl.com/
 
 # Collection settings
 # contentdm collection name 
-cdm-collection-id: manu
+sobek-collection-id: manu
 # name of metadata file, be sure to also change page_gen data setting!
 metadata: schoenberg
 # page gen settings 
