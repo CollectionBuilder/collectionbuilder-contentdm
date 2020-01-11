@@ -34,12 +34,14 @@ lazyload: true
         <th>
             <h3>{{ year }}</h3>
         </th>
-        <td>
+        <td><div class="row">
             {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
             {% for item in inYear %}
-            <a href="{{ '/items/' | absolute_url | append: item.objectid | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% if item.youtubeid %}https://img.youtube.com/vi/{{ item.youtubeid }}/mqdefault.jpg{% else %}{% include image/thumb.html %}{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <a href="{{ '/items/' | absolute_url | append: item.objectid | append: '.html' }}"><img class="lazyload img-thumbnail m-1" data-src="{% if item.youtubeid %}https://img.youtube.com/vi/{{ item.youtubeid }}/mqdefault.jpg{% else %}{% include image/thumb.html %}{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
+            </div>
             {% endfor %}
-        </td>
+        </div></td>
     </tr>
     {% endfor %}
 </table>
