@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Language" content="en-us" >
 {% if jekyll.environment == "production" %}
 {% if page.layout == "item" %}{% include head/item-meta.html %}{% else %}{% include head/page-meta.html %}{% endif %}
-{% include head/google-analytics.html %}
+{% if site.google-analytics-id %}{% include head/google-analytics.html %}{% endif %}
 {% endif %}
 
 {% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{% endif %}
