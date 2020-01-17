@@ -43,6 +43,10 @@ page_gen:
 # if present, used to add analytics during build
 google-analytics-id: 
 
+# Robots exclude
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
+
 # add liquid profiler to id bottlenecks
 # profile: true
 
