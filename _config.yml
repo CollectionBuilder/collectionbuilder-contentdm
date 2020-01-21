@@ -3,35 +3,35 @@
 
 # URL variables
 # site domain 
-url: https://www.lib.uidaho.edu
+url: https://collectionbuilder.github.io
 # location on the domain
 # e.g. /digital/hjccc
-baseurl: /demo/psychiana
+baseurl: /demo/wsu-hirahara
 # CONTENTdm server url
-cdm-url: https://digital.lib.uidaho.edu
+cdm-url: https://cdm16866.contentdm.oclc.org/
 # location of code
 source-code: https://github.com/CollectionBuilder
 
 # Site settings
-title: Collection Builder CDM Skin
+title: Hirahara Photographs
 # header and head metadata
-tagline: Digital Collection Magic with Static Web Technologies
-description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
+tagline: A CollectionBuilder Demo for WSU
+description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the George and Frank C. Hirahara Photograph Collection, 1943-1945 from Washington State University." 
 # Organization branding
 organization-name: "Digital Initiatives, University of Idaho Library"
 organization-link: https://www.lib.uidaho.edu/digital/
-organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
-organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
+organization-logo-banner: https://repo.wsu.edu/spine/2.0.2/marks/wsu-signature-vertical-darker.svg
+organization-logo-nav: https://content.libraries.wsu.edu/customizations/global/images/coug-logo.png
 
 # Collection settings
 # contentdm collection name 
-cdm-collection-id: psychiana
+cdm-collection-id: hiraharag
 # name of metadata file, be sure to also change page_gen data setting!
-metadata: demo_psychiana 
+metadata: hiraharag 
 # page gen settings 
 # "data" value must be the name of the metadata file
 page_gen:
-  - data: 'demo_psychiana'
+  - data: 'hiraharag'
     template: 'items'
     name: 'objectid'
     dir: 'items'

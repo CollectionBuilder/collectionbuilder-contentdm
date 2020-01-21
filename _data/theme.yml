@@ -4,7 +4,7 @@
 # Home page
 # featured image is used in home page banner, and in meta markup
 # use either featured-image-objectid (image in collection) or featured-image-link (external img), not both
-featured-image-objectid: demo_psychiana548 # use objectid of a item from collection
+featured-image-objectid: hiraharag1744 # use objectid of a item from collection
 featured-image-link: # full url to img if NOT using objectid 
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
@@ -13,8 +13,15 @@ carousel-height: # in px, but don't include the "px"; default is 450.
 carousel-type: image
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: Moscow, ID #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
-featured-locations-max: 3
+featured-locations: #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations-max: 1
+
+# Data 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,subject,description,creator,publisher,contributors,date,type,genre,format,digitization,identifier,source,relation,language,coverage,rights,rights notes,audience,image size,dpi,date (digitized),negative or print,location depicted,note,oclc number,date created,date modified,reference url,cdmid,contentdm file name,contentdm file path,objectid"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject,creator,genre,date,location"
 
 # Browse page
 # see _data/browse-config.csv for field display options
@@ -35,7 +42,7 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 # Subject page
 subjects-page: true # true / false, turns off subject generation 
-subjects-fields: subject;creator # set of fields separated by ; to be featured in the cloud
+subjects-fields: subject;genre # set of fields separated by ; to be featured in the cloud
 subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -48,13 +55,6 @@ locations-stopwords: # set of subjects separated by ; that will be removed from 
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
 year-nav-increment: 5 # set increments to auto gen nav years
-
-# Data 
-# add metadata fields for export in data downloads (tip: paste in first row of csv)
-# comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,creator,recipient,date,date-is-approximate,latitude,longitude,item-information,subject,related-publication,publisher-digital,source,original-identifier,identifier,rights,rightsstatement,type,format,language,relation,cdmid,objectid,youtubeid"
-# generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,creator,format"
 
 # Advanced Theme Options
 
