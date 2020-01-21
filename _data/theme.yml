@@ -16,6 +16,13 @@ featured-subjects-max: 6 # set number of top subjects to display if auto generat
 featured-locations: Moscow, ID #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 
+# Data 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,description,creator,recipient,date,date-is-approximate,latitude,longitude,item-information,subject,related-publication,publisher-digital,source,original-identifier,identifier,rights,rightsstatement,type,format,language,relation,cdmid,objectid,youtubeid"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject,creator,format"
+
 # Browse page
 # see _data/browse-config.csv for field display options
 # fields given the "btn" option can be multivalued with ";" such as subjects.
@@ -48,13 +55,6 @@ locations-stopwords: # set of subjects separated by ; that will be removed from 
 # Timeline
 year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
 year-nav-increment: 5 # set increments to auto gen nav years
-
-# Data 
-# add metadata fields for export in data downloads (tip: paste in first row of csv)
-# comma delimited list, reference url is automatic
-metadata-export-fields: "title,description,creator,recipient,date,date-is-approximate,latitude,longitude,item-information,subject,related-publication,publisher-digital,source,original-identifier,identifier,rights,rightsstatement,type,format,language,relation,cdmid,objectid,youtubeid"
-# generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,creator,format"
 
 # Advanced Theme Options
 
