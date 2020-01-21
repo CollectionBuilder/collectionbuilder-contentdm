@@ -2,6 +2,9 @@ display-text,stub
 Home,/
 Browse,/browse.html
 Subjects,/subjects.html
+Creators,/creators.html
+Location,/locations.html
 Timeline,/timeline.html
 Data,/data/
-About,/about.html
+About,/about.html,About
+Overview,/timelinetostatehood.html,About

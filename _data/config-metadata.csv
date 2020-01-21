@@ -6,10 +6,8 @@ description,Description,DC.description
 publisher,Publisher,
 subject,Subjects,DC.subject,true
 genre,Genre
-language,Language,,true
 location,Location
 identifier,Source Identifier
 type,Type,DC.type
 format,Format
 source,Source
-relation,relation

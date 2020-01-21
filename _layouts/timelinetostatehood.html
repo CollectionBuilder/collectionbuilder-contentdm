@@ -1,0 +1,26 @@
+---
+layout: page
+---
+{%- assign items = site.data.timelinetostatehood -%}
+
+{{ content }}
+
+<table id="timeline" class="table table-striped">
+    {% for item in items %}
+    <tr id="{{ item.era }}">
+        <th>
+            <h3>{{ item.era }}</h3>
+        </th>
+        <td>
+            {{item.description}}
+        </td>{% if item.searchphrase%}
+        <!--<td><a href="browse.html#{{ item.searchphrase }}">Browse</a></td>-->
+        <td><a href="{{ item.searchlink }}">Search Database </a></td>
+        {%else%}
+        <!--<td></td>-->
+        <td></td>
+        {%endif%}
+
+    </tr>
+    {% endfor %}
+</table>

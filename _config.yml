@@ -6,32 +6,32 @@
 url: https://collectionbuilder.github.io
 # location on the domain
 # e.g. /digital/hjccc
-baseurl: /demo/wsu-hirahara
+baseurl: /demo/wsu-maps
 # CONTENTdm server url
 cdm-url: https://cdm16866.contentdm.oclc.org/
 # location of code
 source-code: https://github.com/CollectionBuilder
 
 # Site settings
-title: Hirahara Photographs
+title: Early Washington Maps
 # header and head metadata
 tagline: A CollectionBuilder Demo for WSU
-description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the George and Frank C. Hirahara Photograph Collection, 1943-1945 from Washington State University." 
+description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Early Washington Maps Collection, 1943-1945 from Washington State University." 
 # Organization branding
-organization-name: "Digital Initiatives, University of Idaho Library"
-organization-link: https://www.lib.uidaho.edu/digital/
+organization-name: "Washington State University "
+organization-link: https://content.libraries.wsu.edu/digital/
 organization-logo-banner: https://repo.wsu.edu/spine/2.0.2/marks/wsu-signature-vertical-darker.svg
 organization-logo-nav: https://content.libraries.wsu.edu/customizations/global/images/coug-logo.png
 
 # Collection settings
 # contentdm collection name 
-cdm-collection-id: hiraharag
+cdm-collection-id: maps
 # name of metadata file, be sure to also change page_gen data setting!
-metadata: hiraharag 
+metadata: maps 
 # page gen settings 
 # "data" value must be the name of the metadata file
 page_gen:
-  - data: 'hiraharag'
+  - data: 'maps'
     template: 'items'
     name: 'objectid'
     dir: 'items'
