@@ -2,6 +2,7 @@
 title: About
 layout: page
 permalink: /about.html
+lazyload: true
 # add image to index page bootstrap jumbotron
 featured-image: "objects/test001.jpg"
 ---

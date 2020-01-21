@@ -18,8 +18,8 @@ title: Hirahara Photographs
 tagline: A CollectionBuilder Demo for WSU
 description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the George and Frank C. Hirahara Photograph Collection, 1943-1945 from Washington State University." 
 # Organization branding
-organization-name: "Digital Initiatives, University of Idaho Library"
-organization-link: https://www.lib.uidaho.edu/digital/
+organization-name: "Washington State University"
+organization-link: https://content.libraries.wsu.edu/digital/
 organization-logo-banner: https://repo.wsu.edu/spine/2.0.2/marks/wsu-signature-vertical-darker.svg
 organization-logo-nav: https://content.libraries.wsu.edu/customizations/global/images/coug-logo.png
 
