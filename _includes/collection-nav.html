@@ -20,9 +20,10 @@
                 </li>
                 {% else %}
                 <li class="nav-item dropdown">
-                    <a class="nav-link mt-1 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display-text }}</a>
+                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.parent == nav.display-text' %}
+                    {% assign childStubs = navChildren | map: 'stub' %}
+                    <a class="nav-link mt-1 dropdown-toggle{% if childStubs contains page.url %} active{% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display-text }}</a>
                     <div class="dropdown-menu">
-                        {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.parent == nav.display-text' %}
                         {% for c in navChildren %}
                         <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}" href="{{ c.stub | relative_url }}">{{ c.display-text }}</a>
                         {% endfor %}
