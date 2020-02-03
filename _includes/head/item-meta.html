@@ -1,10 +1,10 @@
-<meta name="keywords" content="{{ page.subject | escape }}" >
-<meta name="description" content="Item from {{ site.title | escape }}: {{ page.description | truncatewords: 25 | escape }}">
+{% if page.subject %}<meta name="keywords" content="{{ page.subject | escape }}" >{% endif %}
+{% if page.description %}<meta name="description" content="Item from {{ site.title | escape }}: {{ page.description | truncatewords: 25 | escape }}">{% endif %}
 <!-- DC meta -->
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
 {%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.dc-map != nil' -%}
-{% for f in fields %}{% if page[f.field] %}<meta name="{{ f.dc-map }}" content="{{ page[f.field] | truncatewords: 25 | xml_escape }}" xml:lang="en" />
+{% for f in fields %}{% if page[f.field] %}<meta name="{{ f.dc-map | xml_escape }}" content="{{ page[f.field] | truncatewords: 25 | xml_escape }}" xml:lang="en" />
 {% endif %}{% endfor %}
 <!-- Open Graph meta -->
 <meta property="og:title" content="{{ page.title | escape }}" />
@@ -24,7 +24,7 @@
     {% if page.creator %}"creator": {{ page.creator | jsonify }},{%- endif -%}
     {% if page.date %}"dateCreated": {{ page.date | jsonify }},{%- endif -%}
     {% if page.description %}"description": {{ page.description | truncatewords: 28 | jsonify }},{%- endif -%}
-    {% if page.subjects %}"keywords": {{ page.subjects | jsonify }},{%- endif -%}
+    {% if page.subject %}"keywords": {{ page.subject | jsonify }},{%- endif -%}
     {% if page.location %}"contentLocation": {{ page.location | jsonify }},{%- endif -%}
     "isPartOf": {{ site.title | jsonify }},
     "relatedLink": {{ '/' | absolute_url | jsonify }},
