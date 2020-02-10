@@ -28,12 +28,24 @@ Because page_gen rewrites the page object front matter, additional front matter 
 To avoid this issue, we use a dummy layout "items" which simply passes everything to the real layout "item" (_layouts/item.html).
 
 The item layout uses the properties of the the metadata to create the item page contents, configured by "_data/config-metadata.csv". 
-Item pages have a special meta markup in head (_includes/head/item-meta.html) which is also configured by config-metadata and driven by the metadata fields.
+Item pages have a special meta markup in head (_includes/head/item-meta.html) which is also configured by config-metadata and driven by the metadata fields (see "docs/markup.md").
 The image representations and object downloads logic is based on the `format` field in the metadata--thus will be incorrect if the format field is wrong or malformed.  
 
 For image items, a zoomable, full screen gallery view is added using [lightGallery](http://sachinchoolur.github.io/lightGallery/).
 The lightGallery dependencies are added by including `gallery: true` in the item layout front matter.
 See docs/lightgallery.md for more details.
+
+## Metadata display
+
+The metadata fields displayed on an item page are configured by config-metadata. 
+
+Only fields with a value in the "display-name" column will be displayed, and only if the item has a value for that field. 
+(*Note:* if you want a field to display without a field name visible, enter a blank space in the "display-name" column)
+
+Fields with "true" in the "browse-link" column in config-metadata will generate a link to the Browse page. 
+Values in "browse-link" fields will be split on semicolon `;` as multi-valued fields before adding links.
+These often mirror the "btn" links on the Browse config-browse. 
+Keep in mind that for the browse links to be useful, the field must also be available to filter on the Browse page--so the field should appear in config-browse (displayed, btn, or hidden). 
 
 ## Preferred Citation 
 
@@ -44,6 +56,7 @@ To use a different format, please edit the card in the item layout.
 
 At the bottom of the item page a "Rights" box is automatically generated if either "rights" or "rightsstatement" field is in the metadata.
 The layout assumes that "rightsstatement" is a link only, e.g. most likely from rightsstatements.org or Creative Commons, a value such as "http://rightsstatements.org/vocab/NoC-US/1.0/".
+If your collection uses different field names for these values, either modify the field names in the metadata CSV, or edit the Rights box in the item layout. 
 
 ## Browse buttons
 
