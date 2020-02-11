@@ -24,7 +24,6 @@
     {% for f in sc-fields %}{% if page[f.field] %}
     "{{ f.schema-map }}": {{ page[f.field] | jsonify }},{% endif %}{% endfor %}
     "isPartOf": {{ site.title | jsonify }},
-    "relatedLink": {{ '/' | absolute_url | jsonify }},
     {% if page.format contains 'image' %}"image": "{% include image/original.html %}",{% endif %}
     "thumbnailUrl": "{% include image/thumb.html %}",
     "url": {{ page.url | absolute_url | jsonify }}
