@@ -58,3 +58,125 @@ layout: page
         </thead>
     </table>
 </div>
+
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org/",
+    "@type":"Dataset",
+    "name":"{{ site.title | escape }} Data",
+    "description":"Metadata and data derived from {{ site.title | escape }}. {{ site.description | escape }}",
+    "url":"{{ page.url | absolute_url }}",
+    "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+    "hasPart" : [
+        {% if stubs contains "subject" %}
+        {
+            "@type": "Dataset",
+            "name": "{{ site.title | escape }} metadata subject counts",
+            "description": "Unique values and counts of metadata subject fields.",
+            "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+            "distribution":[
+                {
+                    "@type":"DataDownload",
+                    "encodingFormat":"CSV",
+                    "contentUrl":"{{ '/data/subjects.csv' | absolute_url }}"
+                },
+                {
+                    "@type":"DataDownload",
+                    "encodingFormat":"JSON",
+                    "contentUrl":"{{ '/data/subjects.json' | absolute_url }}"
+                }
+            ]      
+        },
+        {%- endif -%}
+        {% if stubs contains "map" %}
+        {
+            "@type": "Dataset",
+            "name": "{{ site.title | escape }} geographic metadata",
+            "description": "Geojson data containing all objects with lat-longs and associated descriptive metadata.",
+            "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+            "distribution":[
+                {
+                    "@type":"DataDownload",
+                    "encodingFormat":"JSON",
+                    "contentUrl":"{{ '/data/geodata.json' | absolute_url }}"
+                }
+            ]      
+        },
+        {%- endif -%}
+        {% if stubs contains "location" %}
+        {
+            "@type": "Dataset",
+            "name": "{{ site.title | escape }} metadata location counts",
+            "description": "Unique values and counts of metadata location fields.",
+            "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+            "distribution":[
+                {
+                    "@type":"DataDownload",
+                    "encodingFormat":"CSV",
+                    "contentUrl":"{{ '/data/locations.csv' | absolute_url }}"
+                },
+                {
+                    "@type":"DataDownload",
+                    "encodingFormat":"JSON",
+                    "contentUrl":"{{ '/data/locations.json' | absolute_url }}"
+                }
+            ]      
+        },
+        {%- endif -%}
+        {% if stubs contains "timeline" %}
+        {
+            "@type": "Dataset",
+            "name": "{{ site.title | escape }} timeline metadata",
+            "description": "Time-based metadata formated for TimelineJS or other applications.",
+            "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+            "distribution":[
+                {
+                    "@type":"DataDownload",
+                    "encodingFormat":"JSON",
+                    "contentUrl":"{{ '/data/timelinejs.json' | absolute_url }}"
+                }
+            ]      
+        },
+        {%- endif -%}
+        {% if site.data.theme.metadata-facets-fields %}
+        {
+            "@type": "Dataset",
+            "name": "{{ site.title | escape }} Metadata Facets",
+            "description": "Unique values and counts of metadata facet fields.",
+            "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+            "distribution":[
+                {
+                    "@type":"DataDownload",
+                    "encodingFormat":"JSON",
+                    "contentUrl":"{{ '/data/facets.json' | absolute_url }}"
+                }
+            ]      
+        },
+        {%- endif -%}
+        {
+            "@type": "Dataset",
+            "name": "{{ site.title | escape }} full metadata",
+            "description": "Complete metadata export for {{ site.title | escape }} objects.",
+            "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+            "distribution":[
+                {
+                    "@type":"DataDownload",
+                    "encodingFormat":"CSV",
+                    "contentUrl":"{{ '/data/metadata.csv' | absolute_url }}"
+                },
+                {
+                    "@type":"DataDownload",
+                    "encodingFormat":"JSON",
+                    "contentUrl":"{{ '/data/metadata.json' | absolute_url }}"
+                }
+            ]
+        }
+    ],
+    "creator":{
+        "@type":"Organization",
+        "url": "{{ site.organization-link }}",
+        "name":"{{ site.organization-name }}"
+    }
+}
+</script>
+    
