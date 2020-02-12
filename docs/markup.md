@@ -23,7 +23,7 @@ Recommended fields to map include:
 - `DC.subject`
 - `DC.type`
 
-This implementation is based on DSpace.
+This implementation is based on DSpace, following the [DC-HTML](https://www.dublincore.org/specifications/dublin-core/dc-html/2008-08-04/) conventions.
 
 ## Schema.org 
 
@@ -58,6 +58,8 @@ Additionally, the Schema type, `isPartOf` (the collection), `image` (url), `thum
 Note: in the future, our base item type may move to `ArchiveComponent` when this spec is fully integrated into the standard, https://schema.org/ArchiveComponent .
 An alternative approach would be to use `ItemPage`, https://schema.org/ItemPage to describe the object pages, although this seems less direct.
 
+Item pages are also marked up with Schema [BreadcrumbList](https://schema.org/BreadcrumbList) to represent their nesting in the site, which may be [represented in search results](https://developers.google.com/search/docs/data-types/breadcrumb). 
+
 ### Data page
 
 The Data page includes Schema markup in JSON-LD representing the various data derivatives that can be downloaded (included on the data.html layout). 
@@ -81,7 +83,16 @@ For example, if I want to show all data downloads, even though I don't have the 
 
 ### Content pages
 
-`WebPage`, https://schema.org/WebPage
+Other pages in the site receive more basic markup from the head/page-meta.html include following the [WebPage schema type](https://schema.org/WebPage).
 
-https://schema.org/CollectionPage
-https://schema.org/AboutPage
+## Open Graph Protocol
+
+[Open Graph](https://opengraphprotocol.org/) provides basic metadata in a open standard used by social media sites to generate representations of links shared on the platform.
+Open Graph was established by Facebook, but can be read by other platforms.
+
+OG meta tags are automatically added to every page and are not configurable.
+They provide an authoritative title, description, and image that can be used to represent a link to the page.
+The OG image will be the item image/thumb in the case of item pages, or the site featured image for all other pages.
+For example:
+
+`<meta property="og:title" content="{{ page.title | escape }}" />`
