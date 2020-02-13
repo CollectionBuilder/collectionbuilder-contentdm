@@ -40,6 +40,11 @@ map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact m
 map-cluster: true # suggested for large collection or with many items in same location
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
+# Clouds page
+clouds-fields: subject;creator;location
+clouds-min-frequency: 1
+clouds-stopwords:
+
 # Subject page
 subjects-page: true # true / false, turns off subject generation 
 subjects-fields: subject;creator # set of fields separated by ; to be featured in the cloud
