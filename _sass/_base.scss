@@ -75,3 +75,15 @@ a {
 #footer-credits {
     img { height: 40px; }
 }
+/* scroll to top */
+#scroll-to-top {
+    display: none; 
+    position: fixed; 
+    bottom: 10px; 
+    right: 0px; 
+    z-index: 99;
+    color: #191919; 
+    cursor: pointer; 
+    padding: 5px;
+    font-size: 40px; 
+}
