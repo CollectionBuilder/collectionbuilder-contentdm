@@ -117,17 +117,17 @@ gallery: true
     {% else %}
     {% assign forward = 0 %}
     {%- endunless -%}
-    {%- assign back_url = itemset[back] | append: '.html' | prepend: '/items/' | relative_url -%}
-    {%- assign forward_url = itemset[forward] | append: '.html' | prepend: '/items/' | relative_url -%}
+    {%- assign back_url = '/items/' | append: itemset[back] | append: '.html' | relative_url -%}
+    {%- assign forward_url = '/items/' | append: itemset[forward] | append: '.html' | relative_url -%}
     <div class="text-center">
-        <a class="btn btn-secondary" href="{{ back_url }}" role="button" id="prev-page-button">&laquo; Previous</a>
-        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
-        <a class="btn btn-secondary" href="{{ forward_url }}" role="button" id="next-page-button">Next &raquo;</a>
+        <a class="btn btn-secondary" href="{{ back_url }}" id="prev-page-button">&laquo; Previous</a>
+        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" >Back to Browse</a>
+        <a class="btn btn-secondary" href="{{ forward_url }}" id="next-page-button">Next &raquo;</a>
     </div>
     <div id="item-nav">
         <div class="d-none d-md-block">
-            <a class="previous bg-secondary text-white  btn btn-lg" href="{{ back_url }}" class="text-white">&laquo;</a>
-            <a class="next bg-secondary text-white btn btn-lg" href="{{ forward_url }}" class="text-white">&raquo;</a>
+            <a class="previous btn btn-lg btn-secondary" href="{{ back_url }}">&laquo;</a>
+            <a class="next btn btn-lg btn-secondary" href="{{ forward_url }}">&raquo;</a>
         </div>
     </div>
     {%- endif -%}
