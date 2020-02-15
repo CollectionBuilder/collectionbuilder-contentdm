@@ -6,13 +6,21 @@
 
             <h4><a href="{{ '/' | absolute_url }}" class="text-white">{{ site.title }}</a></h4>
             <p class="text-white"><small>{{ site.description }}</small></p>
-            <ul class="nav nav-pills ">
-                {% for nav in site.data.config-nav %}
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
-                </li>
-                {% endfor %}
-            </ul>
+            <nav>
+                <ul class="nav nav-pills ">
+                    {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
+                    {% for nav in navItems %}
+                    <li class="nav-item">
+                    {% if nav.stub %}
+                        <a class="nav-link text-light{% if page.url == nav.stub %} active{% endif %}" href="{{ nav.stub | relative_url }}">{{ nav.display_text }}</a>
+                    {%- else -%}
+                    {% assign childStub = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_text' | first %}
+                        <a class="nav-link text-light{% if page.url == childStub.stub %} active{% endif %}" href="{{ childStub.stub | relative_url }}">{{ nav.display_text }}</a>
+                    {% endif %}
+                    </li>
+                    {%- endfor -%}
+                </ul>
+            </nav>
 
         </div>
 
