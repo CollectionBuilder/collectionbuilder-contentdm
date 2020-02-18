@@ -1,7 +1,7 @@
 ---
 # find and count unique subjects
 ---
-{%- if site.data.theme.locations-page == true -%}
+{%- if site.data.theme.locations-fields -%}
 {%- assign locations-fields = site.data.theme.locations-fields | split: ";" -%}
 {%- assign places = "" -%}
 {%- for c in locations-fields -%}
