@@ -71,7 +71,7 @@
         /* create pop up */
         var itemHref = '{{ site.baseurl }}/items/' + feature.properties.id + '.html';
         if (feature.properties.youtube) {
-            var thumbSrc = 'https://img.youtube.com/vi/' + feature.properties.youtube + '/0.jpg';
+            var thumbSrc = 'https://img.youtube.com/vi/' + feature.properties.youtube + '/default.jpg';
         } else {
             var thumbSrc = '{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/' + feature.properties.cdm;
         }
