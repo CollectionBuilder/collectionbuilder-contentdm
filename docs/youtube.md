@@ -17,11 +17,13 @@ The embed is given these options:
 ## Item images 
 
 To retrieve image representations for other pages in CollectionBuilder, objects with `youtubeid` will use the YouTube image API.
-The API is not well documented by Google, but is used by many sites.
+The API is not well documented by Google, but is used by many sites and js libraries.
 
 CollectionBuilder uses these calls, which are built into the image includes:
-
-
+youtube-large.html, youtube-small.html, and youtube-thumb.html.
+These do not use SD or max quality versions since those can not be guaranteed for all videos
+(if you know your collection videos are high res, you may want to modify to use those options since all image sizes are relatively small).
+However, these includes are rarely used in the current project, since most calls for YouTube images are via JS.
 
 Basically, you can get four sizes of the default thumbnail, or four smaller thumbnails from different points in the video.
 You can use the domain "img.youtube.com" or "i3.ytimg.com"
