@@ -27,7 +27,7 @@ gallery: true
                             Your browser does not support the audio element.
                         </audio>
                         {%- elsif page.youtubeid -%}
-                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{page.youtubeid}}?rel=0" allowfullscreen></iframe></div>
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/{{page.youtubeid}}?rel=0&modestbranding=1" allowfullscreen></iframe></div>
                         {%- elsif page.format contains 'video' -%}
                         <video width="320" height="240" controls>
                             <source src="{% include download/video.html %}" type="video/mp4">
