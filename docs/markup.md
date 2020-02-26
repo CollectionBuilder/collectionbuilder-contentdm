@@ -62,7 +62,7 @@ Item pages are also marked up with Schema [BreadcrumbList](https://schema.org/Br
 
 ### Data page
 
-The Data page includes Schema markup in JSON-LD representing the various data derivatives that can be downloaded (included on the data.html layout). 
+The Data page includes Schema markup in JSON-LD representing the various data derivatives that can be downloaded (implemented in _includes/data-download-modal.html which is included by the data layout). 
 See [Google dataset docs](https://developers.google.com/search/docs/data-types/dataset) and [Schema Dataset](https://schema.org/Dataset) for details behind this implementation.
 
 The full metadata download in csv and json are automatically added.
@@ -71,8 +71,8 @@ Additional datasets described are selected based on what pages are in the config
 If the config-nav contains the following "stub", the following data files will be added to the markup:
 
 - "subject", subjects.csv, json
-- "map", geodata.json
 - "location", locations.csv, json
+- "map", geodata.json
 - "timeline", timelinejs.json
 
 This may not be accurate for all use cases. 

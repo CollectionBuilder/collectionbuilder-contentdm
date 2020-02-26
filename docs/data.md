@@ -18,3 +18,5 @@ The `subjects.json`, `subjects.csv`, `locations.csv` and `locations.json` use th
 The fields used are configured in `site.data.theme.subjects-fields` and `site.data.theme.locations-fields`.
 
 `timelinejs.json` is a time-focused format designed to work with the standalone version of Knight Lab's [TimelineJS](http://timeline.knightlab.com/).
+
+A link to the source code repository will be included if `source-code` is set in _config.yml, otherwise it will link to CollectionBuilder.
