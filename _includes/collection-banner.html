@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="text-right p-0 mt-0">
-        <small><a class="text-info featured-link" href="{% if site.data.theme.featured-image-objectid %}{{ site.data.theme.featured-image-objectid | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.featured-image-link }}{% endif %}" title="{{ bannerItem[0].title | escape }}">Featured Image</a></small>
+        <small><a class="text-info featured-link" href="{% if site.data.theme.featured-image-objectid %}{{ site.data.theme.featured-image-objectid | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.featured-image-link }}{% endif %}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
     </div>
 </div>
 {%- else -%}
