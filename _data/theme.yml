@@ -2,10 +2,9 @@
 # values set here help configure details of individual pages in the website
 
 # Home page
-# featured image is used in home page banner, and in meta markup
-# use either featured-image-objectid (image in collection) or featured-image-link (external img), not both
-featured-image-objectid: demo_psychiana548 # use objectid of a item from collection
-featured-image-link: # full url to img if NOT using objectid 
+# featured image is used in home page banner and in meta markup to represent the collection
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+featured-image: demo_psychiana548
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 home-banner-image-position: center # [options: top, center, bottom] Default: top
 carousel-height: # in px, but don't include the "px"; default is 450.
@@ -22,6 +21,11 @@ featured-locations-max: 3
 metadata-export-fields: "title,description,creator,recipient,date,date-is-approximate,latitude,longitude,item-information,subject,related-publication,publisher-digital,source,original-identifier,identifier,rights,rightsstatement,type,format,language,relation,cdmid,objectid,youtubeid"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,creator,format"
+
+# About page
+# Featured image on About page - if left blank, CB will use image featured on the home page
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+about-featured-image: demo_psychiana565
 
 # Browse page
 # see _data/browse-config.csv for field display options
