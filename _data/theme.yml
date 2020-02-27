@@ -22,6 +22,11 @@ metadata-export-fields: "title,description,creator,recipient,date,date-is-approx
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,creator,format"
 
+# About page
+# Featured image on About page - if left blank, CB will use image featured on the home page
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+about-featured-image: demo_psychiana565
+
 # Browse page
 # see _data/browse-config.csv for field display options
 # fields given the "btn" option can be multivalued with ";" such as subjects.
