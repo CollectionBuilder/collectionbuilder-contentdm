@@ -1,35 +1,49 @@
-# CollectionBuilder 
-# Jekyll Digital Collection Generator
+##########
+# collectionbuilder-gh
+# Jekyll Digital Collection Generator, designed for GitHub Pages
+# https://github.com/CollectionBuilder/collectionbuilder-gh
+##########
 
-# URL variables
-# site domain 
+##########
+# URL VARIABLES
+#
+# site domain, full URL to the production location of your collection
 url: https://www.lib.uidaho.edu
-# location on the domain
-# e.g. /digital/hjccc
+# path to location on the domain if necessary e.g. /digital/hjccc
 baseurl: /demo/psychiana
-# CONTENTdm server url
-cdm-url: https://digital.lib.uidaho.edu
-# location of code
+# location of code, the full url to your github repository
 source-code: https://github.com/CollectionBuilder
 
-# Site settings
+##########
+# SITE SETTINGS
+#
+# title of site appears in banner
 title: Collection Builder CDM Skin
-# header and head metadata
+# tagline, a short phrase that will appear throughout the site in the top banner
 tagline: Digital Collection Magic with Static Web Technologies
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
 description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: CollectionBuilder
 # Organization branding
 organization-name: "Digital Initiatives, University of Idaho Library"
 organization-link: https://www.lib.uidaho.edu/digital/
 organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
 organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
 
-# Collection settings
-# contentdm collection name 
-cdm-collection-id: psychiana
-# name of metadata file, be sure to also change page_gen data setting!
+
+##########
+# COLLECTION SETTINGS
+#
+# choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
 metadata: demo_psychiana 
-# page gen settings 
-# "data" value must be the name of the metadata file
+# contentdm collection name, matches collection ID used by CDM
+cdm-collection-id: psychiana
+# CONTENTdm server url
+cdm-url: https://digital.lib.uidaho.edu
+# page generation settings 
+# "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
   - data: 'demo_psychiana'
     template: 'items'
@@ -38,20 +52,29 @@ page_gen:
     extension: 'html' 
     filter: 'objectid'  
 
-# Note: use environment variable on build command to include analytics
-# JEKYLL_ENV=production jekyll build
-# if present, used to add analytics during build
-google-analytics-id: 
+##########
+# GOOGLE SERVICES [optional!]
+#
+# leave these blank or comment out to NOT include google code
+# if present, used to add analytics during "production" build only
+# google-analytics-id: "UA-74844011-1"
+# google-cse-id: "002151703305773322890:1pu3smhw1t8"
 
-# Robots exclude
+##########
+# ROBOTS EXCLUDE
+#
 # set noindex to true if you do NOT want Google to index your site
 # noindex: true 
 
-# add liquid profiler to id bottlenecks
-# profile: true
-
+##########
+# BUILD SETTINGS 
+#
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+# (this is done automatically by gh-pages build)
+#
+# ignore stuff
 exclude: [docs/, Rakefile, README.md, LICENSE]
-
 # compress CSS output
 sass:
   style: compressed
