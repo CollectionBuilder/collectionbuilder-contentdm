@@ -27,9 +27,9 @@
             {% if site.tagline %}<p id="home-tagline">{{ site.tagline }}</p>{% endif %}
         </div>
     </div>
-    <div class="text-right p-0 mt-0">
-        <small><a class="text-info featured-link" href="{% if site.data.theme.featured-image-objectid %}{{ site.data.theme.featured-image-objectid | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.featured-image-link }}{% endif %}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
-    </div>
+    {% unless site.data.theme.featured-image contains '/' %}<div class="text-right p-0 mt-0">
+        <small><a class="text-info featured-link" href="{{ site.data.theme.featured-image | prepend: '/item.html?id=' | relative_url }}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
+    </div>{% endunless %}
 </div>
 {%- else -%}
 <div class="container">
