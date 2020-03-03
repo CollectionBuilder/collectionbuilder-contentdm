@@ -78,9 +78,9 @@
         var popupTemplate = '<h4><a class="text-dark" href="' + itemHref + '">' +
             feature.properties.title + '</a></h4><div class="text-center"><a class="btn btn-light" href="' + itemHref + 
             '" ><img class="mapthumb" src="' + thumbSrc + '" alt="item thumbnail"></a></div><p class="mt-0">';
-        {% for f in fields %}{% if f.display %}
+        {% for f in fields %}{% if f.display_name %}
         if (feature.properties.{{ f.field }}) {
-            popupTemplate += '<strong>{{ f.display }}:</strong> ' + feature.properties.{{ f.field }} + '<br>'; 
+            popupTemplate += '<strong>{{ f.display_name }}:</strong> ' + feature.properties.{{ f.field }} + '<br>'; 
         }
         {% endif %}{% endfor %}
         popupTemplate += '</p><div class="text-center"><a class="btn btn-light" href="' + itemHref + '" >View Item</a></div>';
