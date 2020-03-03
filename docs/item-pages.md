@@ -39,11 +39,11 @@ See docs/lightgallery.md for more details.
 
 The metadata fields displayed on an item page are configured by config-metadata. 
 
-Only fields with a value in the "display-name" column will be displayed, and only if the item has a value for that field. 
-(*Note:* if you want a field to display without a field name visible, enter a blank space in the "display-name" column)
+Only fields with a value in the "display_name" column will be displayed, and only if the item has a value for that field. 
+(*Note:* if you want a field to display without a field name visible, enter a blank space in the "display_name" column)
 
-Fields with "true" in the "browse-link" column in config-metadata will generate a link to the Browse page. 
-Values in "browse-link" fields will be split on semicolon `;` as multi-valued fields before adding links.
+Fields with "true" in the "browse_link" column in config-metadata will generate a link to the Browse page. 
+Values in "browse_link" fields will be split on semicolon `;` as multi-valued fields before adding links.
 These often mirror the "btn" links on the Browse config-browse. 
 Keep in mind that for the browse links to be useful, the field must also be available to filter on the Browse page--so the field should appear in config-browse (displayed, btn, or hidden). 
 

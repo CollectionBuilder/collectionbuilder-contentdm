@@ -3,8 +3,8 @@
 <!-- DC meta -->
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
-{%- assign dc-fields = site.data.config-metadata | where_exp: 'item', 'item.dc-map != nil' -%}
-{% for f in dc-fields %}{% if page[f.field] %}<meta name="{{ f.dc-map | xml_escape }}" content="{{ page[f.field] | truncatewords: 25 | xml_escape }}" xml:lang="en" />
+{%- assign dc-fields = site.data.config-metadata | where_exp: 'item', 'item.dc_map != nil' -%}
+{% for f in dc-fields %}{% if page[f.field] %}<meta name="{{ f.dc_map | xml_escape }}" content="{{ page[f.field] | truncatewords: 25 | xml_escape }}" xml:lang="en" />
 {% endif %}{% endfor %}
 <!-- Open Graph meta -->
 <meta property="og:title" content="{{ page.title | escape }}" />
@@ -20,9 +20,9 @@
 { 
     "@context": "http://schema.org",
     "@type": "CreativeWork",
-    {%- assign sc-fields = site.data.config-metadata | where_exp: 'item', 'item.schema-map != nil' -%}
+    {%- assign sc-fields = site.data.config-metadata | where_exp: 'item', 'item.schema_map != nil' -%}
     {% for f in sc-fields %}{% if page[f.field] %}
-    "{{ f.schema-map }}": {{ page[f.field] | jsonify }},{% endif %}{% endfor %}
+    "{{ f.schema_map }}": {{ page[f.field] | jsonify }},{% endif %}{% endfor %}
     "isPartOf": {{ site.title | jsonify }},
     {% if page.format contains 'image' %}"image": "{% include image/original.html %}",{% endif %}
     "thumbnailUrl": "{% include image/thumb.html %}",

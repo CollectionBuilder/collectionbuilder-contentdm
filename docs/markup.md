@@ -2,7 +2,7 @@
 
 ## Dublin Core 
 
-Dublin Core elements are added to Item pages driven by the "dc-map" column of config-metadata.csv.
+Dublin Core elements are added to Item pages driven by the "dc_map" column of config-metadata.csv.
 
 Choose mapping options directly from:
 
@@ -12,7 +12,7 @@ Choose mapping options directly from:
 The values will be directly added to meta tag name attribute.
 For example, to use Dublin Core [Title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/elements/1.1/title) from the "elements" namespace, the value would be `DC.title`.
 To use an element from the "terms" namespace the prefix would be `DCTERMS`, e.g. [abstract](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/abstract) is `DCTERMS.abstract`.
-If the "dc-map" column is empty, no DC meta tags will be added.
+If the "dc_map" column is empty, no DC meta tags will be added.
 
 Recommended fields to map include:
 
@@ -37,10 +37,10 @@ Markup can be tested using Google's [Structured Data Testing Tool](https://searc
 ### Item pages 
 
 Item pages have in depth Schema markup in JSON-LD format driven by the object metadata. 
-Schema elements are driven by the "schema-map" column of config-metadata.csv.
+Schema elements are driven by the "schema_map" column of config-metadata.csv.
 Each item page is given the basic type of `CreativeWork`, thus metadata fields can be mapped to any of the properties listed on the [CreativeWork documentation](https://schema.org/CreativeWork). 
 Copy the exact property name, as this value will be turned into schema JSON-LD markup.
-If the "schema-map" column is empty, only the automatically generated markup will be added.
+If the "schema_map" column is empty, only the automatically generated markup will be added.
 
 Suggested field mappings include:
 

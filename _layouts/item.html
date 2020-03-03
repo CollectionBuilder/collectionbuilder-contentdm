@@ -2,7 +2,7 @@
 layout: default
 gallery: true
 ---
-{%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.display-name != nil' -%}
+{%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.display_name != nil' -%}
 <div class="container py-3">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
@@ -56,9 +56,9 @@ gallery: true
             <div id="item-metadata" class="metadata">
                 <dl>
                     {% for f in fields %}{% if page[f.field] %}
-                    <dt class="field">{{ f.display-name }}:</dt>
+                    <dt class="field">{{ f.display_name }}:</dt>
                     <dd class="field-value">
-                        {% if f.browse-link == "true" %}
+                        {% if f.browse_link == "true" %}
                         {% assign topics = page[f.field] | split: ";" %}
                         {% for t in topics %}
                         <a class="filter mr-3" data-filter="{{ t | strip | escape }}" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>

@@ -1,4 +1,4 @@
-field,display-name,browse-link,dc-map,schema-map
+field,display_name,browse_link,dc_map,schema_map
 title,Title,,DC.title,headline
 creator,Creator,,DC.creator,creator
 recipient,Recipient,
