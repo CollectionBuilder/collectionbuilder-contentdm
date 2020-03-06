@@ -4,24 +4,23 @@
 
 Dublin Core elements are added to Item pages driven by the "dc_map" column of config-metadata.csv.
 
-Choose mapping options directly from:
+Choose mapping options directly from the DCMI Terms namespace: http://purl.org/dc/terms/
+*Note: DMCI the original 15 Elements namespace is mirrored in the Terms namespace (i.e. both have "title", "creator", etc), however, using the newer Terms namespace is preferred.*
 
-- http://purl.org/dc/elements/1.1/
-- http://purl.org/dc/terms/
+The values will be directly added to meta tag name attribute, thus should use the `DCTERMS` prefix.
 
-The values will be directly added to meta tag name attribute.
-For example, to use Dublin Core [Title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/elements/1.1/title) from the "elements" namespace, the value would be `DC.title`.
-To use an element from the "terms" namespace the prefix would be `DCTERMS`, e.g. [abstract](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/abstract) is `DCTERMS.abstract`.
+For example, to use Dublin Core [Title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title) from the "Terms" namespace, the value would be `DCTERMS.title`.
+To use [abstract](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/abstract), `DCTERMS.abstract`.
 If the "dc_map" column is empty, no DC meta tags will be added.
 
 Recommended fields to map include:
 
-- `DC.title`
-- `DC.creator`
+- `DCTERMS.title`
+- `DCTERMS.creator`
 - `DCTERMS.created`
-- `DC.description`
-- `DC.subject`
-- `DC.type`
+- `DCTERMS.description`
+- `DCTERMS.subject`
+- `DCTERMS.type`
 
 This implementation is based on DSpace, following the [DC-HTML](https://www.dublincore.org/specifications/dublin-core/dc-html/2008-08-04/) conventions.
 
