@@ -1,1 +1,1 @@
-{{ site.cdm-url }}/utils/getfile/collection/{{ site.cdm-collection-id }}/id/{%if item.title %}{{ item.cdmid }}/filename/{{ item.objectid }}{%else%}{{ page.cdmid }}/filename/{{ page.objectid }}{% endif %}.pdf
+{{ site.cdm-url }}/utils/getfile/collection/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/id/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/id/{{ page.cdmid }}{% endif %}.pdf

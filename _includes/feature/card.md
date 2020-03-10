@@ -12,7 +12,7 @@
 <div class="card mb-3 {% if include.float %}float-{{ include.float }} {% endif %}{% if include.width %}w-{{ include.width }}{% endif %}">
 {% if include.objectid %}
 {% assign item = site.data[site.metadata] | where: "objectid", include.objectid | first %}
-<img class="card-img-top" src="{% unless item.youtubeid %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ item.cdmid }}/full/max/0/default.jpg{% else %}https://img.youtube.com/vi/{{ item.youtubeid }}/maxresdefault.jpg{% endunless %}" alt="{{ item.title | escape }}">
+<img class="card-img-top" src="{% unless item.youtubeid %}{{ site.cdm-url }}/digital/iiif/{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}/full/max/0/default.jpg{% else %}https://img.youtube.com/vi/{{ item.youtubeid }}/maxresdefault.jpg{% endunless %}" alt="{{ item.title | escape }}">
 {%- endif -%}
 {% if include.header %}<h5 class="card-header">{{ include.header }}</h5>{% endif %}
 <div class="card-body">
