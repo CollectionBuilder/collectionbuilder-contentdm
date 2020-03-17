@@ -14,7 +14,7 @@
     {% for item in items %}
     { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude | strip }},{{ item.latitude | strip }}] }, "properties":
     { "title": {{ item.title | escape | jsonify }}, 
-    {% for f in fields %}"{{ f.field | escape }}": {{ item[f.field] | escape | jsonify }},{% endfor %} "cdm": {{ item.cdmid | jsonify }}, {% if item.youtubeid %} "youtube": {{ item.youtubeid | jsonify }},{% endif %} "id": {{ item.objectid | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endfor %}
+    {% for f in fields %}{{ f.field | escape | jsonify }}: {{ item[f.field] | escape | jsonify }},{% endfor %} "cdm": {{ item.cdmid | jsonify }}, {% if item.youtubeid %} "youtube": {{ item.youtubeid | jsonify }},{% endif %} "id": {{ item.objectid | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endfor %}
     ]};
 
     /* init map and set zoom */
@@ -79,8 +79,8 @@
             feature.properties.title + '</a></h4><div class="text-center"><a class="btn btn-light" href="' + itemHref + 
             '" ><img class="mapthumb" src="' + thumbSrc + '" alt="item thumbnail"></a></div><p class="mt-0">';
         {% for f in fields %}{% if f.display_name %}
-        if (feature.properties.{{ f.field }}) {
-            popupTemplate += '<strong>{{ f.display_name }}:</strong> ' + feature.properties.{{ f.field }} + '<br>'; 
+        if (feature.properties[{{ f.field | escape | jsonify }}]) {
+            popupTemplate += '<strong>{{ f.display_name }}:</strong> ' + feature.properties[{{ f.field | escape | jsonify }}] + '<br>'; 
         }
         {% endif %}{% endfor %}
         popupTemplate += '</p><div class="text-center"><a class="btn btn-light" href="' + itemHref + '" >View Item</a></div>';
