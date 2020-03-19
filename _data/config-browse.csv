@@ -2,3 +2,5 @@ field,display_name,btn,hidden
 date,Date,
 creator,Creator,
 subject,,true
+digitalcollection,,,true
+location,,,true

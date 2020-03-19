@@ -2,6 +2,7 @@ field,display_name,browse_link,dc_map,schema_map
 title,Title,,DCTERMS.title,headline
 creator,Creator,,DCTERMS.creator,creator
 recipient,Recipient,
+digitalcollection,Collection
 date,Date Created,,DCTERMS.created,dateCreated
 date-is-approximate,Approximated Date
 description,Description,,DCTERMS.description,description
