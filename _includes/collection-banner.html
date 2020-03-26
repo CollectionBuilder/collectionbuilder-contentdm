@@ -28,7 +28,7 @@
         </div>
     </div>
     {% unless site.data.theme.featured-image contains '/' %}<div class="text-right p-0 mt-0">
-        <small><a class="text-info featured-link" href="{{ site.data.theme.featured-image | prepend: '/item.html?id=' | relative_url }}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
+        <small><a class="text-info featured-link" href="{{ '/items/' | relative_url | append: site.data.theme.featured-image | append: '.html' }}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
     </div>{% endunless %}
 </div>
 {%- else -%}
