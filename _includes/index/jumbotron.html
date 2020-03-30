@@ -1,4 +1,3 @@
-{% if site.data.theme.featured-image-objectid %}{% assign bannerItem = site.data[site.metadata] | where: 'objectid', site.data.theme.featured-image-objectid %}{%- endif -%}
 <style>
 #jumbo-feature {
     background-image: url('{% include image/featured-image.html %}');

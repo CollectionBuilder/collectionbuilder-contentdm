@@ -7,6 +7,9 @@ CollectionBuilder-CONTENTdm utilizes [CONTENTdm](https://www.oclc.org/en/content
 
 Visit the [CollectionBuilder home](https://collectionbuilder.github.io/) for more information about getting started!
 
+If you are interested in using CollectionBuilder, or are already using it, please drop us a line (**libstatic.uidaho@gmail.com**) since we would love to learn more about it's use in the wild. 
+There are also currently opportunities to [collaborate on CollectionBuilder](https://collectionbuilder.github.io/about.html#the-grant).
+
 ----------
 
 CollectionBuilder is a project of University of Idaho Library's [Digital Initiatives](https://www.lib.uidaho.edu/digital/) as part of the Lib-STATIC toolkit. 
@@ -17,3 +20,10 @@ Metadata visualizations are built using open source libraries such as [DataTable
 Object metadata is exposed using [Schema.org](http://schema.org) and [Open Graph protocol](http://ogp.me/) standards.
 
 Questions can be directed to **libstatic.uidaho@gmail.com**
+
+## License
+
+CollectionBuilder documentation and general web content is licensed [Creative Commons Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/). 
+This license does *NOT* include any objects or images used in digital collections, which may have individually applied licenses described by a "rights" field.
+CollectionBuilder code is licensed [MIT](https://github.com/CollectionBuilder/collectionbuilder-contentdm/blob/master/LICENSE). 
+This license does not include external dependencies included in the `assets/lib` directory, which are covered by their individual licenses.

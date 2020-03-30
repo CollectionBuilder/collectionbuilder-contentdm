@@ -1,5 +1,8 @@
-# CollectionBuilder 
-# Jekyll Digital Collection Generator
+##########
+# collectionbuilder-contentdm
+# Jekyll Digital Collection Generator, designed as a skin over CONTENTdm
+# https://github.com/CollectionBuilder/collectionbuilder-contentdm
+##########
 
 # URL variables
 # site domain 
@@ -16,7 +19,11 @@ source-code: https://github.com/CollectionBuilder
 title: Founding Histories Demo
 # header and head metadata
 tagline: Digital Collection Magic with Static Web Technologies
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
 description: "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." 
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: CollectionBuilder
 # Organization branding
 organization-name: "University of Washington Libraries Digital Collections"
 organization-link: https://content.lib.washington.edu/
@@ -35,18 +42,32 @@ page_gen:
     template: 'items'
     name: 'objectid'
     dir: 'items'
-    extension: 'html'   
+    extension: 'html' 
+    filter: 'objectid'  
 
+##########
+# GOOGLE SERVICES [optional!]
+#
+# leave these blank or comment out to NOT include google code
+# if present, used to add analytics during "production" build only
+# google-analytics-id: "UA-74844011-1"
+# google-cse-id: "002151703305773322890:1pu3smhw1t8"
+
+##########
+# ROBOTS EXCLUDE
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
+
+##########
+# BUILD SETTINGS 
+#
 # Note: use environment variable on build command to include analytics
 # JEKYLL_ENV=production jekyll build
-# if present, used to add analytics during build
-google-analytics-id: 
-
-# add liquid profiler to id bottlenecks
-# profile: true
-
+# (this is done automatically by gh-pages build)
+#
+# ignore stuff
 exclude: [docs/, Rakefile, README.md, LICENSE]
-
 # compress CSS output
 sass:
   style: compressed

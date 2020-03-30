@@ -7,33 +7,16 @@
 .gallery-img {
     cursor: pointer;
 }
-dt {
-    font-size:20px;
-}
-.mp3-item-player{ width:100%; }
 #item-nav {
     a { 
         position: absolute;
         top:500px;
-        opacity:.3;
-        &:hover{opacity:1}
-        @include media-query($on-palm) {
-            top:200px; 
-        }
     }
     .previous { left:10px; }
     .next{ right:10px; }
 }
 
 /* browse */
-.item .card-title {
-    font-size:1.5rem;
-}
-.hidden-format-for-browse{
-    color:rgba(0, 0, 0, 0);
-    font-size:1px;
-    line-height: 1px;
-}
 
 /* map */
 #map { height: 750px; z-index: 98; }
@@ -48,10 +31,6 @@ dt {
 #timeline .img-thumbnail { height: 110px; }
 
 /* subjects */
-#cloud {
-    background: none repeat scroll 0% 0% rgb(64, 82, 79); 
-    padding: 4px;
-}
 .tagcloud0{font-size:0.4em;}
 .tagcloud1{font-size:0.5em;}
 .tagcloud2{font-size:0.8em;}

@@ -1,13 +1,14 @@
-field,display-name,dc-map,browse-link
-title,Title,DC.title
-interviewee,Interviewee,,
-interviewer,Interviewer,,
-date,Date Created,DCTERMS.created
+field,display-name,browse-link,dc_map,schema_map
+title,Title,,DC.title
+interviewee,Interviewee,,DCTERMS.creator,creator
+interviewer,Interviewer,,DCTERMS.creator,creator
+date,Date Created,,DCTERMS.created,dateCreated
 affiliation (role),Role,,
 affiliation (department),Department,,
 biography,Biography,,
-subject,Subjects,DC.subject,true
-location,Location,,true
+subject,Subjects,true,DC.subject,keywords
+location,Location,true,,contentLocation
 extent,Extent,,
 type,Type,DC.type
-format,Format
+format,Format,,,encodingFormat
+rights,Rights,,DCTERMS.rights,license

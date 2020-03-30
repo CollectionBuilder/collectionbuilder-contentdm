@@ -44,19 +44,19 @@ gallery: true
                 <div class="mt-4">
                     <p>
                         {%- if page.format contains 'audio' -%}
-                        <audio controls class="mp3-item-player">
+                        <audio controls class="w-100">
                             <source src="{% include download/item.html %}" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
                         {%- elsif page.youtubeid -%}
-                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{page.youtubeid}}?rel=0" allowfullscreen></iframe></div>
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/{{page.youtubeid}}?rel=0&modestbranding=1" allowfullscreen></iframe></div>
                         {%- elsif page.format contains 'video' -%}
                         <video width="320" height="240" controls>
                             <source src="{% include download/video.html %}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         {%- else -%}
-                        <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a>
+                        <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid thumb"></a>
                         {%- endif -%}
                     </p>
                 </div>
@@ -69,9 +69,9 @@ gallery: true
                     {% else %} 
                     <a target="_blank" href="{% include download/item.html %}" class="btn btn-outline-info" title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>{% endif %}
                     {% if page.date %}{%- capture year -%}{% if page.date contains "-" %}{{ page.date | split: "-" | first }}{% elsif page.date contains "/" %}{{ page.date | split: "/" | last }}{% else %}{{ page.date }}{% endif %}{%- endcapture -%}
-                    <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" class="ml-2 btn btn-outline-info" title="View object year on timeline">View on Timeline</a>{% endif %}
+                    <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" class="ml-2 btn btn-outline-info">View on Timeline</a>{% endif %}
                     {% if page.latitude and page.longitude %}
-                    <a href="{{ '/map.html#' | append: page.latitude  | append: ',' | append: page.longitude | relative_url}}" class="ml-2 btn btn-outline-info" title="View object location on map">View on Map</a>{% endif %}
+                    <a href="{{ '/map.html#' | append: page.latitude  | append: ',' | append: page.longitude | relative_url}}" class="ml-2 btn btn-outline-info">View on Map</a>{% endif %}
                 </div>
             </div>
         </div>
@@ -80,9 +80,9 @@ gallery: true
             <div id="item-metadata" class="metadata">
                 <dl>
                     {% for f in fields %}{% if page[f.field] %}
-                    <dt class="field">{{ f.display-name }}:</dt>
+                    <dt class="field">{{ f.display_name }}:</dt>
                     <dd class="field-value">
-                        {% if f.browse-link == "true" %}
+                        {% if f.browse_link == "true" %}
                         {% assign topics = page[f.field] | split: ";" %}
                         {% for t in topics %}
                         <a class="filter mr-3" data-filter="{{ t | strip | escape }}" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
@@ -110,6 +110,7 @@ gallery: true
                 </div>
             </div>
         </div>
+        {% if page.rights or page.rightsstatment %}
         <div class="col-md-5">
             <div class="card mb-2">
                 <div class="card-header">Rights</div>
@@ -124,10 +125,12 @@ gallery: true
                 </div>
             </div>
         </div>
+        {% endif %}
     </div>
 
     {%- if site.data.theme.browse-buttons == true -%}
-    {% assign last = site.data[site.metadata] | size | minus: 1 %}
+    {% assign itemset = site.data[site.metadata] | map: 'objectid' | compact %}
+    {% assign last = itemset | size | minus: 1 %}
     {% unless page.index_number == 0 %}
     {% assign back = page.index_number | minus: 4 %}
     {% else %}
@@ -138,17 +141,17 @@ gallery: true
     {% else %}
     {% assign forward = 3 %}
     {%- endunless -%}
-    {%- assign back_url = site.data[site.metadata][back].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
-    {%- assign forward_url = site.data[site.metadata][forward].objectid | append: '.html' | prepend: '/items/' | relative_url -%}
+    {%- assign back_url = '/items/' | append: itemset[back] | append: '.html' | relative_url -%}
+    {%- assign forward_url = '/items/' | append: itemset[forward] | append: '.html' | relative_url -%}
     <div class="text-center">
-        <a class="btn btn-secondary" href="{{ back_url }}" role="button" id="prev-page-button">&laquo; Previous</a>
-        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
-        <a class="btn btn-secondary" href="{{ forward_url }}" role="button" id="next-page-button">Next &raquo;</a>
+        <a class="btn btn-secondary" href="{{ back_url }}" id="prev-page-button">&laquo; Previous</a>
+        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" >Back to Browse</a>
+        <a class="btn btn-secondary" href="{{ forward_url }}" id="next-page-button">Next &raquo;</a>
     </div>
     <div id="item-nav">
         <div class="d-none d-md-block">
-            <a class="previous bg-secondary text-white  btn btn-lg" href="{{ back_url }}" class="text-white">&laquo;</a>
-            <a class="next bg-secondary text-white btn btn-lg" href="{{ forward_url }}" class="text-white">&raquo;</a>
+            <a class="previous btn btn-lg btn-secondary" href="{{ back_url }}">&laquo;</a>
+            <a class="next btn btn-lg btn-secondary" href="{{ forward_url }}">&raquo;</a>
         </div>
     </div>
     {%- endif -%}

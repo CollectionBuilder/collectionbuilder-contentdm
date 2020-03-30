@@ -1,6 +1,5 @@
 ---
-layout: page 
-lazyload: true
+layout: page
 ---
 {% assign itemCount = site.data[site.metadata] | where: "format","cpd" | size %}
 
@@ -9,13 +8,13 @@ lazyload: true
 <div class="row mb-3 justify-content-center">
     <div class="col-md-8 text-center">
         <div class="input-group input-group-lg">
-            <input type="text" class="form-control form-control-lg" id="quickSearch" placeholder="Filter ... " > 
+            <input type="text" class="form-control form-control-lg" id="quickSearch" placeholder="Filter ... " aria-label="Search"> 
             <div class="input-group-append">
-                <button class="btn btn-success" type="button" title="Search" alt="Search" id="goButton" >Search</button>
+                <button class="btn btn-success" type="button" title="Filter items" alt="Search" id="goButton" >Search</button>
                 <a class="btn btn-outline-secondary filter" href="#" data-filter="">Reset</a>
             </div>
         </div>
-        <span class="info2 h2"><span id="numberOf">{{ itemCount }}</span> of {{ itemCount }} items</span>
+        <div class="h2" id="numberOf"></div>
     </div>
 </div>
 

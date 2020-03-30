@@ -1,7 +1,7 @@
 ---
 # find all unique subjects used in the metadata 
 ---
-{%- if site.data.theme.subjects-page == true -%}
+{%- if site.data.theme.subjects-fields -%}
 {%- assign subjects-fields = site.data.theme.subjects-fields | split: ";" -%}
 {%- assign subjects = "" -%}
 {%- for c in subjects-fields -%}

@@ -1,0 +1,7 @@
+{%- assign item = site.data[site.metadata] | where: "objectid", include.objectid | first -%}
+<div class="col-12 text-center m-2 mb-3">
+    <figure class="figure">
+    <a href="{% include item-link.html %}"><img class="figure-img img-fluid rounded lazyload" alt="{{ item.description | escape }}" data-src="{% include image/large.html %}" data-toggle="tooltip" data-placement="bottom" title="{{ item.description | escape }} | {{ item.date | escape }}"></a>
+      <figcaption class="figure-caption">{{ item.title }}</figcaption>
+    </figure>
+</div>
