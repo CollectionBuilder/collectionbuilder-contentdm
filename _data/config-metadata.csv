@@ -1,4 +1,4 @@
-field,display-name,browse-link,dc_map,schema_map
+field,display_name,browse_link,dc_map,schema_map
 title,Title,,DC.title
 interviewee,Interviewee,,DCTERMS.creator,creator
 interviewer,Interviewer,,DCTERMS.creator,creator

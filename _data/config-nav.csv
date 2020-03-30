@@ -1,8 +1,8 @@
-display-text,stub,dropdown_parent
+display_name,stub,dropdown_parent
 Home,/
-Browse,/browse.html
-Subjects,/subjects.html
-Locations,/locations.html
-Timeline,/timeline.html
-Data,/data/
-About,/about.html
+Browse,/browse.html,
+Subjects,/subjects.html,
+Locations,/locations.html,
+Timeline,/timeline.html,
+Data,/data/,
+About,/about.html,
