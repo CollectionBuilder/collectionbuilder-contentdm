@@ -10,8 +10,8 @@
 
 {%- endcomment -%}
 {%- assign item = site.data[site.metadata] | where: "objectid", include.objectid | first -%}
-<div class="text-center m-3 {% if include.float %}float-{{ include.float }} {% endif %}{% if include.width %}w-{{ include.width }}{% endif %}">
-    <figure class="figure">
+<div class="text-center">
+    <figure class="figure mx-3{% if include.float %} float-{{ include.float }}{% endif %}{% if include.width %} w-{{ include.width }}{% endif %}">
         <a href="{{ '/items/' | append: item.objectid | append: '.html' | relative_url }}">
             <img class="figure-img img-fluid rounded lazyload" alt="{{ item.title | escape }}" data-src="{% unless item.youtubeid %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ item.cdmid }}/full/max/0/default.jpg{% else %}https://img.youtube.com/vi/{{ item.youtubeid }}/maxresdefault.jpg{% endunless %}" >
         </a>
