@@ -13,7 +13,7 @@
 <div class="text-center">
     <figure class="figure mx-3{% if include.float %} float-{{ include.float }}{% endif %}{% if include.width %} w-{{ include.width }}{% endif %}">
         <a href="{{ '/items/' | append: item.objectid | append: '.html' | relative_url }}">
-            <img class="figure-img img-fluid rounded lazyload" alt="{{ item.title | escape }}" data-src="{% unless item.youtubeid %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ item.cdmid }}/full/max/0/default.jpg{% else %}https://img.youtube.com/vi/{{ item.youtubeid }}/maxresdefault.jpg{% endunless %}" >
+            <img class="figure-img img-fluid rounded lazyload" alt="{{ item.title | escape }}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{% unless item.youtubeid %}{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/{{ item.cdmid }}/full/max/0/default.jpg{% else %}https://img.youtube.com/vi/{{ item.youtubeid }}/maxresdefault.jpg{% endunless %}" >
         </a>
         {% unless include.caption == false %}<figcaption class="figure-caption">{% if include.caption %}{{ include.caption }}{% else %}{{ item.title }}{% endif %}</figcaption>{% endunless %}
     </figure>
