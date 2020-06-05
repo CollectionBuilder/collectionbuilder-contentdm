@@ -21,14 +21,14 @@
     <div id="home-title-box">
         <div class="title-card p-2 text-center">
             <a class="d-none d-md-block" href="{{ site.organization-link }}" target="_blank" rel="noopener">
-                <img src="{{ site.organization-logo-nav | relative_url }}" alt="{{ site.organization-name }} logo" >
+                <img src="{{ site.organization-logo-nav | relative_url }}" alt="{{ site.organization-name }} home" >
             </a>
             <h1 class="display-4">{{ site.title }}</h1>
             {% if site.tagline %}<p id="home-tagline">{{ site.tagline }}</p>{% endif %}
         </div>
     </div>
     {% unless site.data.theme.featured-image contains '/' %}<div class="text-right p-0 mt-0">
-        <small><a class="text-info featured-link" href="{{ site.data.theme.featured-image | prepend: '/item.html?id=' | relative_url }}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
+        <small><a class="text-info featured-link" href="{{ '/items/' | relative_url | append: site.data.theme.featured-image | append: '.html' }}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
     </div>{% endunless %}
 </div>
 {%- else -%}
@@ -40,7 +40,7 @@
         </div>
         <div class="col-md-3 d-none d-lg-block text-right">
             <a class="btn btn-outline-light" href="{{ site.organization-link }}" target="_blank" rel="noopener">
-                <img class="img-fluid" src="{{ site.organization-logo-banner | relative_url }}" title="{{ site.organization-name }}" alt="{{ site.organization-name }} logo" >
+                <img class="img-fluid" src="{{ site.organization-logo-banner | relative_url }}" title="{{ site.organization-name }}" alt="{{ site.organization-name }} home" >
             </a>
         </div>
     </div>

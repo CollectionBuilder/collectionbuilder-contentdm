@@ -7,7 +7,6 @@
     - "objectid" = the given object (photo or youtube) will create a card cap image
     - "width" will use Bootstrap sizing to set the % size, choose from "25", "50", "75", or "100"
     - "float" will use Bootstrap float utility to add float, choose from "left" or "right"
-{% endcapture %}
 {%- endcomment -%}
 <div class="card mb-3 {% if include.float %}float-{{ include.float }} {% endif %}{% if include.width %}w-{{ include.width }}{% endif %}">
 {% if include.objectid %}
