@@ -1,7 +1,7 @@
 <script>
     function cdm_search() {
         var query = document.getElementById("nav-search").value;
-        window.open("{{ site.cdm-url }}/digital/collection/{{ site.cdm-collection-id }}/search/searchterm/" + encodeURI(query), "_blank" );
+        window.open("{{ site.cdm-url }}/digital/search/collection/{{ site.data[site.metadata] | map: 'collectionid' | push: site.cdm-collection-id | compact | uniq | join: '!' }}/searchterm/" + encodeURI(query), "_blank" );
     }
 </script>
 <form class="form-inline my-2 my-lg-0" role="search" id="cdm-search" onsubmit="cdm_search(); return false;">

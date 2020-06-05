@@ -14,7 +14,7 @@
     {% for item in items %}
     { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude | strip }},{{ item.latitude | strip }}] }, "properties":
     { "title": {{ item.title | escape | jsonify }}, 
-    {% for f in fields %}{{ f.field | escape | jsonify }}: {{ item[f.field] | escape | jsonify }},{% endfor %} "cdm": {{ item.cdmid | jsonify }}, {% if item.youtubeid %} "youtube": {{ item.youtubeid | jsonify }},{% endif %} "id": {{ item.objectid | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endfor %}
+    {% for f in fields %}{{ f.field | escape | jsonify }}: {{ item[f.field] | escape | jsonify }},{% endfor %} "col": {{ item.collectionid | default: site.cdm-collection-id | jsonify }}, "cdm": {{ item.cdmid | jsonify }}, {% if item.youtubeid %} "youtube": {{ item.youtubeid | jsonify }},{% endif %} "id": {{ item.objectid | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endfor %}
     ]};
 
     /* init map and set zoom */
@@ -73,7 +73,7 @@
         if (feature.properties.youtube) {
             var thumbSrc = 'https://img.youtube.com/vi/' + feature.properties.youtube + '/default.jpg';
         } else {
-            var thumbSrc = '{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/' + feature.properties.cdm;
+            var thumbSrc = '{{ site.cdm-url }}/utils/getthumbnail/collection/' + feature.properties.col + '/id/' + feature.properties.cdm;
         }
         var popupTemplate = '<h4><a class="text-dark" href="' + itemHref + '">' +
             feature.properties.title + '</a></h4><div class="text-center"><a class="btn btn-light" href="' + itemHref + 

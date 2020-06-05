@@ -1,20 +1,20 @@
 {% if site.data.theme.carousel-type == "pdf" %}
 {%- assign carousel-items = site.data[site.metadata] | where: "format","application/pdf" -%}
-{% capture itemImg %}"{{ site.cdm-url }}/digital/api/singleitem/image/pdf/{{ site.cdm-collection-id }}/" + carouselItems[i][1] + "/default.png"{% endcapture %}
+{% capture itemImg %}"{{ site.cdm-url }}/digital/api/singleitem/image/pdf/" + carouselItems[i][3] + "/" + carouselItems[i][1] + "/default.png"{% endcapture %}
 {% elsif site.data.theme.carousel-type == "youtube" %}
 {%- assign carousel-items = site.data[site.metadata] | where_exp: "item","item.youtubeid != nil" -%}
 {% capture itemImg %}"https://img.youtube.com/vi/" + carouselItems[i][1] + "/hqdefault.jpg"{% endcapture %}
 {% elsif site.data.theme.carousel-type == "image" %}
 {%- assign carousel-items = site.data[site.metadata] | where_exp: "item","item.format contains 'image'" -%}
-{% capture itemImg %}"{{ site.cdm-url }}/digital/iiif/{{ site.cdm-collection-id }}/" + carouselItems[i][1] + "/full/,{{ site.data.theme.carousel-height | remove: 'px' | default: '450' }}/0/default.jpg"{% endcapture %}
+{% capture itemImg %}"{{ site.cdm-url }}/digital/iiif/" + carouselItems[i][3] + "/" + carouselItems[i][1] + "/full/,{{ site.data.theme.carousel-height | remove: 'px' | default: '450' }}/0/default.jpg"{% endcapture %}
 {% else %}
 {%- assign carousel-items = site.data[site.metadata] | where_exp: "item","item.youtubeid == nil" -%}
-{% capture itemImg %}"{{ site.cdm-url }}/utils/getthumbnail/collection/{{ site.cdm-collection-id }}/id/" + carouselItems[i][1]{% endcapture %}
+{% capture itemImg %}"{{ site.cdm-url }}/utils/getthumbnail/collection/" + carouselItems[i][3] + "/id/" + carouselItems[i][1]{% endcapture %}
 {%- endif -%}
 
 <script> 
-    //title,youtubeid/cdmid,objectid
-    var carouselItems = [ {% for c in carousel-items %}[ {{ c.title | escape | jsonify }}, "{% if site.data.theme.carousel-type == 'youtube' %}{{ c.youtubeid }}{% else %}{{ c.cdmid }}{% endif %}", "{{ c.objectid }}" ]{% unless forloop.last %}, {% endunless %}{% endfor %}];
+    //title,youtubeid/cdmid,objectid,collectionid
+    var carouselItems = [ {% for c in carousel-items %}[ {{ c.title | escape | jsonify }}, "{% if site.data.theme.carousel-type == 'youtube' %}{{ c.youtubeid }}{% else %}{{ c.cdmid }}{% endif %}", "{{ c.objectid }}", "{{ c.collectionid | default: site.cdm-collection-id }}" ]{% unless forloop.last %}, {% endunless %}{% endfor %}];
     var carousel = document.getElementById("carouselInner");
     carouselItems.sort(function() { return 0.5 - Math.random() });
     var i;
