@@ -3,6 +3,8 @@
 <script>
 
 function makeCard(obj) {
+    // placeholder image for lazyload
+    var placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E";
     // find item link
     var itemHref = "{{ '/items/' | relative_url }}" + obj.id + ".html";
     // find images
@@ -17,13 +19,13 @@ function makeCard(obj) {
     var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
     // top image for photos
     if(imgSrc) {
-      card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
+      card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" src="' + placeholder + '" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
     // title
     card += '<div class="card-body text-center"> <h4 class="card-title"><a href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h4>';
     // thumb for non-photo items
     if(thumbSrc){
-      card += '<p><a href="' + itemHref + '"><img class="lazyload" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
+      card += '<p><a href="' + itemHref + '"><img class="lazyload" src="' + placeholder + '" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
     }
     // other fields
     card += '<p class="card-text">';
@@ -46,7 +48,7 @@ function makeCard(obj) {
     card += '</p>';
     // media type
     if(obj.format != "") {
-      card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
+      card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ "/browse.html" | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
         obj.format.split("/").pop().toUpperCase() + ' <span class="';
       if(obj.format.includes('image')){
         card += 'far fa-image';
@@ -71,10 +73,10 @@ function makeCard(obj) {
   function shuffle(array) {
     var m = array.length, t, i;
     while (m) {
-    i = Math.floor(Math.random() * m--);
-    t = array[m];
-    array[m] = array[i];
-    array[i] = t;
+      i = Math.floor(Math.random() * m--);
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
     }
     return array;
   }
@@ -87,6 +89,7 @@ function makeCard(obj) {
   /* randomize items once at page load */
   shuffle(items);
 
+  /* filter items */
   function filterItems(arr,q) {
     // dont filter if no q 
     if (q=="") { 
