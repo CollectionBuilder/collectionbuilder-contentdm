@@ -3,7 +3,7 @@ title: About
 layout: page
 permalink: /about.html
 ---
-{% include about/jumbotron.html %} 
+{% include feature/jumbotron.html %} 
 
 ### About the {{site.title}}
 

@@ -1,5 +1,5 @@
 {% comment %}
-    Bootstrap Card, https://getbootstrap.com/docs/4.4/components/card/
+    Bootstrap Card, https://getbootstrap.com/docs/4.5/components/card/
     Options:
     - "text" = main card text, can use markdown formatting. Use a Liquid capture to add more complex content.
     - "header" = card header text (in bar above card content)
@@ -8,7 +8,7 @@
     - "width" will use Bootstrap sizing to set the % size, choose from "25", "50", "75", or "100"
     - "float" will use Bootstrap float utility to add float, choose from "left" or "right"
 {%- endcomment -%}
-<div class="card mb-3 {% if include.float %}float-{{ include.float }} {% endif %}{% if include.width %}w-{{ include.width }}{% endif %}">
+<div class="card mb-3{% if include.float %} float-{{ include.float }}{% endif %}{% if include.width %} w-{{ include.width }}{% endif %}">
 {% if include.objectid %}
 {% assign item = site.data[site.metadata] | where: "objectid", include.objectid | first %}
 <img class="card-img-top" src="{% unless item.youtubeid %}{{ site.cdm-url }}/digital/iiif/{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}/full/max/0/default.jpg{% else %}https://img.youtube.com/vi/{{ item.youtubeid }}/maxresdefault.jpg{% endunless %}" alt="{{ item.title | escape }}">
