@@ -2,12 +2,17 @@
 
     Bootstrap Jumbotron, https://getbootstrap.com/docs/4.5/components/jumbotron/
     This include adds a Jumbotron feature from an objectid. By default it is configured to work with the About page option "about-featured-image" set in theme.yml without any options necessary. 
+
+    E.G. --> {% include feature/jumbotron.html %}
+
     Options:
     - "objectid" = one objectid for a photo object in this collection, or a full link to an image. By default this is be the about-featured-image, or the featured-image set in theme.yml.
     - "position" = set background-position, "center", "top", "bottom"
     - "heading" = major heading to display. By default this will be the site title. Give the value false for no heading.
     - "text" = paragraph text below heading. By default this will be the site tagline. Give the value false for no text.
     - "padding" = additional padding added to the feature to increase size. Give value in em or px, e.g. "5em".
+
+    Note: if using a YouTube item and an error image appears, the video may not have a "maxresdefault" image available. Replace "maxresdefault.jpg" in the code below with "hqdefault.jpg"
 
 {%- endcomment -%}
 
@@ -44,7 +49,7 @@
 }
 {%- endif -%}
 </style>
-<div class="jumbotron feature px-0 py-5 border" id="jumbo-feature">
+<div class="jumbotron feature px-0 border" id="jumbo-feature">
     <div id="home-title-box">
         {% unless include.heading == false and include.text == false %}
         <div class="title-card p-2 text-center">
