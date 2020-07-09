@@ -12,4 +12,4 @@ vendor/
 .DS_Store
 
 # temporarily ignore gemfile.lock
-Gemfile.lock
+# Gemfile.lock
