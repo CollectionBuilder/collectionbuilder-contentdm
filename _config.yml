@@ -8,7 +8,7 @@
 # URL VARIABLES
 #
 # site domain, full URL to the production location of your collection
-url: https://collectionbuilder.github.io/
+url: https://collectionbuilder.github.io
 # path to location on the domain if necessary e.g. /digital/hjccc
 baseurl: /collectionbuilder-contentdm
 # location of code, the full url to your github repository
