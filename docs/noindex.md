@@ -5,6 +5,6 @@ This can be done using a Robots.txt at the root level of the site, or a [robots 
 To make adding robots meta tag easy, CollectionBuilder includes the option to add it across the project or to individual pages:
 
 - full site, uncomment or add `noindex: true` to "_config.yml". 
-- individual page, add `noindex: true` to the YML front matter.
+- individual page or layout, add `noindex: true` to the YML front matter.
 
 This will cause `<meta name="robots" content="noindex" />` to be added to the page(s) head during production build. 
