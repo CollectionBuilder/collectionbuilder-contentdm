@@ -1,6 +1,6 @@
 # demo-site branch
 
-demo-site branch of cb-contentdm is set up with GitHub Actions to create the demo collection on github pages.
+demo-site branch of cb-contentdm is set up with GitHub Actions (see `.github/workflows/jekyll.yml`) to create the demo collection on github pages.
 If you push or PR to `demo-site` branch, it will automatically build it and put the output into `demo-site-build` branch, creating: https://collectionbuilder.github.io/collectionbuilder-contentdm/
 
 I added noindex to the item pages and browse, so it doesn't get indexed competing against the real collection.
