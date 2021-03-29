@@ -29,13 +29,13 @@ about-featured-image: demo_psychiana565
 ##########
 # BROWSE PAGE
 #
-# see _data/browse-config.csv for field display options
+# see _data/config-browse.csv for field display options
 # fields given the "btn" option can be multivalued with ";" such as subjects.
 
 ##########
 # ITEM PAGE
 #
-# see _data/metadata-config.csv to define the metadata fields that will display.
+# see _data/config-metadata.csv to define the metadata fields that will display.
 browse-buttons: true # true / false, adds previous/next arrows to items, but increases build time
 
 ##########
@@ -55,7 +55,7 @@ locations-stopwords: # set of subjects separated by ; that will be removed from 
 ##########
 # MAP PAGE
 #
-# see _data/map-config.csv for field display options
+# see _data/config-map.csv for field display options
 latitude: 39.805157 #to determine center of map
 longitude: -95.036494 #to determine center of map
 zoom-level: 5 # zoom level for map 
