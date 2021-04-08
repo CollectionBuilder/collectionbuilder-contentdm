@@ -1,8 +1,8 @@
 # Rich markup
 
-## Dublin Core 
+## Dublin Core DC-HTML
 
-Dublin Core elements are added to Item pages driven by the "dc_map" column of config-metadata.csv.
+Dublin Core elements are added to Item pages driven by the "dc_map" column of config-metadata.csv (which generates meta tags in "_includes/head/item-meta.html").
 
 Choose mapping options directly from the DCMI Terms namespace: http://purl.org/dc/terms/
 *Note: DMCI the original 15 Elements namespace is mirrored in the Terms namespace (i.e. both have "title", "creator", etc), however, using the newer Terms namespace is preferred.*
@@ -29,14 +29,19 @@ This implementation is based on DSpace, following the [DC-HTML](https://www.dubl
 Schema is a standard designed to provide structured semantic markup for search engines to better understand content of web pages. 
 The concepts described apply to a generalized web landscape, centered mostly around commercial sites, and don't necessarily follow the logic and structure of library-based metadata or digital collections.
 However, it is useful to provide the markup to drive better representations of the data in search results.
+
 See [Full Schema hierarchy](https://schema.org/docs/full.html), or [Google Guide to Structure Data](https://developers.google.com/search/docs/guides/intro-structured-data).
 Keep in mind that Schema is an open standard, however, Google is the biggest consumer, so information found in Google's [Developer Docs](https://developers.google.com/) is potentially more pragmatically useful (e.g. Google highly recommends using JSON-LD vs. Schema suggesting microdata).
+
 Markup can be tested using Google's [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool).
 
-### Item pages 
+Schema markup is added to Item pages, the Data page, and other general pages.
+
+### Item page
 
 Item pages have in depth Schema markup in JSON-LD format driven by the object metadata. 
-Schema elements are driven by the "schema_map" column of config-metadata.csv.
+Schema elements are driven by the "schema_map" column of config-metadata.csv (which generates JSON-LD in "_includes/head/item-meta.html").
+
 Each item page is given the basic type of `CreativeWork`, thus metadata fields can be mapped to any of the properties listed on the [CreativeWork documentation](https://schema.org/CreativeWork). 
 Copy the exact property name, as this value will be turned into schema JSON-LD markup.
 If the "schema_map" column is empty, only the automatically generated markup will be added.
@@ -61,11 +66,12 @@ Item pages are also marked up with Schema [BreadcrumbList](https://schema.org/Br
 
 ### Data page
 
-The Data page includes Schema markup in JSON-LD representing the various data derivatives that can be downloaded (implemented in _includes/data-download-modal.html which is included by the data layout). 
+The Data page includes Schema markup in JSON-LD representing the various data derivatives that can be downloaded (implemented in "_includes/data-download-modal.html" which is included by the "data" layout). 
 See [Google dataset docs](https://developers.google.com/search/docs/data-types/dataset) and [Schema Dataset](https://schema.org/Dataset) for details behind this implementation.
 
 The full metadata download in csv and json are automatically added.
 A metadata facets json file is added if fields are set in theme "metadata-facets-fields".
+
 Additional datasets described are selected based on what pages are in the config-nav, following the same logic used to select which data download buttons are shown to users.
 If the config-nav contains the following "stub", the following data files will be added to the markup:
 
@@ -82,14 +88,15 @@ For example, if I want to show all data downloads, even though I don't have the 
 
 ### Content pages
 
-Other pages in the site receive more basic markup from the head/page-meta.html include following the [WebPage schema type](https://schema.org/WebPage).
+Other pages in the site receive more basic markup following the [WebPage schema type](https://schema.org/WebPage) (JSON-LD implemented in "_includes/head/page-meta.html").
+Appropriate values are filled from _config.yml options.
 
 ## Open Graph Protocol
 
-[Open Graph](https://opengraphprotocol.org/) provides basic metadata in a open standard used by social media sites to generate representations of links shared on the platform.
+[Open Graph](https://opengraphprotocol.org/) provides basic metadata in a open standard used by social media sites to generate representations of links shared on the platforms.
 Open Graph was established by Facebook, but can be read by other platforms.
 
-OG meta tags are automatically added to every page and are not configurable.
+OG meta tags are automatically added to every page and are not configurable (implemented in "_includes/head/page-meta.html" and "_includes/head/item-meta.html").
 They provide an authoritative title, description, and image that can be used to represent a link to the page.
 The OG image will be the item image/thumb in the case of item pages, or the site featured image for all other pages.
 For example:

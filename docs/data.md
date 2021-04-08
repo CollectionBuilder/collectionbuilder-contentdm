@@ -22,13 +22,13 @@ The fields used are configured in `site.data.theme.subjects-fields` and `site.da
 
 A link to the source code repository will be included if `source-code` is set in _config.yml, otherwise it will link to CollectionBuilder.
 
-## Data Markup
+## Data Set Markup
 
-The data found in `/assets/data/` can be seen as a "datapackage" containing all the derivatives related to the collection.
-This data is described by two markup standards. 
+The data found in `/assets/data/` can be seen as a data set or "datapackage" containing all the derivatives related to the collection.
+This data set is described by two markup standards. 
 
 First, the Data page (`/data.html`) contains [schema.org Dataset](https://schema.org/Dataset) markup embedded on the page in json+ld format (written in the `_includes/data-download-modal.html` file). 
-This markup is [required by Google](https://developers.google.com/search/docs/data-types/dataset) to be indexed into their datasets search engine. 
+This markup is [required by Google](https://developers.google.com/search/docs/data-types/dataset) to be indexed into their [datasets search engine](https://datasetsearch.research.google.com/). 
 
 Second, `/assets/data/` contains `datapackage.json` as described by the Frictionless Data [Data Package Spec](https://specs.frictionlessdata.io/data-package/).
 Each data file "resource" is described following the [Data Resource Spec](https://specs.frictionlessdata.io/data-resource/).
