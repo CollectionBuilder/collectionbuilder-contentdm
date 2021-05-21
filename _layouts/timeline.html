@@ -1,5 +1,6 @@
 ---
 layout: page
+custom-foot: js/timeline-js.html
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'i','i.date' -%}
 {%- assign raw-dates = items | map: 'date' | compact | uniq -%}
