@@ -20,19 +20,6 @@ featured-locations: Moscow, ID #separate by semi-colon(';') - if left blank, wil
 featured-locations-max: 3
 
 ##########
-# ABOUT PAGE
-#
-# Featured image on About page - if left blank, CB will use image featured on the home page
-# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-about-featured-image: demo_psychiana565
-
-##########
-# BROWSE PAGE
-#
-# see _data/config-browse.csv for field display options
-# fields given the "btn" option can be multivalued with ";" such as subjects.
-
-##########
 # ITEM PAGE
 #
 # see _data/config-metadata.csv to define the metadata fields that will display.
