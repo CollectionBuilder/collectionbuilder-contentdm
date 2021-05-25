@@ -42,7 +42,7 @@ To avoid using Analytics during local development testing, it is only added in t
 By default Jekyll uses the "development" ENV, thus analytics will not be added.
 If you are manually building and deploying your site, you will need to use the command:
 
-`JEKYLL_ENV=production jekyll build`
+`JEKYLL_ENV=production bundle exec jekyll build`
 
 Or use our short cut Rake task: 
 
