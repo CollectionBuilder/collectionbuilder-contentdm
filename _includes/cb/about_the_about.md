@@ -13,21 +13,27 @@ We hope this makes it easier for site builders to develop the collection AND add
 
 #### Include an Image
 
-- Image --> `{% raw %}{% include feature/item-figure.html objectid="demo_001" width="75" %}{% endraw %}`
+- Image --> `{% raw %}{% include feature/image.html objectid="demo_001" width="75" %}{% endraw %}`
 
-{% include feature/item-figure.html objectid="demo_psychiana554" width="75" %}
+{% include feature/image.html objectid="demo_psychiana554" width="75" %}
 
 #### Include a PDF
 
-- PDF -- > `{% raw %}{% include feature/item-pdf-embed.html objectid="demo_002"  width="50" %}{% endraw %}`
+- PDF -- > `{% raw %}{% include feature/pdf.html objectid="demo_002"  width="50" %}{% endraw %}`
 
-{% include feature/item-pdf-embed.html objectid="demo_psychiana1025" width="50" %}
+{% include feature/pdf.html objectid="demo_psychiana1025" width="50" %}
 
 #### Include a Video
 
-- Video: `{% raw %}{% include feature/item-video-embed.html objectid="demo_004" %}{% endraw %}`
+- Video: `{% raw %}{% include feature/video.html objectid="demo_004" %}{% endraw %}`
 
-{% include feature/item-video-embed.html objectid="pyschiana_demo20" %}
+{% include feature/video.html objectid="demo_psychiana_yt1" %}
+
+#### Include a Audio
+
+- Audio: `{% raw %}{% include feature/audio.html objectid="demo_003" %}{% endraw %}`
+
+{% include feature/audio.html objectid="demo_psychiana54" %}
 
 ### Include [Bootstrap](https://getbootstrap.com/) Features
 
