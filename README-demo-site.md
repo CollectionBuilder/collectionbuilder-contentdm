@@ -5,10 +5,10 @@ If you push or PR to `demo-site` branch, it will automatically build it and put 
 
 I added noindex to the item pages and browse, so it doesn't get indexed competing against the real collection.
 
-If you want to make changes to the demo site, make them in `demo-site` branch (not master). 
+If you want to make changes to the demo site, make them in `demo-site` branch (not main). 
 
-To update demo-site from master:
+To update demo-site from main:
 
 - checkout the branch: `git checkout demo-site`
 - make sure it is up-to-date: `git pull`
-- bring in master: `git merge master`
+- bring in main: `git merge main`
