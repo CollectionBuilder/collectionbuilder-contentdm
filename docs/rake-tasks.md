@@ -7,4 +7,4 @@ Adding a `Rakefile` allows you to add commands to automate repetitive tasks.
 This project has a very basic `Rakefile`. 
 Currently it has only one command: 
 
-- `rake deploy`, runs Jekyll command `JEKYLL_ENV=production jekyll build` to include analytics in build. 
+- `rake deploy`, runs Jekyll command `JEKYLL_ENV=production bundle exec jekyll build` to include analytics in build. 

@@ -1,7 +1,9 @@
 ---
-# generate time-focused json data suitable for TimelineJS
+# generate time-focused json data suitable for TimelineJS.
+# includes all items in metadata that have a "date" field filled.
+# current using relative_url due to jekyll bug, should be absolute_url in production!
 ---
-{%- assign items = site.data[site.metadata] -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' | where_exp: 'item', 'item.date' -%}
 {
     "title": {
         "media": {
@@ -15,7 +17,7 @@
         }
     },
     "events": [
-      {% for item in items %}{% if item.date %}{
+      {% for item in items %}{
         "media": {
           "url": "{% if item.format contains 'image' %}{% include image/medium.html %}{% elsif item.youtubeid %}{% include image/youtube-large.html %}{% else %}{% include image/thumb.html %}{% endif %}",
           "caption": {{ item.title | jsonify }},
@@ -32,6 +34,6 @@
           "headline": {{ item.title | jsonify }}{% if item.description %},
           "text": {{ item.description | jsonify }}{% endif %}
         }
-      }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
+      }{% unless forloop.last %},{% endunless %}{% endfor %}
     ]
 }

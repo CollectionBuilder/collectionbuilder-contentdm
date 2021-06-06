@@ -20,7 +20,7 @@ This ensures the image makes sense in that location, but can end up with odd siz
 
 ## CONTENTdm API reference
 
-- [CONTENTdm API reference](https://www.oclc.org/support/services/contentdm/help/customizing-website-help/other-customizations/contentdm-api-reference.en.html)
+- [CONTENTdm API reference](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/API_Reference/CONTENTdm_API)
 - [CONTENTdm IIIF API reference](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/API_Reference/IIIF_API_reference)
 - [IIIF Image API 2.1.1](https://iiif.io/api/image/2.1/)
 
