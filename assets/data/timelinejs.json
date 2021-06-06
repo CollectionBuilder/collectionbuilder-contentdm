@@ -1,0 +1,1654 @@
+{
+    "title": {
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/548/full/max/0/default.jpg",
+          "caption": "Photograph of clerical and bookkeeping staff from the branch mailing department.",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "text": {
+          "headline": "Collection Builder CDM Skin Timeline",
+          "text": "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s."
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "https://img.youtube.com/vi/x6eu5wj8b04/hqdefault.jpg",
+          "caption": "Psychiana, A Mail Order Religion Created in the Small Town of Moscow, Idaho",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana_yt1.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "08",
+          "day": "28",
+          "year": "2019"
+        },
+        "text": {
+          "headline": "Psychiana, A Mail Order Religion Created in the Small Town of Moscow, Idaho",
+          "text": "Short video describing Psychiana, a mail order religion that preached the New Thought Movement. In 1928, Dr. Frank B. Robinson created Psychiana in Moscow, Idaho."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/841",
+          "caption": "$10,000 Reward",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana841.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1946"
+        },
+        "text": {
+          "headline": "$10,000 Reward",
+          "text": "Single-fold pamphlet regarding the possibility of eternal life on earth, which Robinson claims is possible with the help of Psychiana. Offers a $10,000 reward to anyone who can prove that 'almighty god cannot give eternal life on this earth.'"
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/98",
+          "caption": "A Conspectus of the Eleven Living Religions of the World, Arranged in the Chronological Order of Their Origin",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana98.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "A Conspectus of the Eleven Living Religions of the World, Arranged in the Chronological Order of Their Origin",
+          "text": "Table of compiled data about eleven orthodox religions in regards to each religions' name, date of birth of founder, founder, deity, present location, scripture, and number in millions of adherents."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/281",
+          "caption": "A Little Chat About Money",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana281.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "A Little Chat About Money",
+          "text": "Notice sent to members to make prompt payments. Robinson tells his members that he believes in their unshakable integrity and that it must be carelessness that they don't make their payments, but it is important that the payments are received on time."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/245",
+          "caption": "A Money-Making Opportunity for 'Psychiana' Students Establish a 'Psychiana' Sales Agency",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana245.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1936"
+        },
+        "text": {
+          "headline": "A Money-Making Opportunity for 'Psychiana' Students Establish a 'Psychiana' Sales Agency",
+          "text": "Fill out and sign enclosed 'Sales Agents Application Blank'. Notice to inform students about becoming sale agents for Psychiana."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/251",
+          "caption": "A Sacred Trust",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana251.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1933"
+        },
+        "text": {
+          "headline": "A Sacred Trust",
+          "text": "A single-page notice sent to members asking that they direct their thoughts to Hitler and to say 'YOU ARE OPPOSING THE SPIRIT OF GOD-YOU WILL LOSE.'"
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/253",
+          "caption": "A Special Offer to our Members ONLY!",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana253.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1949"
+        },
+        "text": {
+          "headline": "A Special Offer to our Members ONLY!",
+          "text": "A single-page advertisement and detachable order form at the bottom. Members offered a 28 1/2% discount for three of Frank B. Robinson�s books."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/664",
+          "caption": "A Visit to the Man Who 'Talks With God'",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana664.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "09",
+          "day": "24",
+          "year": "1939"
+        },
+        "text": {
+          "headline": "A Visit to the Man Who 'Talks With God'",
+          "text": "Page 1-2 article in sections--'Followers', 'Ten Years', 'Building', 'Figures', 'Lessons', 'Losses', 'Author', and 'Tenney'--recounting the trajectory of Psychiana and its current doctrine and financial status; Page 3-4 photographs of Robinson, Robinson's car, Psychiana Headquarters, and Dr. C.W. Tenney."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/409",
+          "caption": "All the World Wants God, Bt It Doesn't Know Where to Find That Great Power",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana409.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1934"
+        },
+        "text": {
+          "headline": "All the World Wants God, Bt It Doesn't Know Where to Find That Great Power",
+          "text": "Similar to mg101_b7_f28_005: photograph of full lecture hall in LA.  Text follows regarding the import of Robinson's teachings."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/255",
+          "caption": "An Abiding Faith alternate version",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana255.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "An Abiding Faith alternate version",
+          "text": "A single-page notice to members to keep up their donations."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/337",
+          "caption": "Autographed Portrait of Frank B. Robinson",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana337.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Autographed Portrait of Frank B. Robinson",
+          "text": "Sepia photograph of Robinson in a hat and suit. Also includes an autograph and note reading, 'Yours for Others, Frank B. Robinson.'"
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/692",
+          "caption": "Business Card for John G. Foster, Niagara Representative of Psychiana",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana692.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "01",
+          "day": "01",
+          "year": "1936"
+        },
+        "text": {
+          "headline": "Business Card for John G. Foster, Niagara Representative of Psychiana",
+          "text": "Business card reading 'Write 'Psychiana'' lists the name of Niagara Representative John G. Foster and physical address 5 Water Street, St. Catharine's."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1242",
+          "caption": "Business Reply Card [01]",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana1242.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1941"
+        },
+        "text": {
+          "headline": "Business Reply Card [01]",
+          "text": "A postage-paid, business reply card addressed to Psychiana headquarters."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/437",
+          "caption": "Coming to Portland",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana437.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "11",
+          "day": "29",
+          "year": "1934"
+        },
+        "text": {
+          "headline": "Coming to Portland",
+          "text": "Alternative flyer advertising speeches by Robinson at the Psychiana National Convention in Portland, OR. Includes a portion of text describing the event, including speech, meet-and-greet, etc."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/370",
+          "caption": "Crucified Gods Galore",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana370.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1933"
+        },
+        "text": {
+          "headline": "Crucified Gods Galore",
+          "text": "Single-page flyer advertising Robinson's latest book."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/248",
+          "caption": "Daily Procedure For Every 'Psychiana' Student",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana248.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Daily Procedure For Every 'Psychiana' Student",
+          "text": "Frank B. Robinson gives his students five procedures to do daily in addition to the exercises to do the lessons."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/412",
+          "caption": "Death to the Axis",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana412.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1942"
+        },
+        "text": {
+          "headline": "Death to the Axis",
+          "text": "Single-page form notice asks that the reader send in for the two free booklets now. Frank B. Robinson tells how he was a failure before he talked with God and now he has all his needs met."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/261",
+          "caption": "Delinquent Notice",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana261.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Delinquent Notice",
+          "text": "Delinquent notice sent out to students. Mrs. Marjorie Hill sent out this notice to remind students to make their payments."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/440",
+          "caption": "Dr. Frank B. Robinson Speaking to Packed House",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana440.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "05",
+          "day": "01",
+          "year": "1934"
+        },
+        "text": {
+          "headline": "Dr. Frank B. Robinson Speaking to Packed House",
+          "text": "Flyer with large photograph of Robinson giving a speech to a full auditorium. Text follows regarding Robinson 'usually' filling the 'largest auditoriums whenever he speaks' and his waxing popularity."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/249",
+          "caption": "Dr. Frank B. Robinson Speaking to Packed house in the TRINITY AUGITORIUM Los Angeles, California, January 27th 1935",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana249.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "01",
+          "day": "27",
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Dr. Frank B. Robinson Speaking to Packed house in the TRINITY AUGITORIUM Los Angeles, California, January 27th 1935",
+          "text": "A flyer announcing a Frank B. Robinson speaking engagement at Trinity Auditorium."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/308",
+          "caption": "Dr. Robinson's 'Realization' Secret",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana308.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1933"
+        },
+        "text": {
+          "headline": "Dr. Robinson's 'Realization' Secret",
+          "text": "Special offer details Robinson's early life, calling himself a 'FAILURE', the large growth of Psychiana, and offers students this secret to Robinson's success."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/380",
+          "caption": "Dr. Robinson's Latest and Most Sensational Book",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana380.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1942"
+        },
+        "text": {
+          "headline": "Dr. Robinson's Latest and Most Sensational Book",
+          "text": "Advertisement for Robinson's book 'What This War Really Means'.  Includes order form."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/285",
+          "caption": "Flyer with Instructions to Use God-Power Against Axis Power",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana285.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Flyer with Instructions to Use God-Power Against Axis Power",
+          "text": "Flyer includes illustrations of both Hitler and Mussolini with instructions to repeat the affirmation, 'THE SPIRIT OF GOD, WHICH IS THE SPIRIT OF TRUTH, JUSTICE, PEACE, AND POWER, WILL BRING YOUR SPEEDY DOWNFALL.'' Flyer asserts that the God-Power lies in each individual for their use."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1033",
+          "caption": "For Rent - A Cross",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana1033.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1942"
+        },
+        "text": {
+          "headline": "For Rent - A Cross",
+          "text": "A flyer to all Americans advertizing Frank B. Robinson's newest book."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/829",
+          "caption": "God - As a Living Spirit -Can Bring to You Perfect Abundance!",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana829.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1939"
+        },
+        "text": {
+          "headline": "God - As a Living Spirit -Can Bring to You Perfect Abundance!",
+          "text": "Illustration of a man carrying a basket full of harvested vegetables. A paragraph of text follows the illustration stating that God is not dead, never has been, and that the reader will realize, 'sooner or later,' what the 'God-Law' can do for him or her."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/54",
+          "caption": "Good News",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana54.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1947"
+        },
+        "text": {
+          "headline": "Good News",
+          "text": "Radio program corresponding with transcript of Radio Psychiana - Series for Dr. Frank B. Robinson No. 3. Episode begins proclaiming the growth of Pyschiana and then takes listeners to Robinson's home in Moscow, Idaho, describing its appearance. A dialogue begins between a 'guide' and Robinson about miracles, healing, the God-Law, the mail Robinson receives, and the 'Life Impulse' or 'motivating spirit' that allows people to think and live with God."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/55",
+          "caption": "Good News - Man's Quest",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana55.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1947"
+        },
+        "text": {
+          "headline": "Good News - Man's Quest",
+          "text": "Radio program episode discusses man's quest for answers, then introduces Robinson and his concept of the Cosmic God-Power. Robinson discusses the God-Power, reads a student letter asking for help, and uses the discovery of the 'cosmic ray' by Professor Milikan as evidence that there is invisible power around us. Robinson claims this Power is for our use and can bring anyone what they desire. Also includes a testimonial from a man claimed to live in Holland."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/52",
+          "caption": "Good News - Purpose of the Program",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana52.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1947"
+        },
+        "text": {
+          "headline": "Good News - Purpose of the Program",
+          "text": "Radio program episode outlines the purpose of the 'Good News' radio program, to broadcast positive and peaceful things rather than negative. Episode includes organ music and songs sung by Al Marino, jokes made in the face of war, and urges listeners to buy quality-made products for better piece of mind."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/376",
+          "caption": "Hang This Where You Can See It, Better Still - Frame It",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana376.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Hang This Where You Can See It, Better Still - Frame It",
+          "text": "Flyer depicts a drawing of a large tree labeled 'The God-Realm' and the word 'You' beneath one of the branches. A caption reads 'The Unity and Peace of Power' and also explains that we all live linked to the great life of God and there is nothing more simple than that."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/316",
+          "caption": "Here Is Your Lesson No. 3 - Man Can Now Talk With God",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana316.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Here Is Your Lesson No. 3 - Man Can Now Talk With God",
+          "text": "Package includes introductory letter entitled 'Here is Your Lesson Number Three - To All Students.' Letter includes testimonial from a student whose sister's illness was healed. Tenney asserts this healing is proof there is no limit to the God-Power. Lesson 3 discusses the God-Law via various examples in nature (i.e. goldfish living with water all around them)."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/171",
+          "caption": "Here's Your Answer!",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana171.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "Here's Your Answer!",
+          "text": "Pocket-sized booklet includes several common questions about religion along with various answers in the form of or including quotes from the Christian Bible."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/359",
+          "caption": "I Talked With God",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana359.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1946"
+        },
+        "text": {
+          "headline": "I Talked With God",
+          "text": "Clipping of an article in which Robinson discusses how he talks directly God and how God comes to us. Numbered advertisement 3543-46."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/681/full/pct:40/0/default.jpg",
+          "caption": "I Talked With God Advertisement",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana681.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "I Talked With God Advertisement",
+          "text": "Photograph of Psychiana Advertisement pinned to a board, reads 'I TALKED WITH GOD...'"
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/669",
+          "caption": "I Talked With God advertisement clipping",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana669.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "I Talked With God advertisement clipping",
+          "text": "Advertisement printed in newspapers claiming Frank B. Robinson talked with God and can offer followers the God-Power if they inquire via mail to Psychiana headquarters in Moscow, Idaho."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/322",
+          "caption": "I Want You to Find the Almighty Power of God and You Can Right Here on Earth",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana322.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1944"
+        },
+        "text": {
+          "headline": "I Want You to Find the Almighty Power of God and You Can Right Here on Earth",
+          "text": "Flyer includes illustration of Robinson as iconic 'Uncle Sam' with electric bolts around title. Copy states Robinson wants 'you' to discover a Power that brings prosperity."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/371",
+          "caption": "Is the Story of Jesus Christ Fact or Fiction? [01]",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana371.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Is the Story of Jesus Christ Fact or Fiction? [01]",
+          "text": "Advertisement for Robinson's book 'Is the Story of Jesus Christ Fact or Fiction?' Includes order form."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/294",
+          "caption": "It Takes a Lot of Employees for the Psychiana Religion",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana294.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "10",
+          "day": "26",
+          "year": "1942"
+        },
+        "text": {
+          "headline": "It Takes a Lot of Employees for the Psychiana Religion",
+          "text": "Document includes photos without names or identification of many members of the Psychiana staff, following brief description of the religion. Letter also ends with an endorsement of Robinson, Psychiana, and Psychiana advertising by James W. Brown, Sr."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/433",
+          "caption": "It Took the Manifestation of Adolf Hitler",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana433.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1942"
+        },
+        "text": {
+          "headline": "It Took the Manifestation of Adolf Hitler",
+          "text": "Flyer that claims the appearance of Hitler and Nazi Germany will lead to the revelation of Psychiana to all peoples of the world."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/538/full/pct:40/0/default.jpg",
+          "caption": "Label of a photograph mailed from Frank B. Robinson to his son, Albert B. Robinson",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana538.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "01",
+          "day": "20",
+          "year": "1948"
+        },
+        "text": {
+          "headline": "Label of a photograph mailed from Frank B. Robinson to his son, Albert B. Robinson",
+          "text": "Photograph of a brown paper label torn from a package used to mail a photograph from Frank B. Robinson to Alfred B. Robinson, including addresses and postage."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/687",
+          "caption": "Letterheads Used by Frank B. Robinson",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana687.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1952"
+        },
+        "text": {
+          "headline": "Letterheads Used by Frank B. Robinson",
+          "text": "Pages 1-2 official envelopes used to mail Psychiana correspondence including return address on front and the words 'Quiet Talks With God' on the back; Page 3-7 various official letterheads used by Frank B. Robinson for personal correspondence on behalf of Psychiana"
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/450",
+          "caption": "Marilyn Allen's Challenge",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana450.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1942"
+        },
+        "text": {
+          "headline": "Marilyn Allen's Challenge",
+          "text": "Advertisement depicts a man in a suit holding bags of money and a challenge to those that that think God and Right can bring Hitler to his knees. Also includes a letter about Psychiana's need for money in a campaign called ''Blitzkrieg' for God.' Includes a 'Blitzkrieg Campaign' button pin with an illustration of Hitler."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/523/full/pct:40/0/default.jpg",
+          "caption": "Negative photograph of a Psychiana pin",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana523.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1936"
+        },
+        "text": {
+          "headline": "Negative photograph of a Psychiana pin",
+          "text": "Negative photograph of a pin worn by members of Psychiana. Pin includes a small hand holding a lit torch with the capital letter 'P' prominently in front."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/722/full/pct:40/0/default.jpg",
+          "caption": "Negative photograph of Frank B. Robinson's books Ye Men of Athens and The Wanderer",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana722.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1947"
+        },
+        "text": {
+          "headline": "Negative photograph of Frank B. Robinson's books Ye Men of Athens and The Wanderer",
+          "text": "Negative photograph of the covers of Frank B. Robinson's books Ye Men of Athens, which depicts an Ancient Greek building, statue, and column, and The Wanderer, which includes text only. Both published by Psychiana, Inc."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/725/full/pct:40/0/default.jpg",
+          "caption": "Negative photograph of several copies of the June 1948 edition of the 'The Way: A Quarterly Publication of the Psychiana Religion.'",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana725.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1948"
+        },
+        "text": {
+          "headline": "Negative photograph of several copies of the June 1948 edition of the 'The Way: A Quarterly Publication of the Psychiana Religion.'",
+          "text": "Negative photograph of the covers of The Way that include rays of light moving to a point behind a picture of mountains, a mountain lake, and clouds."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/209",
+          "caption": "Notes from Robinson to Staff",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana209.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "Notes from Robinson to Staff",
+          "text": "Letters and notes that include instructions for how to manage Psychiana employees, referred to as 'girls,' while Robinson is away. Includes insults, disciplinary action, sending staff home, and specific instruction about Psychiana mail."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1035",
+          "caption": "Now --- It's War!",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana1035.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "12",
+          "day": "07",
+          "year": "1941"
+        },
+        "text": {
+          "headline": "Now --- It's War!",
+          "text": "A flyer discussing the Japanese attack on Pearl Harbor in 1941."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/247",
+          "caption": "Order Blank",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana247.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1936"
+        },
+        "text": {
+          "headline": "Order Blank",
+          "text": "Order form blank for Psychiana written materials with retail, cost, and profit columns."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/842",
+          "caption": "Packet featuring atom bomb as volcano",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana842.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "03",
+          "day": "28",
+          "year": "1947"
+        },
+        "text": {
+          "headline": "Packet featuring atom bomb as volcano",
+          "text": "Packet with a series of materials, most of which are focused on how near earth is to destruction, employing the atom bomb and communism in particular. Includes history of the movement, testimony, advertisements for lessons, application for membership, and form envelopes. Also includes large mailer the packet was sent in."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/853",
+          "caption": "Packet headed with an illustration of Science and Energy",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana853.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1944"
+        },
+        "text": {
+          "headline": "Packet headed with an illustration of Science and Energy",
+          "text": "Packet with materials focused on the 'power' that is inside each of us, which is the power of God. Materials urge the recipient to remit application and fees to join the movement. Includes an illustration of Robinson that echoes Uncle Sam."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/358",
+          "caption": "Peace of Mind",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana358.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1939"
+        },
+        "text": {
+          "headline": "Peace of Mind",
+          "text": "Flyer includes an illustration of Jesus Christ and quotes the Bible. Discusses solving people's problems with God-Power and includes testimonials on the reverse page."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/543/full/pct:40/0/default.jpg",
+          "caption": "Photograph of 1st and Main Street, Moscow, ID",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana543.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of 1st and Main Street, Moscow, ID",
+          "text": "Photograph of unmarked corner building located at the intersection of 1st and Main Street in Moscow, Idaho."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/548/full/pct:40/0/default.jpg",
+          "caption": "Photograph of clerical and bookkeeping staff from the branch mailing department.",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana548.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Photograph of clerical and bookkeeping staff from the branch mailing department.",
+          "text": "Photograph of all women staff from Psychiana clerical and bookkeeping standing in front of the Branch Mailing Department at 1st and Main Street in Moscow, Idaho. This building is two stories and occupies half a block."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/542/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Corner Drug Store in Moscow, ID",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana542.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of Corner Drug Store in Moscow, ID",
+          "text": "Photograph of the corner drug store in Moscow, Idaho where Frank Robinson worked as a clerk and wrote the first lessons of Psychiana."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/568/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Frank B. Robinson adjusting a small printing press.",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana568.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "Photograph of Frank B. Robinson adjusting a small printing press.",
+          "text": "Photograph depicts Frank B. Robinson with his sleeves rolled up and an unidentified male and female staff member working at row of small printing presses."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/581/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Frank B. Robinson and a man named Henry Banks",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana581.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1939"
+        },
+        "text": {
+          "headline": "Photograph of Frank B. Robinson and a man named Henry Banks",
+          "text": "Photograph depicts Frank B. Robinson handing Mr. Henry Banks a can of 'rattlesnake meat' out front of the building of the publication, The News Review."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/526/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana526.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1934"
+        },
+        "text": {
+          "headline": "Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe",
+          "text": "Photograph of Frank B. Robinson standing outside the passenger side of his Duesenberg Convertible Coupe with a park in the background."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/525/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe in front of crowd",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana525.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1934"
+        },
+        "text": {
+          "headline": "Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe in front of crowd",
+          "text": "Photograph of Frank B. Robinson standing by the hood of his Duesenberg Convertible Coupe in a public square or street with many people standing behind him. Along the running board, a sign reads 'Duesenberg Straight 8.'"
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/520/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Frank B. Robinson in his Duesenberg Convertible Coupe",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana520.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of Frank B. Robinson in his Duesenberg Convertible Coupe",
+          "text": "Photograph of view of Frank B. Robinson sitting in the driver's side of his Duesenberg convertible coupe at the curb in front of his house."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/566/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Frank B. Robinson loading a printing press with ink",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana566.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Photograph of Frank B. Robinson loading a printing press with ink",
+          "text": "Photograph depicts Frank. B. Robinson with his sleeves rolled up, loading a small printing press with ink from a black container."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/519/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Frank B. Robinson playing his organ",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana519.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of Frank B. Robinson playing his organ",
+          "text": "Photograph of Frank B. Robinson playing from a book of sheet music on his pipe organ."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/554/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Frank B. Robinson watching Psychiana staff members work",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana554.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "05",
+          "day": "01",
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of Frank B. Robinson watching Psychiana staff members work",
+          "text": "Photograph depicts young Frank B. Robinson standing in a doorway with his hands on his hips and watching smiling female Psychiana staff complete tasks."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/567/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Frank B. Robinson watching the work of an unidentified male staff member",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana567.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "Photograph of Frank B. Robinson watching the work of an unidentified male staff member",
+          "text": "Photograph depicts Frank B. Robinson standing behind an unidentified male staff member who edits a lithograph plate at a drafting table."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/552/full/pct:40/0/default.jpg",
+          "caption": "Photograph of Psychiana business office",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana552.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "05",
+          "day": "01",
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of Psychiana business office",
+          "text": "Photograph depicts an unidentified man and woman sitting over a desk and writing records in ledgers or some sort of record books. The calendar over the desk marks the month of May in year 1938."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/556/full/pct:40/0/default.jpg",
+          "caption": "Photograph of revolving table used to sort and compile materials",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana556.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "05",
+          "day": "01",
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of revolving table used to sort and compile materials",
+          "text": "Photograph depicts several female Psychiana staff sitting around a revolving 'rotary table,' operated by electric motor and used to assemble Frank B. Robinsons Lessons and follow-up literature before mailing."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/547/full/pct:40/0/default.jpg",
+          "caption": "Photograph of some Psychiana staff members at Psychiana's international headquarters",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana547.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Photograph of some Psychiana staff members at Psychiana's international headquarters",
+          "text": "Photograph of all women staff standing in front of Psychiana's International Headquarters, which operated with a staff of sixty-three women who conducted a direct mail campaign."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/555/full/pct:40/0/default.jpg",
+          "caption": "Photograph of the bookkeeping department",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana555.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "05",
+          "day": "01",
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of the bookkeeping department",
+          "text": "Photograph depicts the bookkeeping department in the Psychiana Branch Mailing Department and several female staff completing various tasks of typing, sorting mail, calculating and keeping records."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/546/full/pct:40/0/default.jpg",
+          "caption": "Photograph of The Professional Building built by Frank B. Robinson",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana546.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1936"
+        },
+        "text": {
+          "headline": "Photograph of The Professional Building built by Frank B. Robinson",
+          "text": "Photograph of The Professional Building main entrance from street view. The Professional Building housed most lawyers and doctors in Moscow, Idaho, along with the Robinson's Exclusive Prescription Pharmacy, grossing $8,000 a year in rent."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/565/full/pct:40/0/default.jpg",
+          "caption": "Photograph of three men, two working at linographs",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana565.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of three men, two working at linographs",
+          "text": "Photograph depicts W.J. Marinean standing between Howard Wallace and T.J. Grief, who sit at two linograph machines and work."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/553/full/pct:40/0/default.jpg",
+          "caption": "Photograph of two women using dictaphones",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana553.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Photograph of two women using dictaphones",
+          "text": "Photograph depicts two women sitting next to each other at a desk and using Dictaphones and typewriters to transcribe documents."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/559/full/pct:40/0/default.jpg",
+          "caption": "Photograph of unidentified woman using an envelope sorter",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana559.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "05",
+          "day": "01",
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Photograph of unidentified woman using an envelope sorter",
+          "text": "Photograph depicts a female Psychiana staff member loading handfuls of envelopes into a sorter machine in preparation for mailing."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/569/full/pct:40/0/default.jpg",
+          "caption": "Photograph of William Walter DeBolt, Frank B. Robinson, and unidentified female staff member working at a sorter",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana569.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "Photograph of William Walter DeBolt, Frank B. Robinson, and unidentified female staff member working at a sorter",
+          "text": "Photograph depicts (from left to right) W.W. DeBolt standing with his hands in his pockets, Frank B. Robinson with sleeves rolled up adjusting a sorter, and a female Psychiana Staff Member collecting materials as they leave the sorter."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/522/full/pct:40/0/default.jpg",
+          "caption": "Portrait of Frank B. Robinson [01]",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana522.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Portrait of Frank B. Robinson [01]",
+          "text": "Portrait of middle-aged Frank B. Robinson dressed in a three piece pin-striped suit and tie."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/524/full/pct:40/0/default.jpg",
+          "caption": "Portrait of Frank B. Robinson [02]",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana524.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Portrait of Frank B. Robinson [02]",
+          "text": "Portrait of middle-aged Frank B. Robinson wearing a suit, tie, vest, and black pork pie hat."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/527/full/pct:40/0/default.jpg",
+          "caption": "Portrait of Frank B. Robinson [03]",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana527.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Portrait of Frank B. Robinson [03]",
+          "text": "Portrait of middle-aged Frank B. Robinson wearing a three piece suit with pocket watch and sitting in an ornate chair with animals carved into the handles."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/394",
+          "caption": "Psychiana Certificate of Life Membership",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana394.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1946"
+        },
+        "text": {
+          "headline": "Psychiana Certificate of Life Membership",
+          "text": "A certificate of 'life membership' in Psychiana."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/802",
+          "caption": "Psychiana Quarterly, December 1935",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana802.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "12",
+          "day": "01",
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Psychiana Quarterly, December 1935",
+          "text": "Issue begins with advertisements for Psychiana with question, 'WHAT IS GOD, REALLY?' and contains various articles on the crucifixion of Jesus, Christmas, Billy Sunday, World War II and violence in Europe, and the state of Religion in Mexico. Issue also includes an inspirational poem and letter from Psychiana student with a story about her eyesight being restored."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/361",
+          "caption": "Psychiana Religion Book List",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana361.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1948"
+        },
+        "text": {
+          "headline": "Psychiana Religion Book List",
+          "text": "Yellow pamphlet listing the various books printed by Psychiana available for purchase.  Includes all of Robinson's books and two by other writers."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/998",
+          "caption": "Psychiana Spiritual Blitzkrieg button",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana998.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "Psychiana Spiritual Blitzkrieg button",
+          "text": "A button featuring an illustration of Hitler and a quote: 'Believing that right is superior to brute force, I am helping to bring Hitler's defeat by repeating hourly, the power of right (God) will bring your speedy downfall.'"
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/311",
+          "caption": "Psychiana What It Is",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana311.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "Psychiana What It Is",
+          "text": "Flyer details the story of Psychiana and Robinson's life on the front. The back includes articles about Latah County farmers asking for loans and statements about how Psychiana has enriched the lives of students."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/34",
+          "caption": "Quiet Talks With God - Proving God Lives in You",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana34.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1941"
+        },
+        "text": {
+          "headline": "Quiet Talks With God - Proving God Lives in You",
+          "text": "Quiet Talks With God included a series of 101 newspaper columns written by Frank B. Robinson to communicate teachings of Psychiana. Column 4,'Proving God Lives in You,' discusses the miracle of birth and the fact that some Power takes over once a fetus is conceived. Robinson equates this to the power of nature and, therefore, God. This article is edited into columns on glossy paper with corrections in pencil."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/246",
+          "caption": "Sales - Agents Application Blank",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana246.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1936"
+        },
+        "text": {
+          "headline": "Sales - Agents Application Blank",
+          "text": "Fill out and sign enclosed 'Sales Agents Application Blank'. Notice to inform students about becoming sale agents for Psychiana and receiving a 33 1/3% commission."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/521/full/pct:40/0/default.jpg",
+          "caption": "Several portrait photographs of a younger Frank B. Robinson",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana521.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1902"
+        },
+        "text": {
+          "headline": "Several portrait photographs of a younger Frank B. Robinson",
+          "text": "Three portrait photographs of a young Frank B. Robinson, two of which have been cut out, wearing the same suit but posing differently in each photograph. 'Age 16' written in pencil in white space."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/375",
+          "caption": "Shall We Know Each Other Beyond the Tomb?",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana375.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1937"
+        },
+        "text": {
+          "headline": "Shall We Know Each Other Beyond the Tomb?",
+          "text": "Advertisement for Robinson's book 'Shall We Know Each Other Beyond the Tomb?'  Includes order form."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/589/full/pct:40/0/default.jpg",
+          "caption": "Signed portrait of Tommy Burns at age 27 mailed to Frank B. Robinson",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana589.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1942"
+        },
+        "text": {
+          "headline": "Signed portrait of Tommy Burns at age 27 mailed to Frank B. Robinson",
+          "text": "Signed portrait of world heavyweight boxing champion Tommy Burns at the age of 27, wearing his heavyweight belt with a personal note to Frank B. Robinson on back."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/387",
+          "caption": "Special Notice [02]",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana387.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "11",
+          "day": "16",
+          "year": "1938"
+        },
+        "text": {
+          "headline": "Special Notice [02]",
+          "text": "Letter begins by affirming Psychiana helps everyone find the God Realm. The majority and rest of the letter explains that Psychiana is not a wealthy institution and has not been receiving donations to cover the cost of its extensive overhead for operation and staffing. Robinson then asks for donations."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/835",
+          "caption": "Study This Picture Carefully",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana835.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1939"
+        },
+        "text": {
+          "headline": "Study This Picture Carefully",
+          "text": "Illustration of a stalk of corn. Text follows the illustration regarding the ways in which a person is like a corn plant."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/443",
+          "caption": "Tack this up in your kitchen",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana443.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1941"
+        },
+        "text": {
+          "headline": "Tack this up in your kitchen",
+          "text": "Flyer includes illustrations of Hitler and Mussolini, reminding Psychiana students to say an affirmation and use the Spirit of God against injustice."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/99",
+          "caption": "Test Tube' Life Hopeless? Two Scientists Disagree",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana99.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "09",
+          "day": "08",
+          "year": "1933"
+        },
+        "text": {
+          "headline": "Test Tube' Life Hopeless? Two Scientists Disagree",
+          "text": "Clipping reports that man might as well give up trying to create life in a laboratory and affirms, via a quote from Dr. James Gray, that Biology provides no support as the origin of living matter in the world."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/323",
+          "caption": "Thank God for the Atom-Bomb",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana323.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1946"
+        },
+        "text": {
+          "headline": "Thank God for the Atom-Bomb",
+          "text": "Flyer claims the atom bomb is the first scientific proof of a power that lives in people. Also claims this 'POWER POWER POWER' comes from talking to God."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/354",
+          "caption": "The Amazing Story of 'Psychiana'",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana354.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1942"
+        },
+        "text": {
+          "headline": "The Amazing Story of 'Psychiana'",
+          "text": "Small card advertising a brochure about Psychiana for only $1.00. Includes detachable order form."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/318",
+          "caption": "The Beginning of a Busy Day",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana318.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "The Beginning of a Busy Day",
+          "text": "Advertisement includes photo of Robinson sitting at his desk looking through many large stacks of paper. Caption asserts that Robinson receives more letters via U.S. mail than most professionals and answers every letter with sound and solid advice personally with the help of his staff."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/373",
+          "caption": "The Life Story of Frank B. Robinson",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana373.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1934"
+        },
+        "text": {
+          "headline": "The Life Story of Frank B. Robinson",
+          "text": "Advertisement for Robinson's book 'The Life Story of Frank B. Robinson.'  Includes order form."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1025",
+          "caption": "The Light Within",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana1025.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1942"
+        },
+        "text": {
+          "headline": "The Light Within",
+          "text": "A flyer featuring an illustration of a lighthouse on the coast representing the light of God within the viewer."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/686",
+          "caption": "The Man Who Talked With God",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana686.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "05",
+          "day": "01",
+          "year": "1942"
+        },
+        "text": {
+          "headline": "The Man Who Talked With God",
+          "text": "Article from Thrill summarizing the origins of Psychiana, Robinson's beliefs, and focusing on the volume of material Psychiana mails and the large postage bill. Includes multiple photographs of Frank B. Robinson, his family, colleagues, Psychiana headquarters, and a Psychiana lecture."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/374",
+          "caption": "The Name of the Beast 666",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana374.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "The Name of the Beast 666",
+          "text": "Advertisement for Robinson's book 'The Name of the Beast '666.''  Includes order form."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/252",
+          "caption": "The New Psychiana",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana252.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1945"
+        },
+        "text": {
+          "headline": "The New Psychiana",
+          "text": "Flyer announcing Frank B. Robinson's new Lessons."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/338",
+          "caption": "The Power of God Can Give To You New Life",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana338.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1944"
+        },
+        "text": {
+          "headline": "The Power of God Can Give To You New Life",
+          "text": "Flyer claims Psychiana lessons will bring new life to students and can provide Allied forces with power to win World War II. Also states churches have never revealed this Power."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/339",
+          "caption": "The Power of God, the Power of God, the Power of God",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana339.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1944"
+        },
+        "text": {
+          "headline": "The Power of God, the Power of God, the Power of God",
+          "text": "Flyer proclaims the discovery of the Power of God, which is available to anyone at any time through Psychiana Lessons. Also criticizes orthodox doctrine that God was crucified."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/273",
+          "caption": "The Psychiana Bulletin, May 1950",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana273.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "05",
+          "day": "01",
+          "year": "1950"
+        },
+        "text": {
+          "headline": "The Psychiana Bulletin, May 1950",
+          "text": "Bulletin includes a primary article discussing the importance of mountains and the 'high' people feel when they go to the mountains and into nature. This  includes stories of mountains in the Bible. Also includes stories written for children, letters from students, Q and A, and other articles."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/707",
+          "caption": "The Shepherd of Moscow, Idaho",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana707.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "month": "02",
+          "day": "20",
+          "year": "1943"
+        },
+        "text": {
+          "headline": "The Shepherd of Moscow, Idaho",
+          "text": "Article from Colliers Magazine provides a holistic view of Frank B. Robinson's life and Psychiana, including Robinson's travels before founding Psychiana, the development of the literature and doctrine, those who oppose and criticize Psychiana, and the financial success of Robinson himself."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/360",
+          "caption": "The Sky is Red, for Protestant ministers",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana360.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "The Sky is Red, for Protestant ministers",
+          "text": "Lecture addressed to Protestant ministers about the dire nature of the church and its doctrine."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/405",
+          "caption": "The World Comes After the Truth Every Time it is Offered to it.",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana405.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1935"
+        },
+        "text": {
+          "headline": "The World Comes After the Truth Every Time it is Offered to it.",
+          "text": "Single-page flyer featuring large photograph of audience that came to hear Robinson speak in LA.  Text follows regarding the popularity of Robinson as a speaker"
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/831",
+          "caption": "This Drawing Depicts What Everyone May Have Through the Dynamic Power of the 'God-Law'",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana831.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1939"
+        },
+        "text": {
+          "headline": "This Drawing Depicts What Everyone May Have Through the Dynamic Power of the 'God-Law'",
+          "text": "Illustration of the Statue of Liberty. Paragraph follows illustration detailing the ways in which Psychiana can liberate its practitioners."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/828",
+          "caption": "This Life of Fulfillment May be Yours Through the Power Teach",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana828.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1939"
+        },
+        "text": {
+          "headline": "This Life of Fulfillment May be Yours Through the Power Teach",
+          "text": "Illustration and two letters. Illustration of a man wearing academic regalia and bearing a scroll labeled 'TRUTH.' He is walking out of a building labeled 'KNOWLEDGE OF THE LIVING GOD' and down a path labeled 'LIFE OF FULFILLMENT' toward a rising sun. The letter under the illustration discusses the way God is available for all persons. The reverse side contains a letter titled 'A WORD OF WARNING' that states that, although there are wondrous benefits to tapping the God-Power, the knowledge also comes with the responsibility to recruit others to the Psychiana cause."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/250",
+          "caption": "To 'Psychiana' Members who Have Allowed Their Commitments to Become Delinquent [02]",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana250.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1934"
+        },
+        "text": {
+          "headline": "To 'Psychiana' Members who Have Allowed Their Commitments to Become Delinquent [02]",
+          "text": "A form letter from Frank B. Robinson asks members to meet their monetary commitment for the movement."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/254",
+          "caption": "To My Students [02]",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana254.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "To My Students [02]",
+          "text": "A single-page notice sent to members asking that they do not make Frank B. Robinson any personal loans."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/293",
+          "caption": "To My Students Everywhere [01]",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana293.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "To My Students Everywhere [01]",
+          "text": "Letter notifies students Robinson has revised and created new lessons he calls 'masterpieces,' which he claims are far superior to the old lessons. He also offers these lessons to students for free if they bought the old lessons but asks for donations in order to keep Psychiana lessons in production. Letter includes a copy of Robinson's signature and illustrations of Robinson and Tenney."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1022",
+          "caption": "Untitled illustration of hungry man",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana1022.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1942"
+        },
+        "text": {
+          "headline": "Untitled illustration of hungry man",
+          "text": "A flyer featuring an untitled illustration of a man standing outside of a restaurant, looking hungrily at food he cannot afford to buy."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/386",
+          "caption": "Untitled photograph of Robinson at his desk before a typewriter",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana386.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1944"
+        },
+        "text": {
+          "headline": "Untitled photograph of Robinson at his desk before a typewriter",
+          "text": "Photograph of Robinson sitting at a desk in his 'down-town study.' Text follows that regarding the taker of the photograph, and details of the scene, including notes on a photograph of Robinson's son."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/303",
+          "caption": "Variations of Applications for Psychiana Membership",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana303.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1937"
+        },
+        "text": {
+          "headline": "Variations of Applications for Psychiana Membership",
+          "text": "Several variations of blank applications for Psychiana membership show different designs, prices, special offers and pitches to recruit students."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/378",
+          "caption": "Wanderer",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana378.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1947"
+        },
+        "text": {
+          "headline": "Wanderer",
+          "text": "Advertisement for Robinson's book 'The Wanderer.'  Includes order form."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/549/full/pct:40/0/default.jpg",
+          "caption": "William Walter DeBolt at his Desk",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana549.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "William Walter DeBolt at his Desk",
+          "text": "Photograph of W.W. DeBolt sitting at his desk beside a Dictaphone and typewriter with several stacks of paper and a hardback book with Frank B. Robinson's face on the cover. [Later illustrations of this man on Psychiana documents may indicate this is actually C.W. Tenney, and was mislabeled.]"
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/282",
+          "caption": "You Have a Solemn Obligation to Me",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana282.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1938"
+        },
+        "text": {
+          "headline": "You Have a Solemn Obligation to Me",
+          "text": "Letter sent to members requesting that they pay their bill. Robinson asks students to make their payments because it will lighten their conscience."
+        }
+      },{
+        "media": {
+          "url": "https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/352",
+          "caption": "Your Chance To Obtain the Full Original 'Psychiana' Teaching of Dr. Frank B. Robinson",
+          "link": "/collectionbuilder-contentdm/items/demo_psychiana352.html",
+          "credit": "Collection Builder CDM Skin"
+        },
+        "start_date": { 
+          "year": "1940"
+        },
+        "text": {
+          "headline": "Your Chance To Obtain the Full Original 'Psychiana' Teaching of Dr. Frank B. Robinson",
+          "text": "Small card advertises Psychiana original 10 lesson course for only 4.98 and includes order form."
+        }
+      }
+    ]
+}
