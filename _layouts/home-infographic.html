@@ -1,13 +1,12 @@
 ---
 layout: page
-custom-foot: js/carousel-js.html
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 <div class="row">
   <div class="col-md-8">
 
     {% include index/description.html %}
-    {% include index/carousel.html%}
+    {% include index/carousel.html title="Sample Items" carousel-type="image" %}
     
   </div>
   <div class="col-md-4">  
