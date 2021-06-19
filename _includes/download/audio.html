@@ -1,0 +1,1 @@
+{{ site.cdm-url }}/utils/getstream/collection/{% if item.title %}{{ item.collectionid | default: site.cdm-collection-id }}/id/{{ item.cdmid }}{% else %}{{ page.collectionid | default: site.cdm-collection-id }}/id/{{ page.cdmid }}{% endif %}

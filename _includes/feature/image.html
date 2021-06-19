@@ -32,11 +32,11 @@
         {%- capture image_alt -%}{{ alts[forloop.index0] }}{%- endcapture -%}
         {%- capture image_link -%}{{ links[forloop.index0] | default: i }}{%- endcapture -%}
     {% else %}
-        {%- assign figure = site.data[site.metadata] | where: "objectid", i | first -%}
-        {%- capture image_link -%}{{ '/item.html' | relative_url | append: '?id=' | append: figure.objectid }}{% endcapture %}
-        {%- capture image_caption -%}{% if include.caption %}{{ captions[forloop.index0] | escape }}{% else %}{{ figure.title | escape }}{% endif %}{%- endcapture -%}
-        {%- capture image_alt -%}{% if include.alt %}{{ alts[forloop.index0] | escape }}{% else %}{{ figure.title | escape }}{% endif %}{%- endcapture -%}
-        {%- capture image_src -%}{% if figure.youtubeid %}{{ 'https://img.youtube.com/vi/' | append: figure.youtubeid | append: '/hqdefault.jpg' }}{% elsif figure.filename contains '/' %}{{ figure.filename }}{% else %}{{ '/objects/' | append: figure.filename | relative_url }}{% endif %}{% endcapture %}
+        {%- assign item = site.data[site.metadata] | where: "objectid", i | first -%}
+        {%- capture image_link -%}{{ '/items/' | append: item.objectid | append: '.html' | relative_url }}{% endcapture %}
+        {%- capture image_caption -%}{% if include.caption %}{{ captions[forloop.index0] | escape }}{% else %}{{ item.title | escape }}{% endif %}{%- endcapture -%}
+        {%- capture image_alt -%}{% if include.alt %}{{ alts[forloop.index0] | escape }}{% else %}{{ item.title | escape }}{% endif %}{%- endcapture -%}
+        {%- capture image_src -%}{% if item.youtubeid %}{{ 'https://img.youtube.com/vi/' | append: item.youtubeid | append: '/hqdefault.jpg' }}{% else %}{% include image/large.html %}{% endif %}{% endcapture %}
     {% endif %}
     <div class="col-md text-center">
         <figure class="figure mx-3{% if include.width %} feature-w-{{ include.width }}{% endif %}">

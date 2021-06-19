@@ -13,21 +13,21 @@ Example Code --> `{% raw %}{% include feature/image.html objectid="demo_psychian
 
 #### Image from Collection (with a caption)
 
-{% include feature/image.html objectid="demo_001" width="75" caption="an image" %}
+{% include feature/image.html objectid="demo_psychiana555" width="75" caption="an image" %}
 
-Example Code --> `{% raw %}{% include feature/image.html objectid="demo_psychiana554" width="75" caption="an image" %}{% endraw %}`
+Example Code --> `{% raw %}{% include feature/image.html objectid="demo_psychiana555" width="75" caption="an image" %}{% endraw %}`
 
 
 #### Multiple Images from the Collection (auto caption)
 
-{% include feature/image.html objectid="demo_001;demo_004;demo_005"  %}
+{% include feature/image.html objectid="demo_psychiana554;demo_psychiana_yt1;demo_psychiana556"  %}
 
-Example Code --> `{% raw %}{% include feature/image.html objectid="demo_psychiana554;demo_psychiana555;demo_psychiana556"  %}{% endraw %}`
+Example Code --> `{% raw %}{% include feature/image.html objectid="demo_psychiana554;demo_psychiana_yt1;demo_psychiana556"  %}{% endraw %}`
 
 
 #### Multiple Images from the Collection (with captions)
 
-{% include feature/image.html objectid="demo_001;demo_004;demo_005" width="75" caption="demo1;nother" %}
+{% include feature/image.html objectid="demo_psychiana554;demo_psychiana555;demo_psychiana556" width="75" caption="demo1;nother" %}
 
 Example Code --> `{% raw %}{% include feature/image.html objectid="demo_psychiana554;demo_psychiana555;demo_psychiana556" %}{% endraw %}`
 
@@ -64,9 +64,9 @@ Example Code --> `{% raw %}{% include feature/pdf.html objectid="demo_psychiana1
 
 #### PDF from the Collection (with a caption)
 
-{% include feature/pdf.html objectid="demo_002" width="50" caption="a pdf from the collection" %}
+{% include feature/pdf.html objectid="demo_psychiana841" width="50" caption="a pdf from the collection" %}
 
-Example Code --> `{% raw %}{% include feature/pdf.html objectid="demo_psychiana1025" width="50" caption="a pdf from the collection" %}{% endraw %}`
+Example Code --> `{% raw %}{% include feature/pdf.html objectid="demo_psychiana841" width="50" caption="a pdf from the collection" %}{% endraw %}`
 
 
 #### External PDF (without a caption)
