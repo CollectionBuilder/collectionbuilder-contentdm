@@ -8,22 +8,26 @@
     - "text" = main card text, can use markdown formatting (tip: use a Liquid capture to add more complex content)
     - "header" = card header text (in bar above card content)
     - "title" = card title text inside card content area
-    - "objectid" = the given object (photo or youtube) will create a card cap image
+    - "objectid" = the given object or link to external image will create a card cap image
+    - "alt" = if adding an external image using objectid option, provide alt text for image
     - "width" = will use responsive sizing to set the % size on desktop (will be 100% on mobile), choose from "25", "50", "75", or "100"
-    - "float" = will use responsive float utility to add float on desktop (will not float on mobile), choose from "left" or "right"
     - "centered" = give "true" to add mx-auto class on the card to center it (don't use with float!)
+    - "float" = will use responsive float utility to add float on desktop (will not float on mobile), choose from "left" or "right"
 
 {%- endcomment -%}
-<div class="card mb-3{% if include.float %} feature-float-{{ include.float }}{% endif %}{% if include.width %} feature-w-{{ include.width }}{% endif %}{% if include.centered %} mx-auto{% endif %}">
-{% if include.objectid %}
-{% assign item = site.data[site.metadata] | where: "objectid", include.objectid | first %}
-<img class="card-img-top" src="{% unless item.youtubeid %}{{ site.cdm-url }}/digital/iiif/{{ item.collectionid | default: site.cdm-collection-id }}/{{ item.cdmid }}/full/max/0/default.jpg{% else %}https://img.youtube.com/vi/{{ item.youtubeid }}/maxresdefault.jpg{% endunless %}" alt="{{ item.title | escape }}">
+{%- if include.objectid contains '/' -%}
+{%- capture src -%}{{ include.objectid | relative_url }}{% endcapture %}
+{%- capture alt -%}{{ include.alt | default: include.title }}{% endcapture %}
+{%- elsif include.objectid -%}
+{%- assign item = site.data[site.metadata] | where: "objectid", include.objectid | first -%}
+{%- capture src -%}{% if item.youtubeid %}{{ 'https://img.youtube.com/vi/' | append: item.youtubeid | append: '/hqdefault.jpg' }}{% else %}{% include image/large.html %}{% endif %}{% endcapture %}
+{%- capture alt -%}{{ item.title | default: include.title }}{% endcapture %}
 {%- endif -%}
-{% if include.header %}<h5 class="card-header">{{ include.header }}</h5>{% endif %}
-<div class="card-body">
-{% if include.title %}<h5 class="card-title">{{ include.title }}</h5>{% endif %}
-<div class="card-text">
-{{ include.text | markdownify }}
-</div>
-</div>
+<div class="card mb-3{% if include.float %} feature-float-{{ include.float }}{% endif %}{% if include.width %} feature-w-{{ include.width }}{% endif %}{% if include.centered %} mx-auto{% endif %}">
+    {% if src %}<img class="card-img-top" src="{{ src }}" alt="{{ alt | escape }}">{%- endif -%}
+    {% if include.header %}<h5 class="card-header">{{ include.header }}</h5>{%- endif -%}
+    <div class="card-body">
+        {% if include.title %}<h5 class="card-title">{{ include.title }}</h5>{%- endif -%}
+        <div class="card-text">{{ include.text | markdownify }}</div>
+    </div>
 </div>
