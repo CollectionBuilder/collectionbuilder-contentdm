@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Timeline | Collection Builder CDM Skin</title>
+<link rel="shortcut icon" type="image/x-icon" href="/collectionbuilder-contentdm/favicon.ico">
+<!--
+  _____     ____        __  _           ___       _ __   __       
+ / ___/__  / / /__ ____/ /_(_)__  ___  / _ )__ __(_) /__/ /__ ____
+/ /__/ _ \/ / / -_) __/ __/ / _ \/ _ \/ _  / // / / / _  / -_) __/
+\___/\___/_/_/\__/\__/\__/_/\___/_//_/____/\_,_/_/_/\_,_/\__/_/   
+   
+    built with CollectionBuilder-CONTENTdm 
+    https://github.com/CollectionBuilder/collectionbuilder-contentdm 
+-->
+<meta name="generator" content="collectionbuilder-contentdm" />
+<meta http-equiv="Content-Language" content="en-us" >
+
+<link rel="stylesheet" href="/collectionbuilder-contentdm/assets/lib/bootstrap.min.css" type="text/css">
+<script defer src="/collectionbuilder-contentdm/assets/lib/fontawesome-free/js/all.min.js"></script>
+<link rel="stylesheet" href="/collectionbuilder-contentdm/assets/css/custom.css" type="text/css">
+
+
+<meta name="robots" content="noindex" />
+<meta name="description" content="CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s.">
+<meta name="author" content="CollectionBuilder, Digital Initiatives, University of Idaho Library" >
+<!-- Open Graph meta -->
+<meta property="og:title" content="Timeline | Collection Builder CDM Skin" />
+<meta property="og:description" content="CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s." />
+<meta property="og:site_name" content="Collection Builder CDM Skin" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://digital.lib.uidaho.edu/digital/iiif/psychiana/548/full/max/0/default.jpg" />
+<meta property="og:image:alt" content="Photograph of clerical and bookkeeping staff from the branch mailing department." />
+<meta property="og:url" content="https://collectionbuilder.github.io/collectionbuilder-contentdm/timeline.html" />
+<meta property="og:locale" content="en_US" />
+<!-- schema.org JSON-LD -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Timeline | Collection Builder CDM Skin","publisher":"Digital Initiatives, University of Idaho Library","description":"CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s.","image":"https://digital.lib.uidaho.edu/digital/iiif/psychiana/548/full/max/0/default.jpg","url":"https://collectionbuilder.github.io/collectionbuilder-contentdm/timeline.html"}</script> 
+
+
+<!-- Analytics --> 
+<!-- Last build date: 2021-07-29 -->
+  </head>
+  <body>
+    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+    <div class="container">
+    <div class="row align-items-center">
+        <div id="title" class="col-md-9">
+            <h1><a class="text-dark font-weight-normal" href="/collectionbuilder-contentdm/" >Collection Builder CDM Skin</a></h1>	 
+            <p>Digital Collection Magic with Static Web Technologies</p>
+        </div>
+        <div class="col-md-3 d-none d-lg-block text-right">
+            <a class="btn btn-outline-light" href="https://www.lib.uidaho.edu/digital/" target="_blank" rel="noopener">
+                <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" title="Digital Initiatives, University of Idaho Library" alt="Digital Initiatives, University of Idaho Library home" >
+            </a>
+        </div>
+    </div>
+</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <span class="d-lg-none text-right">
+            <a href="https://www.lib.uidaho.edu/digital/" target="_blank" rel="noopener">
+                <img class="img-fluid" id="mobile-nav-image" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" title="Digital Initiatives, University of Idaho Library" alt="Digital Initiatives, University of Idaho Library home" >
+            </a>
+        </span>
+
+        <div class="collapse navbar-collapse" id="page-nav">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link " href="/collectionbuilder-contentdm/">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link " href="/collectionbuilder-contentdm/browse.html">Browse</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link " href="/collectionbuilder-contentdm/subjects.html">Subjects</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link " href="/collectionbuilder-contentdm/locations.html">Locations</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link " href="/collectionbuilder-contentdm/map.html">Map</a>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link " href="/collectionbuilder-contentdm/timeline.html">Timeline</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link " href="/collectionbuilder-contentdm/data.html">Data</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link " href="/collectionbuilder-contentdm/about.html">About</a>
+                </li><li class="nav-item ">
+                    <a class="nav-link " href="https://digital.lib.uidaho.edu/search/collection/psychiana/" target="_blank" rel="noopener">Database</a>
+                </li>
+            </ul>
+            <script>
+    function cdm_search() {
+        var query = document.getElementById("nav-search").value;
+        window.open("https://digital.lib.uidaho.edu/digital/search/collection/psychiana/searchterm/" + encodeURI(query), "_blank" );
+    }
+</script>
+<form class="form-inline my-2 my-lg-0" role="search" id="cdm-search" onsubmit="cdm_search(); return false;">
+    <input id="nav-search" class="form-control mr-sm-2 col-sm-9" type="text" placeholder="Search" aria-label="Search">
+    <button class="btn btn-primary" type="submit">
+        <svg viewBox="0 0 512 512" class="align-middle" width="1em"><path fill="#fff" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+        <span class="sr-only">Search Objects</span>
+    </button>
+</form>
+        </div>
+    </div>    
+</nav>
+
+    <main id="maincontent" role="main">
+      <div class="container mt-4">
+  <div class="dropdown float-right" id="year-nav">
+    <button class="btn btn-info dropdown-toggle" type="button" id="yearButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Year
+    </button>
+    <div class="dropdown-menu" aria-labelledby="yearButton">
+        
+        <a class="dropdown-item" href="#1935">1935</a>
+        <a class="dropdown-item" href="#1940">1940</a>
+        <a class="dropdown-item" href="#1945">1945</a>
+        <a class="dropdown-item" href="#1950">1950</a>
+    </div>
+</div><h2 id="collection-timeline">Collection Timeline</h2>
+
+
+<h3><a href="#1902">1902</a> to <a href="#2019">2019</a></h3>
+
+<table id="timeline" class="table table-striped">
+    
+    <tr id="1902">
+        <th>
+            <h3>1902</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana521.html" data-toggle="tooltip" data-placement="bottom" title="Several portrait photographs of a younger Frank B. Robinson | 1902" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/521" alt="Several portrait photographs of a younger Frank B. Robinson" alt="Several portrait photographs of a younger Frank B. Robinson" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1933">
+        <th>
+            <h3>1933</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana251.html" data-toggle="tooltip" data-placement="bottom" title="A Sacred Trust | 1933" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/251" alt="A Sacred Trust" alt="A Sacred Trust" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana370.html" data-toggle="tooltip" data-placement="bottom" title="Crucified Gods Galore | 1933" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/370" alt="Crucified Gods Galore" alt="Crucified Gods Galore" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana308.html" data-toggle="tooltip" data-placement="bottom" title="Dr. Robinson&#39;s &#39;Realization&#39; Secret | 1933" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/308" alt="Dr. Robinson&#39;s &#39;Realization&#39; Secret" alt="Dr. Robinson&#39;s &#39;Realization&#39; Secret" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana99.html" data-toggle="tooltip" data-placement="bottom" title="Test Tube&#39; Life Hopeless? Two Scientists Disagree | 1933-09-08" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/99" alt="Test Tube&#39; Life Hopeless? Two Scientists Disagree" alt="Test Tube&#39; Life Hopeless? Two Scientists Disagree" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1934">
+        <th>
+            <h3>1934</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana409.html" data-toggle="tooltip" data-placement="bottom" title="All the World Wants God, Bt It Doesn&#39;t Know Where to Find That Great Power | 1934" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/409" alt="All the World Wants God, Bt It Doesn&#39;t Know Where to Find That Great Power" alt="All the World Wants God, Bt It Doesn&#39;t Know Where to Find That Great Power" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana437.html" data-toggle="tooltip" data-placement="bottom" title="Coming to Portland | 1934-11-29" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/437" alt="Coming to Portland" alt="Coming to Portland" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana440.html" data-toggle="tooltip" data-placement="bottom" title="Dr. Frank B. Robinson Speaking to Packed House | 1934-05-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/440" alt="Dr. Frank B. Robinson Speaking to Packed House" alt="Dr. Frank B. Robinson Speaking to Packed House" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana526.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe | 1934" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/526" alt="Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe" alt="Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana525.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe in front of crowd | 1934" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/525" alt="Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe in front of crowd" alt="Photograph of Frank B. Robinson beside his Duesenberg Convertible Coupe in front of crowd" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana373.html" data-toggle="tooltip" data-placement="bottom" title="The Life Story of Frank B. Robinson | 1934" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/373" alt="The Life Story of Frank B. Robinson" alt="The Life Story of Frank B. Robinson" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana250.html" data-toggle="tooltip" data-placement="bottom" title="To &#39;Psychiana&#39; Members who Have Allowed Their Commitments to Become Delinquent [02] | 1934" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/250" alt="To &#39;Psychiana&#39; Members who Have Allowed Their Commitments to Become Delinquent [02]" alt="To &#39;Psychiana&#39; Members who Have Allowed Their Commitments to Become Delinquent [02]" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1935">
+        <th>
+            <h3>1935</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana248.html" data-toggle="tooltip" data-placement="bottom" title="Daily Procedure For Every &#39;Psychiana&#39; Student | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/248" alt="Daily Procedure For Every &#39;Psychiana&#39; Student" alt="Daily Procedure For Every &#39;Psychiana&#39; Student" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana249.html" data-toggle="tooltip" data-placement="bottom" title="Dr. Frank B. Robinson Speaking to Packed house in the TRINITY AUGITORIUM Los Angeles, California, January 27th 1935 | 1935-01-27" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/249" alt="Dr. Frank B. Robinson Speaking to Packed house in the TRINITY AUGITORIUM Los Angeles, California, January 27th 1935" alt="Dr. Frank B. Robinson Speaking to Packed house in the TRINITY AUGITORIUM Los Angeles, California, January 27th 1935" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana681.html" data-toggle="tooltip" data-placement="bottom" title="I Talked With God Advertisement | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/681" alt="I Talked With God Advertisement" alt="I Talked With God Advertisement" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana371.html" data-toggle="tooltip" data-placement="bottom" title="Is the Story of Jesus Christ Fact or Fiction? [01] | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/371" alt="Is the Story of Jesus Christ Fact or Fiction? [01]" alt="Is the Story of Jesus Christ Fact or Fiction? [01]" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana543.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of 1st and Main Street, Moscow, ID | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/543" alt="Photograph of 1st and Main Street, Moscow, ID" alt="Photograph of 1st and Main Street, Moscow, ID" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana542.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Corner Drug Store in Moscow, ID | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/542" alt="Photograph of Corner Drug Store in Moscow, ID" alt="Photograph of Corner Drug Store in Moscow, ID" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana520.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Frank B. Robinson in his Duesenberg Convertible Coupe | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/520" alt="Photograph of Frank B. Robinson in his Duesenberg Convertible Coupe" alt="Photograph of Frank B. Robinson in his Duesenberg Convertible Coupe" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana519.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Frank B. Robinson playing his organ | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/519" alt="Photograph of Frank B. Robinson playing his organ" alt="Photograph of Frank B. Robinson playing his organ" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana554.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Frank B. Robinson watching Psychiana staff members work | 1935-05-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/554" alt="Photograph of Frank B. Robinson watching Psychiana staff members work" alt="Photograph of Frank B. Robinson watching Psychiana staff members work" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana552.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Psychiana business office | 1935-05-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/552" alt="Photograph of Psychiana business office" alt="Photograph of Psychiana business office" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana556.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of revolving table used to sort and compile materials | 1935-05-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/556" alt="Photograph of revolving table used to sort and compile materials" alt="Photograph of revolving table used to sort and compile materials" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana555.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of the bookkeeping department | 1935-05-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/555" alt="Photograph of the bookkeeping department" alt="Photograph of the bookkeeping department" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana565.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of three men, two working at linographs | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/565" alt="Photograph of three men, two working at linographs" alt="Photograph of three men, two working at linographs" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana559.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of unidentified woman using an envelope sorter | 1935-05-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/559" alt="Photograph of unidentified woman using an envelope sorter" alt="Photograph of unidentified woman using an envelope sorter" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana522.html" data-toggle="tooltip" data-placement="bottom" title="Portrait of Frank B. Robinson [01] | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/522" alt="Portrait of Frank B. Robinson [01]" alt="Portrait of Frank B. Robinson [01]" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana524.html" data-toggle="tooltip" data-placement="bottom" title="Portrait of Frank B. Robinson [02] | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/524" alt="Portrait of Frank B. Robinson [02]" alt="Portrait of Frank B. Robinson [02]" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana527.html" data-toggle="tooltip" data-placement="bottom" title="Portrait of Frank B. Robinson [03] | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/527" alt="Portrait of Frank B. Robinson [03]" alt="Portrait of Frank B. Robinson [03]" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana802.html" data-toggle="tooltip" data-placement="bottom" title="Psychiana Quarterly, December 1935 | 1935-12-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/802" alt="Psychiana Quarterly, December 1935" alt="Psychiana Quarterly, December 1935" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana311.html" data-toggle="tooltip" data-placement="bottom" title="Psychiana What It Is | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/311" alt="Psychiana What It Is" alt="Psychiana What It Is" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana374.html" data-toggle="tooltip" data-placement="bottom" title="The Name of the Beast 666 | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/374" alt="The Name of the Beast 666" alt="The Name of the Beast 666" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana405.html" data-toggle="tooltip" data-placement="bottom" title="The World Comes After the Truth Every Time it is Offered to it. | 1935" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/405" alt="The World Comes After the Truth Every Time it is Offered to it." alt="The World Comes After the Truth Every Time it is Offered to it." ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1936">
+        <th>
+            <h3>1936</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana245.html" data-toggle="tooltip" data-placement="bottom" title="A Money-Making Opportunity for &#39;Psychiana&#39; Students Establish a &#39;Psychiana&#39; Sales Agency | 1936" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/245" alt="A Money-Making Opportunity for &#39;Psychiana&#39; Students Establish a &#39;Psychiana&#39; Sales Agency" alt="A Money-Making Opportunity for &#39;Psychiana&#39; Students Establish a &#39;Psychiana&#39; Sales Agency" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana692.html" data-toggle="tooltip" data-placement="bottom" title="Business Card for John G. Foster, Niagara Representative of Psychiana | 1936-01-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/692" alt="Business Card for John G. Foster, Niagara Representative of Psychiana" alt="Business Card for John G. Foster, Niagara Representative of Psychiana" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana523.html" data-toggle="tooltip" data-placement="bottom" title="Negative photograph of a Psychiana pin | 1936" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/523" alt="Negative photograph of a Psychiana pin" alt="Negative photograph of a Psychiana pin" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana247.html" data-toggle="tooltip" data-placement="bottom" title="Order Blank | 1936" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/247" alt="Order Blank" alt="Order Blank" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana546.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of The Professional Building built by Frank B. Robinson | 1936" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/546" alt="Photograph of The Professional Building built by Frank B. Robinson" alt="Photograph of The Professional Building built by Frank B. Robinson" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana246.html" data-toggle="tooltip" data-placement="bottom" title="Sales - Agents Application Blank | 1936" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/246" alt="Sales - Agents Application Blank" alt="Sales - Agents Application Blank" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1937">
+        <th>
+            <h3>1937</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana375.html" data-toggle="tooltip" data-placement="bottom" title="Shall We Know Each Other Beyond the Tomb? | 1937" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/375" alt="Shall We Know Each Other Beyond the Tomb?" alt="Shall We Know Each Other Beyond the Tomb?" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana303.html" data-toggle="tooltip" data-placement="bottom" title="Variations of Applications for Psychiana Membership | 1937" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/303" alt="Variations of Applications for Psychiana Membership" alt="Variations of Applications for Psychiana Membership" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1938">
+        <th>
+            <h3>1938</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana281.html" data-toggle="tooltip" data-placement="bottom" title="A Little Chat About Money | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/281" alt="A Little Chat About Money" alt="A Little Chat About Money" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana255.html" data-toggle="tooltip" data-placement="bottom" title="An Abiding Faith alternate version | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/255" alt="An Abiding Faith alternate version" alt="An Abiding Faith alternate version" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana337.html" data-toggle="tooltip" data-placement="bottom" title="Autographed Portrait of Frank B. Robinson | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/337" alt="Autographed Portrait of Frank B. Robinson" alt="Autographed Portrait of Frank B. Robinson" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana261.html" data-toggle="tooltip" data-placement="bottom" title="Delinquent Notice | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/261" alt="Delinquent Notice" alt="Delinquent Notice" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana285.html" data-toggle="tooltip" data-placement="bottom" title="Flyer with Instructions to Use God-Power Against Axis Power | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/285" alt="Flyer with Instructions to Use God-Power Against Axis Power" alt="Flyer with Instructions to Use God-Power Against Axis Power" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana376.html" data-toggle="tooltip" data-placement="bottom" title="Hang This Where You Can See It, Better Still - Frame It | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/376" alt="Hang This Where You Can See It, Better Still - Frame It" alt="Hang This Where You Can See It, Better Still - Frame It" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana316.html" data-toggle="tooltip" data-placement="bottom" title="Here Is Your Lesson No. 3 - Man Can Now Talk With God | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/316" alt="Here Is Your Lesson No. 3 - Man Can Now Talk With God" alt="Here Is Your Lesson No. 3 - Man Can Now Talk With God" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana548.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of clerical and bookkeeping staff from the branch mailing department. | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/548" alt="Photograph of clerical and bookkeeping staff from the branch mailing department." alt="Photograph of clerical and bookkeeping staff from the branch mailing department." ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana566.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Frank B. Robinson loading a printing press with ink | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/566" alt="Photograph of Frank B. Robinson loading a printing press with ink" alt="Photograph of Frank B. Robinson loading a printing press with ink" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana547.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of some Psychiana staff members at Psychiana&#39;s international headquarters | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/547" alt="Photograph of some Psychiana staff members at Psychiana&#39;s international headquarters" alt="Photograph of some Psychiana staff members at Psychiana&#39;s international headquarters" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana553.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of two women using dictaphones | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/553" alt="Photograph of two women using dictaphones" alt="Photograph of two women using dictaphones" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana387.html" data-toggle="tooltip" data-placement="bottom" title="Special Notice [02] | 1938-11-16" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/387" alt="Special Notice [02]" alt="Special Notice [02]" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana318.html" data-toggle="tooltip" data-placement="bottom" title="The Beginning of a Busy Day | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/318" alt="The Beginning of a Busy Day" alt="The Beginning of a Busy Day" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana254.html" data-toggle="tooltip" data-placement="bottom" title="To My Students [02] | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/254" alt="To My Students [02]" alt="To My Students [02]" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana293.html" data-toggle="tooltip" data-placement="bottom" title="To My Students Everywhere [01] | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/293" alt="To My Students Everywhere [01]" alt="To My Students Everywhere [01]" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana549.html" data-toggle="tooltip" data-placement="bottom" title="William Walter DeBolt at his Desk | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/549" alt="William Walter DeBolt at his Desk" alt="William Walter DeBolt at his Desk" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana282.html" data-toggle="tooltip" data-placement="bottom" title="You Have a Solemn Obligation to Me | 1938" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/282" alt="You Have a Solemn Obligation to Me" alt="You Have a Solemn Obligation to Me" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1939">
+        <th>
+            <h3>1939</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana664.html" data-toggle="tooltip" data-placement="bottom" title="A Visit to the Man Who &#39;Talks With God&#39; | 1939-09-24" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/664" alt="A Visit to the Man Who &#39;Talks With God&#39;" alt="A Visit to the Man Who &#39;Talks With God&#39;" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana829.html" data-toggle="tooltip" data-placement="bottom" title="God - As a Living Spirit -Can Bring to You Perfect Abundance! | 1939" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/829" alt="God - As a Living Spirit -Can Bring to You Perfect Abundance!" alt="God - As a Living Spirit -Can Bring to You Perfect Abundance!" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana358.html" data-toggle="tooltip" data-placement="bottom" title="Peace of Mind | 1939" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/358" alt="Peace of Mind" alt="Peace of Mind" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana581.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Frank B. Robinson and a man named Henry Banks | 1939" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/581" alt="Photograph of Frank B. Robinson and a man named Henry Banks" alt="Photograph of Frank B. Robinson and a man named Henry Banks" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana835.html" data-toggle="tooltip" data-placement="bottom" title="Study This Picture Carefully | 1939" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/835" alt="Study This Picture Carefully" alt="Study This Picture Carefully" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana831.html" data-toggle="tooltip" data-placement="bottom" title="This Drawing Depicts What Everyone May Have Through the Dynamic Power of the &#39;God-Law&#39; | 1939" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/831" alt="This Drawing Depicts What Everyone May Have Through the Dynamic Power of the &#39;God-Law&#39;" alt="This Drawing Depicts What Everyone May Have Through the Dynamic Power of the &#39;God-Law&#39;" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana828.html" data-toggle="tooltip" data-placement="bottom" title="This Life of Fulfillment May be Yours Through the Power Teach | 1939" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/828" alt="This Life of Fulfillment May be Yours Through the Power Teach" alt="This Life of Fulfillment May be Yours Through the Power Teach" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1940">
+        <th>
+            <h3>1940</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana98.html" data-toggle="tooltip" data-placement="bottom" title="A Conspectus of the Eleven Living Religions of the World, Arranged in the Chronological Order of Their Origin | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/98" alt="A Conspectus of the Eleven Living Religions of the World, Arranged in the Chronological Order of Their Origin" alt="A Conspectus of the Eleven Living Religions of the World, Arranged in the Chronological Order of Their Origin" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana171.html" data-toggle="tooltip" data-placement="bottom" title="Here&#39;s Your Answer! | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/171" alt="Here&#39;s Your Answer!" alt="Here&#39;s Your Answer!" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana669.html" data-toggle="tooltip" data-placement="bottom" title="I Talked With God advertisement clipping | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/669" alt="I Talked With God advertisement clipping" alt="I Talked With God advertisement clipping" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana209.html" data-toggle="tooltip" data-placement="bottom" title="Notes from Robinson to Staff | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/209" alt="Notes from Robinson to Staff" alt="Notes from Robinson to Staff" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana568.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Frank B. Robinson adjusting a small printing press. | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/568" alt="Photograph of Frank B. Robinson adjusting a small printing press." alt="Photograph of Frank B. Robinson adjusting a small printing press." ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana567.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of Frank B. Robinson watching the work of an unidentified male staff member | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/567" alt="Photograph of Frank B. Robinson watching the work of an unidentified male staff member" alt="Photograph of Frank B. Robinson watching the work of an unidentified male staff member" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana569.html" data-toggle="tooltip" data-placement="bottom" title="Photograph of William Walter DeBolt, Frank B. Robinson, and unidentified female staff member working at a sorter | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/569" alt="Photograph of William Walter DeBolt, Frank B. Robinson, and unidentified female staff member working at a sorter" alt="Photograph of William Walter DeBolt, Frank B. Robinson, and unidentified female staff member working at a sorter" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana998.html" data-toggle="tooltip" data-placement="bottom" title="Psychiana Spiritual Blitzkrieg button | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/998" alt="Psychiana Spiritual Blitzkrieg button" alt="Psychiana Spiritual Blitzkrieg button" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana360.html" data-toggle="tooltip" data-placement="bottom" title="The Sky is Red, for Protestant ministers | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/360" alt="The Sky is Red, for Protestant ministers" alt="The Sky is Red, for Protestant ministers" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana352.html" data-toggle="tooltip" data-placement="bottom" title="Your Chance To Obtain the Full Original &#39;Psychiana&#39; Teaching of Dr. Frank B. Robinson | 1940" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/352" alt="Your Chance To Obtain the Full Original &#39;Psychiana&#39; Teaching of Dr. Frank B. Robinson" alt="Your Chance To Obtain the Full Original &#39;Psychiana&#39; Teaching of Dr. Frank B. Robinson" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1941">
+        <th>
+            <h3>1941</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana1242.html" data-toggle="tooltip" data-placement="bottom" title="Business Reply Card [01] | 1941" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1242" alt="Business Reply Card [01]" alt="Business Reply Card [01]" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana1035.html" data-toggle="tooltip" data-placement="bottom" title="Now --- It&#39;s War! | 1941-12-07" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1035" alt="Now --- It&#39;s War!" alt="Now --- It&#39;s War!" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana34.html" data-toggle="tooltip" data-placement="bottom" title="Quiet Talks With God - Proving God Lives in You | 1941" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/34" alt="Quiet Talks With God - Proving God Lives in You" alt="Quiet Talks With God - Proving God Lives in You" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana443.html" data-toggle="tooltip" data-placement="bottom" title="Tack this up in your kitchen | 1941" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/443" alt="Tack this up in your kitchen" alt="Tack this up in your kitchen" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1942">
+        <th>
+            <h3>1942</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana412.html" data-toggle="tooltip" data-placement="bottom" title="Death to the Axis | 1942" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/412" alt="Death to the Axis" alt="Death to the Axis" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana380.html" data-toggle="tooltip" data-placement="bottom" title="Dr. Robinson&#39;s Latest and Most Sensational Book | 1942" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/380" alt="Dr. Robinson&#39;s Latest and Most Sensational Book" alt="Dr. Robinson&#39;s Latest and Most Sensational Book" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana1033.html" data-toggle="tooltip" data-placement="bottom" title="For Rent - A Cross | 1942" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1033" alt="For Rent - A Cross" alt="For Rent - A Cross" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana294.html" data-toggle="tooltip" data-placement="bottom" title="It Takes a Lot of Employees for the Psychiana Religion | 1942-10-26" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/294" alt="It Takes a Lot of Employees for the Psychiana Religion" alt="It Takes a Lot of Employees for the Psychiana Religion" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana433.html" data-toggle="tooltip" data-placement="bottom" title="It Took the Manifestation of Adolf Hitler | 1942" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/433" alt="It Took the Manifestation of Adolf Hitler" alt="It Took the Manifestation of Adolf Hitler" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana450.html" data-toggle="tooltip" data-placement="bottom" title="Marilyn Allen&#39;s Challenge | 1942" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/450" alt="Marilyn Allen&#39;s Challenge" alt="Marilyn Allen&#39;s Challenge" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana589.html" data-toggle="tooltip" data-placement="bottom" title="Signed portrait of Tommy Burns at age 27 mailed to Frank B. Robinson | 1942" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/589" alt="Signed portrait of Tommy Burns at age 27 mailed to Frank B. Robinson" alt="Signed portrait of Tommy Burns at age 27 mailed to Frank B. Robinson" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana354.html" data-toggle="tooltip" data-placement="bottom" title="The Amazing Story of &#39;Psychiana&#39; | 1942" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/354" alt="The Amazing Story of &#39;Psychiana&#39;" alt="The Amazing Story of &#39;Psychiana&#39;" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana1025.html" data-toggle="tooltip" data-placement="bottom" title="The Light Within | 1942" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1025" alt="The Light Within" alt="The Light Within" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana686.html" data-toggle="tooltip" data-placement="bottom" title="The Man Who Talked With God | 1942-05-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/686" alt="The Man Who Talked With God" alt="The Man Who Talked With God" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana1022.html" data-toggle="tooltip" data-placement="bottom" title="Untitled illustration of hungry man | 1942" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/1022" alt="Untitled illustration of hungry man" alt="Untitled illustration of hungry man" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1943">
+        <th>
+            <h3>1943</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana707.html" data-toggle="tooltip" data-placement="bottom" title="The Shepherd of Moscow, Idaho | 1943-02-20" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/707" alt="The Shepherd of Moscow, Idaho" alt="The Shepherd of Moscow, Idaho" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1944">
+        <th>
+            <h3>1944</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana322.html" data-toggle="tooltip" data-placement="bottom" title="I Want You to Find the Almighty Power of God and You Can Right Here on Earth | 1944" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/322" alt="I Want You to Find the Almighty Power of God and You Can Right Here on Earth" alt="I Want You to Find the Almighty Power of God and You Can Right Here on Earth" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana853.html" data-toggle="tooltip" data-placement="bottom" title="Packet headed with an illustration of Science and Energy | 1944" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/853" alt="Packet headed with an illustration of Science and Energy" alt="Packet headed with an illustration of Science and Energy" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana338.html" data-toggle="tooltip" data-placement="bottom" title="The Power of God Can Give To You New Life | 1944" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/338" alt="The Power of God Can Give To You New Life" alt="The Power of God Can Give To You New Life" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana339.html" data-toggle="tooltip" data-placement="bottom" title="The Power of God, the Power of God, the Power of God | 1944" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/339" alt="The Power of God, the Power of God, the Power of God" alt="The Power of God, the Power of God, the Power of God" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana386.html" data-toggle="tooltip" data-placement="bottom" title="Untitled photograph of Robinson at his desk before a typewriter | 1944" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/386" alt="Untitled photograph of Robinson at his desk before a typewriter" alt="Untitled photograph of Robinson at his desk before a typewriter" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1945">
+        <th>
+            <h3>1945</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana252.html" data-toggle="tooltip" data-placement="bottom" title="The New Psychiana | 1945" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/252" alt="The New Psychiana" alt="The New Psychiana" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1946">
+        <th>
+            <h3>1946</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana841.html" data-toggle="tooltip" data-placement="bottom" title="$10,000 Reward | 1946" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/841" alt="$10,000 Reward" alt="$10,000 Reward" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana359.html" data-toggle="tooltip" data-placement="bottom" title="I Talked With God | 1946" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/359" alt="I Talked With God" alt="I Talked With God" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana394.html" data-toggle="tooltip" data-placement="bottom" title="Psychiana Certificate of Life Membership | 1946" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/394" alt="Psychiana Certificate of Life Membership" alt="Psychiana Certificate of Life Membership" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana323.html" data-toggle="tooltip" data-placement="bottom" title="Thank God for the Atom-Bomb | 1946" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/323" alt="Thank God for the Atom-Bomb" alt="Thank God for the Atom-Bomb" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1947">
+        <th>
+            <h3>1947</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana54.html" data-toggle="tooltip" data-placement="bottom" title="Good News | 1947" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/54" alt="Good News" alt="Good News" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana55.html" data-toggle="tooltip" data-placement="bottom" title="Good News - Man&#39;s Quest | 1947" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/55" alt="Good News - Man&#39;s Quest" alt="Good News - Man&#39;s Quest" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana52.html" data-toggle="tooltip" data-placement="bottom" title="Good News - Purpose of the Program | 1947" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/52" alt="Good News - Purpose of the Program" alt="Good News - Purpose of the Program" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana722.html" data-toggle="tooltip" data-placement="bottom" title="Negative photograph of Frank B. Robinson&#39;s books Ye Men of Athens and The Wanderer | 1947" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/722" alt="Negative photograph of Frank B. Robinson&#39;s books Ye Men of Athens and The Wanderer" alt="Negative photograph of Frank B. Robinson&#39;s books Ye Men of Athens and The Wanderer" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana842.html" data-toggle="tooltip" data-placement="bottom" title="Packet featuring atom bomb as volcano | 1947-03-28" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/842" alt="Packet featuring atom bomb as volcano" alt="Packet featuring atom bomb as volcano" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana378.html" data-toggle="tooltip" data-placement="bottom" title="Wanderer | 1947" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/378" alt="Wanderer" alt="Wanderer" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1948">
+        <th>
+            <h3>1948</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana538.html" data-toggle="tooltip" data-placement="bottom" title="Label of a photograph mailed from Frank B. Robinson to his son, Albert B. Robinson | 1948-01-20" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/538" alt="Label of a photograph mailed from Frank B. Robinson to his son, Albert B. Robinson" alt="Label of a photograph mailed from Frank B. Robinson to his son, Albert B. Robinson" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana725.html" data-toggle="tooltip" data-placement="bottom" title="Negative photograph of several copies of the June 1948 edition of the &#39;The Way: A Quarterly Publication of the Psychiana Religion.&#39; | 1948" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/725" alt="Negative photograph of several copies of the June 1948 edition of the &#39;The Way: A Quarterly Publication of the Psychiana Religion.&#39;" alt="Negative photograph of several copies of the June 1948 edition of the &#39;The Way: A Quarterly Publication of the Psychiana Religion.&#39;" ></a>
+            
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana361.html" data-toggle="tooltip" data-placement="bottom" title="Psychiana Religion Book List | 1948" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/361" alt="Psychiana Religion Book List" alt="Psychiana Religion Book List" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1949">
+        <th>
+            <h3>1949</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana253.html" data-toggle="tooltip" data-placement="bottom" title="A Special Offer to our Members ONLY! | 1949" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/253" alt="A Special Offer to our Members ONLY!" alt="A Special Offer to our Members ONLY!" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1950">
+        <th>
+            <h3>1950</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana273.html" data-toggle="tooltip" data-placement="bottom" title="The Psychiana Bulletin, May 1950 | 1950-05-01" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/273" alt="The Psychiana Bulletin, May 1950" alt="The Psychiana Bulletin, May 1950" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="1952">
+        <th>
+            <h3>1952</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana687.html" data-toggle="tooltip" data-placement="bottom" title="Letterheads Used by Frank B. Robinson | 1952" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://digital.lib.uidaho.edu/utils/getthumbnail/collection/psychiana/id/687" alt="Letterheads Used by Frank B. Robinson" alt="Letterheads Used by Frank B. Robinson" ></a>
+            
+        </td>
+    </tr>
+    
+    <tr id="2019">
+        <th>
+            <h3>2019</h3>
+        </th>
+        <td>
+            <a class="d-inline-block m-1" href="/collectionbuilder-contentdm/items/demo_psychiana_yt1.html" data-toggle="tooltip" data-placement="bottom" title="Psychiana, A Mail Order Religion Created in the Small Town of Moscow, Idaho | 2019-08-28" ><img class="lazyload img-thumbnail" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="https://img.youtube.com/vi/x6eu5wj8b04/mqdefault.jpg" alt="Psychiana, A Mail Order Religion Created in the Small Town of Moscow, Idaho" alt="Psychiana, A Mail Order Religion Created in the Small Town of Moscow, Idaho" ></a>
+            
+        </td>
+    </tr>
+    
+</table>
+
+</div>
+    </main>
+    <footer class="bg-dark pt-4 container-fluid mt-3">
+
+    <div class="row border-bottom border-white pb-4 mb-2">
+
+        <div class="col-md-7  px-4 mt-2">
+
+            <h4><a href="/collectionbuilder-contentdm/" class="text-white font-weight-normal">Collection Builder CDM Skin</a></h4>
+            <p class="text-white"><small>CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s.</small></p>
+            <nav>
+                <ul class="nav nav-pills ">
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/collectionbuilder-contentdm/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/collectionbuilder-contentdm/browse.html">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/collectionbuilder-contentdm/subjects.html">Subjects</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/collectionbuilder-contentdm/locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/collectionbuilder-contentdm/map.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light active" href="/collectionbuilder-contentdm/timeline.html">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/collectionbuilder-contentdm/data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/collectionbuilder-contentdm/about.html">About</a>
+                    </li></ul>
+            </nav>
+
+        </div>
+
+        <div class="col-md-5 mt-2 text-right">
+
+            <p class="text-right">
+                <a href="https://www.lib.uidaho.edu/digital/" target="_blank" rel="noopener">
+                    <img class="img-fluid" src="https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png" alt="Digital Initiatives, University of Idaho Library home">
+                </a>
+            </p>
+            <p class="text-white" id="footer-credits">
+                <small><em>built with</em>
+                    <a href="https://collectionbuilder.github.io/" target="_blank" rel="noopener" title="CollectionBuilder">
+                        <img src="/collectionbuilder-contentdm/assets/img/collectionbuilder-logo.png" class="img-fluid" alt="CollectionBuilder home" >
+                    </a>
+                </small>
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-12 text-center pt-3 pb-1">
+        <p class="text-white">Last updated 2021</p>
+    </div>
+
+</footer>
+    <!-- Optional JS for Bootstrap: jQuery first, then Bootstrap bundle JS -->
+<script src="/collectionbuilder-contentdm/assets/lib/jquery-3.6.0.min.js"></script>
+<script src="/collectionbuilder-contentdm/assets/lib/bootstrap.bundle.min.js"></script>
+<!-- load other js -->
+<script src="/collectionbuilder-contentdm/assets/lib/lazysizes.min.js" async></script>
+
+<script>
+(function(){
+    // init tooltips
+    $('[data-toggle="tooltip"]').tooltip()
+    // highlight year if hash
+    if(window.location.hash) {
+        var hashfilter = decodeURIComponent(location.hash.substr(1));
+        $("tr#" + hashfilter).addClass("bg-info");
+    }
+})();
+</script>
+
+    <script>
+    // When the user scrolls down from the top of the document, show the button
+    window.onscroll = function () {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("scroll-to-top").style.display = "block";
+        } else {
+            document.getElementById("scroll-to-top").style.display = "none";
+        }
+    }
+    // scroll to top function
+    function scrollToTop() {
+        $('html, body').animate({scrollTop: 0}, 750);
+    }
+</script>
+<button id="scroll-to-top" type="button" class="btn btn-link btn-lg" onclick="scrollToTop();" title="Back to Top" aria-label="Back to Top">
+    <span class="fa fa-angle-double-up fa-stack-1x" ></span>
+</button>
+  </body>
+</html>

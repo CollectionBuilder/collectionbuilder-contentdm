@@ -1,0 +1,11 @@
+{ "locations": [
+    { "location" : "moscow, id", "count" : 11, "link" : "https://collectionbuilder.github.io/collectionbuilder-contentdm/browse.html#moscow,%20id" },
+    { "location" : "new york, ny", "count" : 4, "link" : "https://collectionbuilder.github.io/collectionbuilder-contentdm/browse.html#new%20york,%20ny" },
+    { "location" : "spokane, wa", "count" : 3, "link" : "https://collectionbuilder.github.io/collectionbuilder-contentdm/browse.html#spokane,%20wa" },
+    { "location" : "hendersonville, tn", "count" : 3, "link" : "https://collectionbuilder.github.io/collectionbuilder-contentdm/browse.html#hendersonville,%20tn" },
+    { "location" : "springfield, il", "count" : 3, "link" : "https://collectionbuilder.github.io/collectionbuilder-contentdm/browse.html#springfield,%20il" },
+    { "location" : "los angeles, ca", "count" : 2, "link" : "https://collectionbuilder.github.io/collectionbuilder-contentdm/browse.html#los%20angeles,%20ca" },
+    { "location" : "portland, or", "count" : 1, "link" : "https://collectionbuilder.github.io/collectionbuilder-contentdm/browse.html#portland,%20or" },
+    { "location" : "berkley, co", "count" : 1, "link" : "https://collectionbuilder.github.io/collectionbuilder-contentdm/browse.html#berkley,%20co" },
+    { "location" : "seattle, wa", "count" : 1, "link" : "https://collectionbuilder.github.io/collectionbuilder-contentdm/browse.html#seattle,%20wa" }
+]}

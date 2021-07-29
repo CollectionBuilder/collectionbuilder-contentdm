@@ -1,0 +1,24 @@
+{ 
+    "title": "Collection Builder CDM Skin",
+    "url": "https://collectionbuilder.github.io/collectionbuilder-contentdm/",
+    "image": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/548/full/max/0/default.jpg", 
+    "description": "CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s.",
+    "publisher": { 
+        "name": "Digital Initiatives, University of Idaho Library", 
+        "url": "https://www.lib.uidaho.edu/digital/", 
+        "logo": "https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png" 
+    },
+    "date_start": "1902",
+    "date_end": "2019",
+    "objects": {
+        "video/mpeg": "1",
+        "application/pdf": "78",
+        "audio/mp3": "3",
+        "image/jpg": "25",
+        "image/jpeg": "7"
+        
+    },
+    "data": "https://collectionbuilder.github.io/collectionbuilder-contentdm/assets/data/datapackage.json",
+    "last_build_date": "2021-07-29"
+}
+

@@ -1,0 +1,140 @@
+{
+    "profile": "data-package",
+    "name": "collection-builder-cdm-skin-data",
+    "title": "Collection Builder CDM Skin Data",
+    "description": "Metadata and data derived from Collection Builder CDM Skin. CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories. This demo features materials from the Frank B. Robinson Papers documenting Psychiana, a religion popular in the 1930s and 40s.",
+    "keywords":  ["idaho","history","inland northwest"],
+    "homepage": "https://collectionbuilder.github.io/collectionbuilder-contentdm/",
+    "contributors": [
+        {
+            "title": "Digital Initiatives, University of Idaho Library",
+            "path": "https://www.lib.uidaho.edu/digital/",
+            "role": "author"
+        }
+    ],
+    "image": "https://digital.lib.uidaho.edu/digital/iiif/psychiana/548/full/max/0/default.jpg",
+    "licenses": [
+        {
+            "name": "CC0-1.0",
+            "title": "CC0 1.0",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+    ],
+    "resources": [
+         
+        {
+            "name": "facets-json",
+            "path": "facets.json",
+            "title": "Collection Builder CDM Skin Metadata Facets",
+            "description":"Unique values and counts of metadata facet fields.",
+            "format":"json",
+            "profile": "data-resource"
+        },
+        
+        {
+            "name": "subject-csv",
+            "path": "subjects.csv",
+            "title": "Collection Builder CDM Skin metadata subject counts in csv",
+            "description": "Unique values and counts of metadata subject fields.",
+            "format":"csv",
+            "profile":"tabular-data-resource",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "subject",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "count",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "link",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "subjects-json",
+            "path": "subjects.json",
+            "title": "Collection Builder CDM Skin  metadata subject counts in json",
+            "description":"Unique values and counts of metadata subject fields.",
+            "format":"json",
+            "profile": "data-resource"
+        },
+        
+        {
+            "name": "locations-csv",
+            "path": "subjects.csv",
+            "title": "Collection Builder CDM Skin metadata location counts in csv",
+            "description": "Unique values and counts of metadata location fields.",
+            "format":"csv",
+            "profile":"tabular-data-resource",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "location",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "count",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "link",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "locations-json",
+            "path": "locations.json",
+            "title": "Collection Builder CDM Skin metadata location counts in json",
+            "description":"Unique values and counts of metadata location fields.",
+            "format":"json",
+            "profile": "data-resource"
+        },
+        
+        {
+            "name": "geodata-json",
+            "path": "geodata.json",
+            "title": "Collection Builder CDM Skin geographic metadata",
+            "description": "Geojson data containing all objects with lat-longs and associated descriptive metadata.",
+            "format":"json",
+            "profile": "data-resource"
+        },
+        
+        {
+            "name": "timeline-json",
+            "path": "timelinejs.json",
+            "title": "Collection Builder CDM Skin timeline metadata",
+            "description": "Time-based metadata formatted for TimelineJS or other applications.",
+            "format":"json",
+            "profile": "data-resource"
+        },
+        {
+            "name": "metadata-csv",
+            "path": "metadata.csv",
+            "title": "Collection Builder CDM Skin full metadata in csv",
+            "description": "Complete metadata export for Collection Builder CDM Skin objects.",
+            "format":"csv",
+            "profile":"data-resource"
+        },
+        {
+            "name": "metadata-json",
+            "path": "metadata.json",
+            "title": "Collection Builder CDM Skin full metadata in json",
+            "description": "Complete metadata export for Collection Builder CDM Skin objects.",
+            "format":"json",
+            "profile":"data-resource"
+        }
+    ]
+}
