@@ -28,7 +28,12 @@ description: "CollectionBuilder-CONTENTdm is a template for creating digital col
 keywords: idaho;history;inland northwest 
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
-# Organization branding
+
+##########
+# Site/Organization Branding 
+#   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
+#   To remove the branding, comment out these values, or delete them. 
+#
 organization-name: "Digital Initiatives, University of Idaho Library"
 organization-link: https://www.lib.uidaho.edu/digital/
 organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
