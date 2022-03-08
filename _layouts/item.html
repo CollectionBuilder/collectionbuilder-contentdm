@@ -3,7 +3,7 @@ layout: default
 gallery: true
 ---
 {%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.display_name != nil' -%}
-<div class="container py-3">
+<div class="container mt-2 mb-4">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}">Home</a></li>
         <li class="breadcrumb-item"><a href="{{ '/browse.html' | relative_url }}">Items</a></li>
