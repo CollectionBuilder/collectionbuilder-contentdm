@@ -1,5 +1,8 @@
 # CollectionBuilder-CONTENTdm
 
+> **Note: the CollectionBuilder-CONTENTdm template is not actively developed and may lag behind other templates.**
+> For new projects please consider using [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv) which contains some updated features and flexibility.
+
 CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories.
 
 CollectionBuilder-CONTENTdm utilizes [CONTENTdm](https://www.oclc.org/en/contentdm.html) API's to create an engaging "skin" on top of an existing digital collection repository using your existing collection metadata.
