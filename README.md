@@ -1,7 +1,14 @@
 # CollectionBuilder-CONTENTdm
 
-> **Note: the CollectionBuilder-CONTENTdm template is not actively developed and may lag behind other templates.**
-> For new projects please consider using [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv) which contains some updated features and flexibility.
+**Note: the CollectionBuilder-CONTENTdm template has been deprecated and is no longer updated.** 
+
+For new projects use [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv) which contains updated features and flexibility.
+
+*Existing projects using CB-CDM will continue to work fine!*
+However, for all new projects please use CollectionBuilder-CSV.
+All CB-CDM documentation has been removed from cb-docs site--check out the "docs" folder of this repository for reference.
+
+----------
 
 CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories.
 
